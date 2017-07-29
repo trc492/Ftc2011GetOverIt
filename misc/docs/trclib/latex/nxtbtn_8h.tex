@@ -1,0 +1,125 @@
+\hypertarget{nxtbtn_8h}{
+\section{C:/Users/Michael/Ftc/2011/code/trclib/nxtbtn.h File Reference}
+\label{nxtbtn_8h}\index{C:/Users/Michael/Ftc/2011/code/trclib/nxtbtn.h@{C:/Users/Michael/Ftc/2011/code/trclib/nxtbtn.h}}
+}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_n_x_t_b_t_n}{NXTBTN}
+\end{DoxyCompactItemize}
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{nxtbtn_8h_a22dbaef1e18d2037df574457d030b061}{\_\-NXTBTN\_\-H}
+\item 
+\#define \hyperlink{nxtbtn_8h_ae9f4f7cf89710651cd39579c3b03ca42}{MOD\_\-ID}~MOD\_\-NXTBTN
+\item 
+\#define \hyperlink{nxtbtn_8h_aeb2f1a8bf091f1f0520d325ef1329624}{NXTBTNF\_\-USER\_\-MASK}~0x00ff
+\item 
+\#define \hyperlink{nxtbtn_8h_a260d069647a6467d03445fcd6c1c53a6}{NXTBTNF\_\-ENABLE\_\-EVENTS}~0x0001
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{nxtbtn_8h_a871e6d4da3d6455c8385c922135c6192}{NxtBtnEvent} (\_\-\_\-in \hyperlink{struct_n_x_t_b_t_n}{NXTBTN} \&nxtbtn, \_\-\_\-in int nxtButton, \_\-\_\-in bool fPressed)
+\item 
+void \hyperlink{nxtbtn_8h_ad196f1a4faafaa85a8ac8901a27de96a}{NxtBtnInit} (\_\-\_\-out \hyperlink{struct_n_x_t_b_t_n}{NXTBTN} \&nxtbtn, \_\-\_\-in int nxtBtnFlags)
+\item 
+void \hyperlink{nxtbtn_8h_ae6f28b59680283e196e49708b874b783}{NxtBtnTask} (\_\-\_\-inout \hyperlink{struct_n_x_t_b_t_n}{NXTBTN} \&nxtbtn)
+\end{DoxyCompactItemize}
+
+
+\subsection{Define Documentation}
+\hypertarget{nxtbtn_8h_a22dbaef1e18d2037df574457d030b061}{
+\index{nxtbtn.h@{nxtbtn.h}!\_\-NXTBTN\_\-H@{\_\-NXTBTN\_\-H}}
+\index{\_\-NXTBTN\_\-H@{\_\-NXTBTN\_\-H}!nxtbtn.h@{nxtbtn.h}}
+\subsubsection[{\_\-NXTBTN\_\-H}]{\setlength{\rightskip}{0pt plus 5cm}\#define \_\-NXTBTN\_\-H}}
+\label{nxtbtn_8h_a22dbaef1e18d2037df574457d030b061}
+
+
+Definition at line 17 of file nxtbtn.h.
+
+\hypertarget{nxtbtn_8h_ae9f4f7cf89710651cd39579c3b03ca42}{
+\index{nxtbtn.h@{nxtbtn.h}!MOD\_\-ID@{MOD\_\-ID}}
+\index{MOD\_\-ID@{MOD\_\-ID}!nxtbtn.h@{nxtbtn.h}}
+\subsubsection[{MOD\_\-ID}]{\setlength{\rightskip}{0pt plus 5cm}\#define MOD\_\-ID~MOD\_\-NXTBTN}}
+\label{nxtbtn_8h_ae9f4f7cf89710651cd39579c3b03ca42}
+
+
+Definition at line 24 of file nxtbtn.h.
+
+\hypertarget{nxtbtn_8h_a260d069647a6467d03445fcd6c1c53a6}{
+\index{nxtbtn.h@{nxtbtn.h}!NXTBTNF\_\-ENABLE\_\-EVENTS@{NXTBTNF\_\-ENABLE\_\-EVENTS}}
+\index{NXTBTNF\_\-ENABLE\_\-EVENTS@{NXTBTNF\_\-ENABLE\_\-EVENTS}!nxtbtn.h@{nxtbtn.h}}
+\subsubsection[{NXTBTNF\_\-ENABLE\_\-EVENTS}]{\setlength{\rightskip}{0pt plus 5cm}\#define NXTBTNF\_\-ENABLE\_\-EVENTS~0x0001}}
+\label{nxtbtn_8h_a260d069647a6467d03445fcd6c1c53a6}
+
+
+Definition at line 30 of file nxtbtn.h.
+
+\hypertarget{nxtbtn_8h_aeb2f1a8bf091f1f0520d325ef1329624}{
+\index{nxtbtn.h@{nxtbtn.h}!NXTBTNF\_\-USER\_\-MASK@{NXTBTNF\_\-USER\_\-MASK}}
+\index{NXTBTNF\_\-USER\_\-MASK@{NXTBTNF\_\-USER\_\-MASK}!nxtbtn.h@{nxtbtn.h}}
+\subsubsection[{NXTBTNF\_\-USER\_\-MASK}]{\setlength{\rightskip}{0pt plus 5cm}\#define NXTBTNF\_\-USER\_\-MASK~0x00ff}}
+\label{nxtbtn_8h_aeb2f1a8bf091f1f0520d325ef1329624}
+
+
+Definition at line 29 of file nxtbtn.h.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{nxtbtn_8h_a871e6d4da3d6455c8385c922135c6192}{
+\index{nxtbtn.h@{nxtbtn.h}!NxtBtnEvent@{NxtBtnEvent}}
+\index{NxtBtnEvent@{NxtBtnEvent}!nxtbtn.h@{nxtbtn.h}}
+\subsubsection[{NxtBtnEvent}]{\setlength{\rightskip}{0pt plus 5cm}void NxtBtnEvent (
+\begin{DoxyParamCaption}
+\item[{\_\-\_\-in {\bf NXTBTN} \&}]{nxtbtn, }
+\item[{\_\-\_\-in int}]{nxtButton, }
+\item[{\_\-\_\-in bool}]{fPressed}
+\end{DoxyParamCaption}
+)}}
+\label{nxtbtn_8h_a871e6d4da3d6455c8385c922135c6192}
+\hypertarget{nxtbtn_8h_ad196f1a4faafaa85a8ac8901a27de96a}{
+\index{nxtbtn.h@{nxtbtn.h}!NxtBtnInit@{NxtBtnInit}}
+\index{NxtBtnInit@{NxtBtnInit}!nxtbtn.h@{nxtbtn.h}}
+\subsubsection[{NxtBtnInit}]{\setlength{\rightskip}{0pt plus 5cm}void NxtBtnInit (
+\begin{DoxyParamCaption}
+\item[{\_\-\_\-out {\bf NXTBTN} \&}]{nxtbtn, }
+\item[{\_\-\_\-in int}]{nxtBtnFlags}
+\end{DoxyParamCaption}
+)}}
+\label{nxtbtn_8h_ad196f1a4faafaa85a8ac8901a27de96a}
+This function initializes the NXT button system.
+
+
+\begin{DoxyParams}{Parameters}
+{\em nxtbtn} & Points to the \hyperlink{struct_n_x_t_b_t_n}{NXTBTN} structure to be initialized. \\
+\hline
+{\em nxtBtnFlags} & Specifies the button flags. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 58 of file nxtbtn.h.
+
+\hypertarget{nxtbtn_8h_ae6f28b59680283e196e49708b874b783}{
+\index{nxtbtn.h@{nxtbtn.h}!NxtBtnTask@{NxtBtnTask}}
+\index{NxtBtnTask@{NxtBtnTask}!nxtbtn.h@{nxtbtn.h}}
+\subsubsection[{NxtBtnTask}]{\setlength{\rightskip}{0pt plus 5cm}void NxtBtnTask (
+\begin{DoxyParamCaption}
+\item[{\_\-\_\-inout {\bf NXTBTN} \&}]{nxtbtn}
+\end{DoxyParamCaption}
+)}}
+\label{nxtbtn_8h_ae6f28b59680283e196e49708b874b783}
+This function processes the changed buttons and sends button event notifications.
+
+
+\begin{DoxyParams}{Parameters}
+{\em nxtbtn} & Points to the \hyperlink{struct_n_x_t_b_t_n}{NXTBTN} structure. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 81 of file nxtbtn.h.
+

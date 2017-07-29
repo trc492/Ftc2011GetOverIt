@@ -1,0 +1,394 @@
+\hypertarget{joybtn_8h}{
+\section{C:/Users/Michael/Ftc/2011/code/trclib/joybtn.h File Reference}
+\label{joybtn_8h}\index{C:/Users/Michael/Ftc/2011/code/trclib/joybtn.h@{C:/Users/Michael/Ftc/2011/code/trclib/joybtn.h}}
+}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_j_o_y_b_t_n}{JOYBTN}
+\end{DoxyCompactItemize}
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{joybtn_8h_a65384b81491c82909d50546244ba7c97}{\_\-JOYBTN\_\-H}
+\item 
+\#define \hyperlink{joybtn_8h_ae9f4f7cf89710651cd39579c3b03ca42}{MOD\_\-ID}~MOD\_\-JOYBTN
+\item 
+\#define \hyperlink{joybtn_8h_a2e8c97a165aba89fcbb18194537d8f92}{NUM\_\-BTNS}~12
+\item 
+\#define \hyperlink{joybtn_8h_aaac6b71f3caab6696c9cc22bdfe44e92}{JOYBTNF\_\-USER\_\-MASK}~0x00ff
+\item 
+\#define \hyperlink{joybtn_8h_a1dbeed96d09f8e8ed4a77855d34a0fed}{JOYBTNF\_\-ENABLE\_\-EVENTS}~0x0001
+\item 
+\#define \hyperlink{joybtn_8h_aa1e4b2745fed511b4c93f7152134e211}{Btn}(n)~(1 $<$$<$ (n))
+\item 
+\#define \hyperlink{joybtn_8h_acd97de4f745a8df10474577d94480262}{Logitech\_\-Btn1}~Btn(0)
+\item 
+\#define \hyperlink{joybtn_8h_aae31258c140951a76485a531c5707a96}{Logitech\_\-Btn2}~Btn(1)
+\item 
+\#define \hyperlink{joybtn_8h_a2809f63db8afc985b6c9c0546ac35ba7}{Logitech\_\-Btn3}~Btn(2)
+\item 
+\#define \hyperlink{joybtn_8h_a98294149504be0974b024eac0da7c83f}{Logitech\_\-Btn4}~Btn(3)
+\item 
+\#define \hyperlink{joybtn_8h_a855cc022e1f4894c852360bfa9bf8c38}{Logitech\_\-LB5}~Btn(4)
+\item 
+\#define \hyperlink{joybtn_8h_a11e4c4275d961cf3cf442f03b58717bc}{Logitech\_\-RB6}~Btn(5)
+\item 
+\#define \hyperlink{joybtn_8h_a3f48a24458f15494a4a817af810fee56}{Logitech\_\-LB7}~Btn(6)
+\item 
+\#define \hyperlink{joybtn_8h_ae64d5ee034264461a91c100d4c8fadcb}{Logitech\_\-RB8}~Btn(7)
+\item 
+\#define \hyperlink{joybtn_8h_a6249af8edfea4c75487ce1f9595ea99a}{Logitech\_\-Btn9}~Btn(8)
+\item 
+\#define \hyperlink{joybtn_8h_a06717f4fe1d6d3d4c80b4eefd975c2d1}{Logitech\_\-Btn10}~Btn(9)
+\item 
+\#define \hyperlink{joybtn_8h_ae506ac00c2a46a6a35b7a2695f747c28}{Logitech\_\-LStick}~Btn(10)
+\item 
+\#define \hyperlink{joybtn_8h_a85416dba9ce09ce5906564d4208c14b6}{Logitech\_\-RStick}~Btn(11)
+\item 
+\#define \hyperlink{joybtn_8h_ad2be3d8611b034dc5674708496a83605}{Xbox\_\-A}~Btn(0)
+\item 
+\#define \hyperlink{joybtn_8h_aac96f18823bf1533d8694c90af8832a9}{Xbox\_\-B}~Btn(1)
+\item 
+\#define \hyperlink{joybtn_8h_a5b1fb2bdc453756aaf2c345f6281a297}{Xbox\_\-X}~Btn(2)
+\item 
+\#define \hyperlink{joybtn_8h_ad5d15ae34dd9f84cc3cc6f536206e690}{Xbox\_\-Y}~Btn(3)
+\item 
+\#define \hyperlink{joybtn_8h_a6bebbfe2417f54aa117728330c0ebb83}{Xbox\_\-LB}~Btn(4)
+\item 
+\#define \hyperlink{joybtn_8h_a63b6bac6cdbce460f0770a55aff2d580}{Xbox\_\-RB}~Btn(5)
+\item 
+\#define \hyperlink{joybtn_8h_a3c04f69918578f1639c6e5bf8314096d}{Xbox\_\-Back}~Btn(6)
+\item 
+\#define \hyperlink{joybtn_8h_a2875e3bb5622349a12acdc9ca7e96ed9}{Xbox\_\-Start}~Btn(7)
+\item 
+\#define \hyperlink{joybtn_8h_a55e1a664eee5dd5116316d9c379861ab}{Xbox\_\-LStick}~Btn(8)
+\item 
+\#define \hyperlink{joybtn_8h_a9c8a21e3d9521660d967da8f268e8382}{Xbox\_\-RStick}~Btn(9)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{joybtn_8h_ae26673063b8887239b762877304f186e}{JoyBtnEvent} (\_\-\_\-in \hyperlink{struct_j_o_y_b_t_n}{JOYBTN} \&joybtn)
+\item 
+void \hyperlink{joybtn_8h_a70c5c4405ed4a6b7c910bc5d7f10d8e8}{JoyBtnInit} (\_\-\_\-out \hyperlink{struct_j_o_y_b_t_n}{JOYBTN} \&joybtn, \_\-\_\-in int joystickID, \_\-\_\-in int buttonFlags)
+\item 
+void \hyperlink{joybtn_8h_a8dc74c1a7fe97a618830e6946dc98c0c}{JoyBtnTask} (\_\-\_\-inout \hyperlink{struct_j_o_y_b_t_n}{JOYBTN} \&joybtn)
+\end{DoxyCompactItemize}
+
+
+\subsection{Define Documentation}
+\hypertarget{joybtn_8h_a65384b81491c82909d50546244ba7c97}{
+\index{joybtn.h@{joybtn.h}!\_\-JOYBTN\_\-H@{\_\-JOYBTN\_\-H}}
+\index{\_\-JOYBTN\_\-H@{\_\-JOYBTN\_\-H}!joybtn.h@{joybtn.h}}
+\subsubsection[{\_\-JOYBTN\_\-H}]{\setlength{\rightskip}{0pt plus 5cm}\#define \_\-JOYBTN\_\-H}}
+\label{joybtn_8h_a65384b81491c82909d50546244ba7c97}
+
+
+Definition at line 16 of file joybtn.h.
+
+\hypertarget{joybtn_8h_aa1e4b2745fed511b4c93f7152134e211}{
+\index{joybtn.h@{joybtn.h}!Btn@{Btn}}
+\index{Btn@{Btn}!joybtn.h@{joybtn.h}}
+\subsubsection[{Btn}]{\setlength{\rightskip}{0pt plus 5cm}\#define Btn(
+\begin{DoxyParamCaption}
+\item[{}]{n}
+\end{DoxyParamCaption}
+)~(1 $<$$<$ (n))}}
+\label{joybtn_8h_aa1e4b2745fed511b4c93f7152134e211}
+
+
+Definition at line 37 of file joybtn.h.
+
+\hypertarget{joybtn_8h_a1dbeed96d09f8e8ed4a77855d34a0fed}{
+\index{joybtn.h@{joybtn.h}!JOYBTNF\_\-ENABLE\_\-EVENTS@{JOYBTNF\_\-ENABLE\_\-EVENTS}}
+\index{JOYBTNF\_\-ENABLE\_\-EVENTS@{JOYBTNF\_\-ENABLE\_\-EVENTS}!joybtn.h@{joybtn.h}}
+\subsubsection[{JOYBTNF\_\-ENABLE\_\-EVENTS}]{\setlength{\rightskip}{0pt plus 5cm}\#define JOYBTNF\_\-ENABLE\_\-EVENTS~0x0001}}
+\label{joybtn_8h_a1dbeed96d09f8e8ed4a77855d34a0fed}
+
+
+Definition at line 32 of file joybtn.h.
+
+\hypertarget{joybtn_8h_aaac6b71f3caab6696c9cc22bdfe44e92}{
+\index{joybtn.h@{joybtn.h}!JOYBTNF\_\-USER\_\-MASK@{JOYBTNF\_\-USER\_\-MASK}}
+\index{JOYBTNF\_\-USER\_\-MASK@{JOYBTNF\_\-USER\_\-MASK}!joybtn.h@{joybtn.h}}
+\subsubsection[{JOYBTNF\_\-USER\_\-MASK}]{\setlength{\rightskip}{0pt plus 5cm}\#define JOYBTNF\_\-USER\_\-MASK~0x00ff}}
+\label{joybtn_8h_aaac6b71f3caab6696c9cc22bdfe44e92}
+
+
+Definition at line 31 of file joybtn.h.
+
+\hypertarget{joybtn_8h_acd97de4f745a8df10474577d94480262}{
+\index{joybtn.h@{joybtn.h}!Logitech\_\-Btn1@{Logitech\_\-Btn1}}
+\index{Logitech\_\-Btn1@{Logitech\_\-Btn1}!joybtn.h@{joybtn.h}}
+\subsubsection[{Logitech\_\-Btn1}]{\setlength{\rightskip}{0pt plus 5cm}\#define Logitech\_\-Btn1~Btn(0)}}
+\label{joybtn_8h_acd97de4f745a8df10474577d94480262}
+
+
+Definition at line 39 of file joybtn.h.
+
+\hypertarget{joybtn_8h_a06717f4fe1d6d3d4c80b4eefd975c2d1}{
+\index{joybtn.h@{joybtn.h}!Logitech\_\-Btn10@{Logitech\_\-Btn10}}
+\index{Logitech\_\-Btn10@{Logitech\_\-Btn10}!joybtn.h@{joybtn.h}}
+\subsubsection[{Logitech\_\-Btn10}]{\setlength{\rightskip}{0pt plus 5cm}\#define Logitech\_\-Btn10~Btn(9)}}
+\label{joybtn_8h_a06717f4fe1d6d3d4c80b4eefd975c2d1}
+
+
+Definition at line 48 of file joybtn.h.
+
+\hypertarget{joybtn_8h_aae31258c140951a76485a531c5707a96}{
+\index{joybtn.h@{joybtn.h}!Logitech\_\-Btn2@{Logitech\_\-Btn2}}
+\index{Logitech\_\-Btn2@{Logitech\_\-Btn2}!joybtn.h@{joybtn.h}}
+\subsubsection[{Logitech\_\-Btn2}]{\setlength{\rightskip}{0pt plus 5cm}\#define Logitech\_\-Btn2~Btn(1)}}
+\label{joybtn_8h_aae31258c140951a76485a531c5707a96}
+
+
+Definition at line 40 of file joybtn.h.
+
+\hypertarget{joybtn_8h_a2809f63db8afc985b6c9c0546ac35ba7}{
+\index{joybtn.h@{joybtn.h}!Logitech\_\-Btn3@{Logitech\_\-Btn3}}
+\index{Logitech\_\-Btn3@{Logitech\_\-Btn3}!joybtn.h@{joybtn.h}}
+\subsubsection[{Logitech\_\-Btn3}]{\setlength{\rightskip}{0pt plus 5cm}\#define Logitech\_\-Btn3~Btn(2)}}
+\label{joybtn_8h_a2809f63db8afc985b6c9c0546ac35ba7}
+
+
+Definition at line 41 of file joybtn.h.
+
+\hypertarget{joybtn_8h_a98294149504be0974b024eac0da7c83f}{
+\index{joybtn.h@{joybtn.h}!Logitech\_\-Btn4@{Logitech\_\-Btn4}}
+\index{Logitech\_\-Btn4@{Logitech\_\-Btn4}!joybtn.h@{joybtn.h}}
+\subsubsection[{Logitech\_\-Btn4}]{\setlength{\rightskip}{0pt plus 5cm}\#define Logitech\_\-Btn4~Btn(3)}}
+\label{joybtn_8h_a98294149504be0974b024eac0da7c83f}
+
+
+Definition at line 42 of file joybtn.h.
+
+\hypertarget{joybtn_8h_a6249af8edfea4c75487ce1f9595ea99a}{
+\index{joybtn.h@{joybtn.h}!Logitech\_\-Btn9@{Logitech\_\-Btn9}}
+\index{Logitech\_\-Btn9@{Logitech\_\-Btn9}!joybtn.h@{joybtn.h}}
+\subsubsection[{Logitech\_\-Btn9}]{\setlength{\rightskip}{0pt plus 5cm}\#define Logitech\_\-Btn9~Btn(8)}}
+\label{joybtn_8h_a6249af8edfea4c75487ce1f9595ea99a}
+
+
+Definition at line 47 of file joybtn.h.
+
+\hypertarget{joybtn_8h_a855cc022e1f4894c852360bfa9bf8c38}{
+\index{joybtn.h@{joybtn.h}!Logitech\_\-LB5@{Logitech\_\-LB5}}
+\index{Logitech\_\-LB5@{Logitech\_\-LB5}!joybtn.h@{joybtn.h}}
+\subsubsection[{Logitech\_\-LB5}]{\setlength{\rightskip}{0pt plus 5cm}\#define Logitech\_\-LB5~Btn(4)}}
+\label{joybtn_8h_a855cc022e1f4894c852360bfa9bf8c38}
+
+
+Definition at line 43 of file joybtn.h.
+
+\hypertarget{joybtn_8h_a3f48a24458f15494a4a817af810fee56}{
+\index{joybtn.h@{joybtn.h}!Logitech\_\-LB7@{Logitech\_\-LB7}}
+\index{Logitech\_\-LB7@{Logitech\_\-LB7}!joybtn.h@{joybtn.h}}
+\subsubsection[{Logitech\_\-LB7}]{\setlength{\rightskip}{0pt plus 5cm}\#define Logitech\_\-LB7~Btn(6)}}
+\label{joybtn_8h_a3f48a24458f15494a4a817af810fee56}
+
+
+Definition at line 45 of file joybtn.h.
+
+\hypertarget{joybtn_8h_ae506ac00c2a46a6a35b7a2695f747c28}{
+\index{joybtn.h@{joybtn.h}!Logitech\_\-LStick@{Logitech\_\-LStick}}
+\index{Logitech\_\-LStick@{Logitech\_\-LStick}!joybtn.h@{joybtn.h}}
+\subsubsection[{Logitech\_\-LStick}]{\setlength{\rightskip}{0pt plus 5cm}\#define Logitech\_\-LStick~Btn(10)}}
+\label{joybtn_8h_ae506ac00c2a46a6a35b7a2695f747c28}
+
+
+Definition at line 49 of file joybtn.h.
+
+\hypertarget{joybtn_8h_a11e4c4275d961cf3cf442f03b58717bc}{
+\index{joybtn.h@{joybtn.h}!Logitech\_\-RB6@{Logitech\_\-RB6}}
+\index{Logitech\_\-RB6@{Logitech\_\-RB6}!joybtn.h@{joybtn.h}}
+\subsubsection[{Logitech\_\-RB6}]{\setlength{\rightskip}{0pt plus 5cm}\#define Logitech\_\-RB6~Btn(5)}}
+\label{joybtn_8h_a11e4c4275d961cf3cf442f03b58717bc}
+
+
+Definition at line 44 of file joybtn.h.
+
+\hypertarget{joybtn_8h_ae64d5ee034264461a91c100d4c8fadcb}{
+\index{joybtn.h@{joybtn.h}!Logitech\_\-RB8@{Logitech\_\-RB8}}
+\index{Logitech\_\-RB8@{Logitech\_\-RB8}!joybtn.h@{joybtn.h}}
+\subsubsection[{Logitech\_\-RB8}]{\setlength{\rightskip}{0pt plus 5cm}\#define Logitech\_\-RB8~Btn(7)}}
+\label{joybtn_8h_ae64d5ee034264461a91c100d4c8fadcb}
+
+
+Definition at line 46 of file joybtn.h.
+
+\hypertarget{joybtn_8h_a85416dba9ce09ce5906564d4208c14b6}{
+\index{joybtn.h@{joybtn.h}!Logitech\_\-RStick@{Logitech\_\-RStick}}
+\index{Logitech\_\-RStick@{Logitech\_\-RStick}!joybtn.h@{joybtn.h}}
+\subsubsection[{Logitech\_\-RStick}]{\setlength{\rightskip}{0pt plus 5cm}\#define Logitech\_\-RStick~Btn(11)}}
+\label{joybtn_8h_a85416dba9ce09ce5906564d4208c14b6}
+
+
+Definition at line 50 of file joybtn.h.
+
+\hypertarget{joybtn_8h_ae9f4f7cf89710651cd39579c3b03ca42}{
+\index{joybtn.h@{joybtn.h}!MOD\_\-ID@{MOD\_\-ID}}
+\index{MOD\_\-ID@{MOD\_\-ID}!joybtn.h@{joybtn.h}}
+\subsubsection[{MOD\_\-ID}]{\setlength{\rightskip}{0pt plus 5cm}\#define MOD\_\-ID~MOD\_\-JOYBTN}}
+\label{joybtn_8h_ae9f4f7cf89710651cd39579c3b03ca42}
+
+
+Definition at line 23 of file joybtn.h.
+
+\hypertarget{joybtn_8h_a2e8c97a165aba89fcbb18194537d8f92}{
+\index{joybtn.h@{joybtn.h}!NUM\_\-BTNS@{NUM\_\-BTNS}}
+\index{NUM\_\-BTNS@{NUM\_\-BTNS}!joybtn.h@{joybtn.h}}
+\subsubsection[{NUM\_\-BTNS}]{\setlength{\rightskip}{0pt plus 5cm}\#define NUM\_\-BTNS~12}}
+\label{joybtn_8h_a2e8c97a165aba89fcbb18194537d8f92}
+
+
+Definition at line 29 of file joybtn.h.
+
+\hypertarget{joybtn_8h_ad2be3d8611b034dc5674708496a83605}{
+\index{joybtn.h@{joybtn.h}!Xbox\_\-A@{Xbox\_\-A}}
+\index{Xbox\_\-A@{Xbox\_\-A}!joybtn.h@{joybtn.h}}
+\subsubsection[{Xbox\_\-A}]{\setlength{\rightskip}{0pt plus 5cm}\#define Xbox\_\-A~Btn(0)}}
+\label{joybtn_8h_ad2be3d8611b034dc5674708496a83605}
+
+
+Definition at line 52 of file joybtn.h.
+
+\hypertarget{joybtn_8h_aac96f18823bf1533d8694c90af8832a9}{
+\index{joybtn.h@{joybtn.h}!Xbox\_\-B@{Xbox\_\-B}}
+\index{Xbox\_\-B@{Xbox\_\-B}!joybtn.h@{joybtn.h}}
+\subsubsection[{Xbox\_\-B}]{\setlength{\rightskip}{0pt plus 5cm}\#define Xbox\_\-B~Btn(1)}}
+\label{joybtn_8h_aac96f18823bf1533d8694c90af8832a9}
+
+
+Definition at line 53 of file joybtn.h.
+
+\hypertarget{joybtn_8h_a3c04f69918578f1639c6e5bf8314096d}{
+\index{joybtn.h@{joybtn.h}!Xbox\_\-Back@{Xbox\_\-Back}}
+\index{Xbox\_\-Back@{Xbox\_\-Back}!joybtn.h@{joybtn.h}}
+\subsubsection[{Xbox\_\-Back}]{\setlength{\rightskip}{0pt plus 5cm}\#define Xbox\_\-Back~Btn(6)}}
+\label{joybtn_8h_a3c04f69918578f1639c6e5bf8314096d}
+
+
+Definition at line 58 of file joybtn.h.
+
+\hypertarget{joybtn_8h_a6bebbfe2417f54aa117728330c0ebb83}{
+\index{joybtn.h@{joybtn.h}!Xbox\_\-LB@{Xbox\_\-LB}}
+\index{Xbox\_\-LB@{Xbox\_\-LB}!joybtn.h@{joybtn.h}}
+\subsubsection[{Xbox\_\-LB}]{\setlength{\rightskip}{0pt plus 5cm}\#define Xbox\_\-LB~Btn(4)}}
+\label{joybtn_8h_a6bebbfe2417f54aa117728330c0ebb83}
+
+
+Definition at line 56 of file joybtn.h.
+
+\hypertarget{joybtn_8h_a55e1a664eee5dd5116316d9c379861ab}{
+\index{joybtn.h@{joybtn.h}!Xbox\_\-LStick@{Xbox\_\-LStick}}
+\index{Xbox\_\-LStick@{Xbox\_\-LStick}!joybtn.h@{joybtn.h}}
+\subsubsection[{Xbox\_\-LStick}]{\setlength{\rightskip}{0pt plus 5cm}\#define Xbox\_\-LStick~Btn(8)}}
+\label{joybtn_8h_a55e1a664eee5dd5116316d9c379861ab}
+
+
+Definition at line 60 of file joybtn.h.
+
+\hypertarget{joybtn_8h_a63b6bac6cdbce460f0770a55aff2d580}{
+\index{joybtn.h@{joybtn.h}!Xbox\_\-RB@{Xbox\_\-RB}}
+\index{Xbox\_\-RB@{Xbox\_\-RB}!joybtn.h@{joybtn.h}}
+\subsubsection[{Xbox\_\-RB}]{\setlength{\rightskip}{0pt plus 5cm}\#define Xbox\_\-RB~Btn(5)}}
+\label{joybtn_8h_a63b6bac6cdbce460f0770a55aff2d580}
+
+
+Definition at line 57 of file joybtn.h.
+
+\hypertarget{joybtn_8h_a9c8a21e3d9521660d967da8f268e8382}{
+\index{joybtn.h@{joybtn.h}!Xbox\_\-RStick@{Xbox\_\-RStick}}
+\index{Xbox\_\-RStick@{Xbox\_\-RStick}!joybtn.h@{joybtn.h}}
+\subsubsection[{Xbox\_\-RStick}]{\setlength{\rightskip}{0pt plus 5cm}\#define Xbox\_\-RStick~Btn(9)}}
+\label{joybtn_8h_a9c8a21e3d9521660d967da8f268e8382}
+
+
+Definition at line 61 of file joybtn.h.
+
+\hypertarget{joybtn_8h_a2875e3bb5622349a12acdc9ca7e96ed9}{
+\index{joybtn.h@{joybtn.h}!Xbox\_\-Start@{Xbox\_\-Start}}
+\index{Xbox\_\-Start@{Xbox\_\-Start}!joybtn.h@{joybtn.h}}
+\subsubsection[{Xbox\_\-Start}]{\setlength{\rightskip}{0pt plus 5cm}\#define Xbox\_\-Start~Btn(7)}}
+\label{joybtn_8h_a2875e3bb5622349a12acdc9ca7e96ed9}
+
+
+Definition at line 59 of file joybtn.h.
+
+\hypertarget{joybtn_8h_a5b1fb2bdc453756aaf2c345f6281a297}{
+\index{joybtn.h@{joybtn.h}!Xbox\_\-X@{Xbox\_\-X}}
+\index{Xbox\_\-X@{Xbox\_\-X}!joybtn.h@{joybtn.h}}
+\subsubsection[{Xbox\_\-X}]{\setlength{\rightskip}{0pt plus 5cm}\#define Xbox\_\-X~Btn(2)}}
+\label{joybtn_8h_a5b1fb2bdc453756aaf2c345f6281a297}
+
+
+Definition at line 54 of file joybtn.h.
+
+\hypertarget{joybtn_8h_ad5d15ae34dd9f84cc3cc6f536206e690}{
+\index{joybtn.h@{joybtn.h}!Xbox\_\-Y@{Xbox\_\-Y}}
+\index{Xbox\_\-Y@{Xbox\_\-Y}!joybtn.h@{joybtn.h}}
+\subsubsection[{Xbox\_\-Y}]{\setlength{\rightskip}{0pt plus 5cm}\#define Xbox\_\-Y~Btn(3)}}
+\label{joybtn_8h_ad5d15ae34dd9f84cc3cc6f536206e690}
+
+
+Definition at line 55 of file joybtn.h.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{joybtn_8h_ae26673063b8887239b762877304f186e}{
+\index{joybtn.h@{joybtn.h}!JoyBtnEvent@{JoyBtnEvent}}
+\index{JoyBtnEvent@{JoyBtnEvent}!joybtn.h@{joybtn.h}}
+\subsubsection[{JoyBtnEvent}]{\setlength{\rightskip}{0pt plus 5cm}void JoyBtnEvent (
+\begin{DoxyParamCaption}
+\item[{\_\-\_\-in {\bf JOYBTN} \&}]{joybtn}
+\end{DoxyParamCaption}
+)}}
+\label{joybtn_8h_ae26673063b8887239b762877304f186e}
+\hypertarget{joybtn_8h_a70c5c4405ed4a6b7c910bc5d7f10d8e8}{
+\index{joybtn.h@{joybtn.h}!JoyBtnInit@{JoyBtnInit}}
+\index{JoyBtnInit@{JoyBtnInit}!joybtn.h@{joybtn.h}}
+\subsubsection[{JoyBtnInit}]{\setlength{\rightskip}{0pt plus 5cm}void JoyBtnInit (
+\begin{DoxyParamCaption}
+\item[{\_\-\_\-out {\bf JOYBTN} \&}]{joybtn, }
+\item[{\_\-\_\-in int}]{joystickID, }
+\item[{\_\-\_\-in int}]{buttonFlags}
+\end{DoxyParamCaption}
+)}}
+\label{joybtn_8h_a70c5c4405ed4a6b7c910bc5d7f10d8e8}
+This function initializes the joystick button system.
+
+
+\begin{DoxyParams}{Parameters}
+{\em joybtn} & Points to the \hyperlink{struct_j_o_y_b_t_n}{JOYBTN} structure to be initialized. \\
+\hline
+{\em joystickID} & Specifies the joystick ID. \\
+\hline
+{\em buttonFlags} & Specifies the button flags. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 91 of file joybtn.h.
+
+\hypertarget{joybtn_8h_a8dc74c1a7fe97a618830e6946dc98c0c}{
+\index{joybtn.h@{joybtn.h}!JoyBtnTask@{JoyBtnTask}}
+\index{JoyBtnTask@{JoyBtnTask}!joybtn.h@{joybtn.h}}
+\subsubsection[{JoyBtnTask}]{\setlength{\rightskip}{0pt plus 5cm}void JoyBtnTask (
+\begin{DoxyParamCaption}
+\item[{\_\-\_\-inout {\bf JOYBTN} \&}]{joybtn}
+\end{DoxyParamCaption}
+)}}
+\label{joybtn_8h_a8dc74c1a7fe97a618830e6946dc98c0c}
+This function processes the changed buttons and sends button event notifications.
+
+
+\begin{DoxyParams}{Parameters}
+{\em joybtn} & Points to the \hyperlink{struct_j_o_y_b_t_n}{JOYBTN} structure. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 118 of file joybtn.h.
+

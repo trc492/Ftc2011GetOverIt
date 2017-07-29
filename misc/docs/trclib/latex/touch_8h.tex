@@ -1,0 +1,143 @@
+\hypertarget{touch_8h}{
+\section{C:/Users/Michael/Ftc/2011/code/trclib/touch.h File Reference}
+\label{touch_8h}\index{C:/Users/Michael/Ftc/2011/code/trclib/touch.h@{C:/Users/Michael/Ftc/2011/code/trclib/touch.h}}
+}
+{\ttfamily \#include \char`\"{}..$\backslash$HTDriversV1.6$\backslash$drivers$\backslash$LEGOTS-\/driver.h\char`\"{}}\par
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_t_o_u_c_h}{TOUCH}
+\end{DoxyCompactItemize}
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{touch_8h_ad9ddd70873f9c53fe1e4ab5bd83f9463}{\_\-TOUCH\_\-H}
+\item 
+\#define \hyperlink{touch_8h_ae9f4f7cf89710651cd39579c3b03ca42}{MOD\_\-ID}~MOD\_\-TOUCH
+\item 
+\#define \hyperlink{touch_8h_a7fa0b72277f3f18e15f2bc3f086102c8}{TOUCHF\_\-USER\_\-MASK}~0x00ff
+\item 
+\#define \hyperlink{touch_8h_acd2c0c815ebe7e1ef56c36a0da321069}{TOUCHF\_\-ENABLE\_\-EVENTS}~0x0001
+\item 
+\#define \hyperlink{touch_8h_a99671554c8a70739204b82d88dc1c25c}{TouchGetState}(p)~TSreadState((tSensors)p.sensorID)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{touch_8h_ad9a3db3664472e393c4de3f23256cb9f}{TouchEvent} (\_\-\_\-in \hyperlink{struct_t_o_u_c_h}{TOUCH} \&touch, \_\-\_\-in bool fActive)
+\item 
+void \hyperlink{touch_8h_a9c0d973f31a6249a2d32fc13100a9e22}{TouchInit} (\_\-\_\-out \hyperlink{struct_t_o_u_c_h}{TOUCH} \&touch, \_\-\_\-in int sensorID, \_\-\_\-in int touchFlags)
+\item 
+void \hyperlink{touch_8h_a7c332f43d6dfe0899b98e0122558e0ef}{TouchTask} (\_\-\_\-inout \hyperlink{struct_t_o_u_c_h}{TOUCH} \&touch)
+\end{DoxyCompactItemize}
+
+
+\subsection{Define Documentation}
+\hypertarget{touch_8h_ad9ddd70873f9c53fe1e4ab5bd83f9463}{
+\index{touch.h@{touch.h}!\_\-TOUCH\_\-H@{\_\-TOUCH\_\-H}}
+\index{\_\-TOUCH\_\-H@{\_\-TOUCH\_\-H}!touch.h@{touch.h}}
+\subsubsection[{\_\-TOUCH\_\-H}]{\setlength{\rightskip}{0pt plus 5cm}\#define \_\-TOUCH\_\-H}}
+\label{touch_8h_ad9ddd70873f9c53fe1e4ab5bd83f9463}
+
+
+Definition at line 16 of file touch.h.
+
+\hypertarget{touch_8h_ae9f4f7cf89710651cd39579c3b03ca42}{
+\index{touch.h@{touch.h}!MOD\_\-ID@{MOD\_\-ID}}
+\index{MOD\_\-ID@{MOD\_\-ID}!touch.h@{touch.h}}
+\subsubsection[{MOD\_\-ID}]{\setlength{\rightskip}{0pt plus 5cm}\#define MOD\_\-ID~MOD\_\-TOUCH}}
+\label{touch_8h_ae9f4f7cf89710651cd39579c3b03ca42}
+
+
+Definition at line 25 of file touch.h.
+
+\hypertarget{touch_8h_acd2c0c815ebe7e1ef56c36a0da321069}{
+\index{touch.h@{touch.h}!TOUCHF\_\-ENABLE\_\-EVENTS@{TOUCHF\_\-ENABLE\_\-EVENTS}}
+\index{TOUCHF\_\-ENABLE\_\-EVENTS@{TOUCHF\_\-ENABLE\_\-EVENTS}!touch.h@{touch.h}}
+\subsubsection[{TOUCHF\_\-ENABLE\_\-EVENTS}]{\setlength{\rightskip}{0pt plus 5cm}\#define TOUCHF\_\-ENABLE\_\-EVENTS~0x0001}}
+\label{touch_8h_acd2c0c815ebe7e1ef56c36a0da321069}
+
+
+Definition at line 34 of file touch.h.
+
+\hypertarget{touch_8h_a7fa0b72277f3f18e15f2bc3f086102c8}{
+\index{touch.h@{touch.h}!TOUCHF\_\-USER\_\-MASK@{TOUCHF\_\-USER\_\-MASK}}
+\index{TOUCHF\_\-USER\_\-MASK@{TOUCHF\_\-USER\_\-MASK}!touch.h@{touch.h}}
+\subsubsection[{TOUCHF\_\-USER\_\-MASK}]{\setlength{\rightskip}{0pt plus 5cm}\#define TOUCHF\_\-USER\_\-MASK~0x00ff}}
+\label{touch_8h_a7fa0b72277f3f18e15f2bc3f086102c8}
+
+
+Definition at line 30 of file touch.h.
+
+\hypertarget{touch_8h_a99671554c8a70739204b82d88dc1c25c}{
+\index{touch.h@{touch.h}!TouchGetState@{TouchGetState}}
+\index{TouchGetState@{TouchGetState}!touch.h@{touch.h}}
+\subsubsection[{TouchGetState}]{\setlength{\rightskip}{0pt plus 5cm}\#define TouchGetState(
+\begin{DoxyParamCaption}
+\item[{}]{p}
+\end{DoxyParamCaption}
+)~TSreadState((tSensors)p.sensorID)}}
+\label{touch_8h_a99671554c8a70739204b82d88dc1c25c}
+
+
+Definition at line 44 of file touch.h.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{touch_8h_ad9a3db3664472e393c4de3f23256cb9f}{
+\index{touch.h@{touch.h}!TouchEvent@{TouchEvent}}
+\index{TouchEvent@{TouchEvent}!touch.h@{touch.h}}
+\subsubsection[{TouchEvent}]{\setlength{\rightskip}{0pt plus 5cm}void TouchEvent (
+\begin{DoxyParamCaption}
+\item[{\_\-\_\-in {\bf TOUCH} \&}]{touch, }
+\item[{\_\-\_\-in bool}]{fActive}
+\end{DoxyParamCaption}
+)}}
+\label{touch_8h_ad9a3db3664472e393c4de3f23256cb9f}
+\hypertarget{touch_8h_a9c0d973f31a6249a2d32fc13100a9e22}{
+\index{touch.h@{touch.h}!TouchInit@{TouchInit}}
+\index{TouchInit@{TouchInit}!touch.h@{touch.h}}
+\subsubsection[{TouchInit}]{\setlength{\rightskip}{0pt plus 5cm}void TouchInit (
+\begin{DoxyParamCaption}
+\item[{\_\-\_\-out {\bf TOUCH} \&}]{touch, }
+\item[{\_\-\_\-in int}]{sensorID, }
+\item[{\_\-\_\-in int}]{touchFlags}
+\end{DoxyParamCaption}
+)}}
+\label{touch_8h_a9c0d973f31a6249a2d32fc13100a9e22}
+This function initializes the touch sensor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em touch} & Points to the \hyperlink{struct_t_o_u_c_h}{TOUCH} structure to be initialized. \\
+\hline
+{\em sensorID} & Specifies the ID of the gyro sensor. \\
+\hline
+{\em touchFlags} & Specifies the touch flags. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 74 of file touch.h.
+
+\hypertarget{touch_8h_a7c332f43d6dfe0899b98e0122558e0ef}{
+\index{touch.h@{touch.h}!TouchTask@{TouchTask}}
+\index{TouchTask@{TouchTask}!touch.h@{touch.h}}
+\subsubsection[{TouchTask}]{\setlength{\rightskip}{0pt plus 5cm}void TouchTask (
+\begin{DoxyParamCaption}
+\item[{\_\-\_\-inout {\bf TOUCH} \&}]{touch}
+\end{DoxyParamCaption}
+)}}
+\label{touch_8h_a7c332f43d6dfe0899b98e0122558e0ef}
+This function performs the touch task where it monitors the touch sensor state and send a notification if necessary.
+
+
+\begin{DoxyParams}{Parameters}
+{\em touch} & Points to the \hyperlink{struct_t_o_u_c_h}{TOUCH} structure. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 99 of file touch.h.
+

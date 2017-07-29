@@ -1,0 +1,314 @@
+\hypertarget{drive_8h}{
+\section{C:/Users/Michael/Ftc/2011/code/trclib/drive.h File Reference}
+\label{drive_8h}\index{C:/Users/Michael/Ftc/2011/code/trclib/drive.h@{C:/Users/Michael/Ftc/2011/code/trclib/drive.h}}
+}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_d_r_i_v_e}{DRIVE}
+\end{DoxyCompactItemize}
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{drive_8h_a938660a35922ab06af981944b83b5698}{\_\-DRIVE\_\-H}
+\item 
+\#define \hyperlink{drive_8h_ae9f4f7cf89710651cd39579c3b03ca42}{MOD\_\-ID}~MOD\_\-DRIVE
+\item 
+\#define \hyperlink{drive_8h_a41735f1169a496fad48142065538b3ed}{DRIVEF\_\-ON}~0x0100
+\item 
+\#define \hyperlink{drive_8h_a47e8ed661e5e5b011697e6290ac10850}{DRIVEF\_\-STALL\_\-PROTECT\_\-ON}~0x0200
+\item 
+\#define \hyperlink{drive_8h_a6db469ec10da38df6f5fb1b56a6e365d}{DRIVEF\_\-STALLED}~0x0400
+\item 
+\#define \hyperlink{drive_8h_a86d3fd245e52226567d1b1de89c8b506}{MOTOR\_\-MIN\_\-VALUE}~-\/100
+\item 
+\#define \hyperlink{drive_8h_ac17e1cea2c78912c598faf791c0eabb1}{MOTOR\_\-MAX\_\-VALUE}~100
+\item 
+\#define \hyperlink{drive_8h_ad34496434da6e23bb254b63bbd2e3014}{MIN\_\-STALL\_\-POWER}~20
+\item 
+\#define \hyperlink{drive_8h_aa7157d228b08e0908de40a3a7cc280a8}{STALL\_\-TIME}~2000
+\item 
+\#define \hyperlink{drive_8h_a0df0f0c8f8623dad03adfd85f9bba17b}{NORMALIZE\_\-DRIVE}(x, m, n)~NORMALIZE(x, m, n, MOTOR\_\-MIN\_\-VALUE, MOTOR\_\-MAX\_\-VALUE)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{drive_8h_a13e8a4c1d90e6e19feaf7083960f7bfe}{DriveStop} (\_\-\_\-out \hyperlink{struct_d_r_i_v_e}{DRIVE} \&drive)
+\item 
+void \hyperlink{drive_8h_a730e39ae29a0aa1ef8f9c717909f36c1}{DriveReset} (\_\-\_\-out \hyperlink{struct_d_r_i_v_e}{DRIVE} \&drive)
+\item 
+void \hyperlink{drive_8h_a93760bb7be98b28f334684cf7508c9df}{DriveInit} (\_\-\_\-out \hyperlink{struct_d_r_i_v_e}{DRIVE} \&drive, \_\-\_\-in int leftMotor, \_\-\_\-in int rightMotor, \_\-\_\-in float distPerClick, \_\-\_\-in float degreesPerClick)
+\item 
+void \hyperlink{drive_8h_a22d0bfa5664b81aa362273bbd6bc438d}{DriveStallProtect} (\_\-\_\-inout \hyperlink{struct_d_r_i_v_e}{DRIVE} \&drive, \_\-\_\-in bool fOn)
+\item 
+void \hyperlink{drive_8h_a5c543217960780dc4da35488e9321c35}{DriveTank} (\_\-\_\-out \hyperlink{struct_d_r_i_v_e}{DRIVE} \&drive, \_\-\_\-in int leftPower, \_\-\_\-in int rightPower)
+\item 
+void \hyperlink{drive_8h_adef41eb1d529886dfce6c8f3f285e79a}{DriveArcade} (\_\-\_\-out \hyperlink{struct_d_r_i_v_e}{DRIVE} \&drive, \_\-\_\-in int drivePower, \_\-\_\-in int turnPower)
+\item 
+void \hyperlink{drive_8h_aecda5f9888c881c507f58239ce95659f}{DriveTask} (\_\-\_\-inout \hyperlink{struct_d_r_i_v_e}{DRIVE} \&drive)
+\end{DoxyCompactItemize}
+
+
+\subsection{Define Documentation}
+\hypertarget{drive_8h_a938660a35922ab06af981944b83b5698}{
+\index{drive.h@{drive.h}!\_\-DRIVE\_\-H@{\_\-DRIVE\_\-H}}
+\index{\_\-DRIVE\_\-H@{\_\-DRIVE\_\-H}!drive.h@{drive.h}}
+\subsubsection[{\_\-DRIVE\_\-H}]{\setlength{\rightskip}{0pt plus 5cm}\#define \_\-DRIVE\_\-H}}
+\label{drive_8h_a938660a35922ab06af981944b83b5698}
+
+
+Definition at line 16 of file drive.h.
+
+\hypertarget{drive_8h_a41735f1169a496fad48142065538b3ed}{
+\index{drive.h@{drive.h}!DRIVEF\_\-ON@{DRIVEF\_\-ON}}
+\index{DRIVEF\_\-ON@{DRIVEF\_\-ON}!drive.h@{drive.h}}
+\subsubsection[{DRIVEF\_\-ON}]{\setlength{\rightskip}{0pt plus 5cm}\#define DRIVEF\_\-ON~0x0100}}
+\label{drive_8h_a41735f1169a496fad48142065538b3ed}
+
+
+Definition at line 28 of file drive.h.
+
+\hypertarget{drive_8h_a47e8ed661e5e5b011697e6290ac10850}{
+\index{drive.h@{drive.h}!DRIVEF\_\-STALL\_\-PROTECT\_\-ON@{DRIVEF\_\-STALL\_\-PROTECT\_\-ON}}
+\index{DRIVEF\_\-STALL\_\-PROTECT\_\-ON@{DRIVEF\_\-STALL\_\-PROTECT\_\-ON}!drive.h@{drive.h}}
+\subsubsection[{DRIVEF\_\-STALL\_\-PROTECT\_\-ON}]{\setlength{\rightskip}{0pt plus 5cm}\#define DRIVEF\_\-STALL\_\-PROTECT\_\-ON~0x0200}}
+\label{drive_8h_a47e8ed661e5e5b011697e6290ac10850}
+
+
+Definition at line 29 of file drive.h.
+
+\hypertarget{drive_8h_a6db469ec10da38df6f5fb1b56a6e365d}{
+\index{drive.h@{drive.h}!DRIVEF\_\-STALLED@{DRIVEF\_\-STALLED}}
+\index{DRIVEF\_\-STALLED@{DRIVEF\_\-STALLED}!drive.h@{drive.h}}
+\subsubsection[{DRIVEF\_\-STALLED}]{\setlength{\rightskip}{0pt plus 5cm}\#define DRIVEF\_\-STALLED~0x0400}}
+\label{drive_8h_a6db469ec10da38df6f5fb1b56a6e365d}
+
+
+Definition at line 30 of file drive.h.
+
+\hypertarget{drive_8h_ad34496434da6e23bb254b63bbd2e3014}{
+\index{drive.h@{drive.h}!MIN\_\-STALL\_\-POWER@{MIN\_\-STALL\_\-POWER}}
+\index{MIN\_\-STALL\_\-POWER@{MIN\_\-STALL\_\-POWER}!drive.h@{drive.h}}
+\subsubsection[{MIN\_\-STALL\_\-POWER}]{\setlength{\rightskip}{0pt plus 5cm}\#define MIN\_\-STALL\_\-POWER~20}}
+\label{drive_8h_ad34496434da6e23bb254b63bbd2e3014}
+
+
+Definition at line 35 of file drive.h.
+
+\hypertarget{drive_8h_ae9f4f7cf89710651cd39579c3b03ca42}{
+\index{drive.h@{drive.h}!MOD\_\-ID@{MOD\_\-ID}}
+\index{MOD\_\-ID@{MOD\_\-ID}!drive.h@{drive.h}}
+\subsubsection[{MOD\_\-ID}]{\setlength{\rightskip}{0pt plus 5cm}\#define MOD\_\-ID~MOD\_\-DRIVE}}
+\label{drive_8h_ae9f4f7cf89710651cd39579c3b03ca42}
+
+
+Definition at line 23 of file drive.h.
+
+\hypertarget{drive_8h_ac17e1cea2c78912c598faf791c0eabb1}{
+\index{drive.h@{drive.h}!MOTOR\_\-MAX\_\-VALUE@{MOTOR\_\-MAX\_\-VALUE}}
+\index{MOTOR\_\-MAX\_\-VALUE@{MOTOR\_\-MAX\_\-VALUE}!drive.h@{drive.h}}
+\subsubsection[{MOTOR\_\-MAX\_\-VALUE}]{\setlength{\rightskip}{0pt plus 5cm}\#define MOTOR\_\-MAX\_\-VALUE~100}}
+\label{drive_8h_ac17e1cea2c78912c598faf791c0eabb1}
+
+
+Definition at line 33 of file drive.h.
+
+\hypertarget{drive_8h_a86d3fd245e52226567d1b1de89c8b506}{
+\index{drive.h@{drive.h}!MOTOR\_\-MIN\_\-VALUE@{MOTOR\_\-MIN\_\-VALUE}}
+\index{MOTOR\_\-MIN\_\-VALUE@{MOTOR\_\-MIN\_\-VALUE}!drive.h@{drive.h}}
+\subsubsection[{MOTOR\_\-MIN\_\-VALUE}]{\setlength{\rightskip}{0pt plus 5cm}\#define MOTOR\_\-MIN\_\-VALUE~-\/100}}
+\label{drive_8h_a86d3fd245e52226567d1b1de89c8b506}
+
+
+Definition at line 32 of file drive.h.
+
+\hypertarget{drive_8h_a0df0f0c8f8623dad03adfd85f9bba17b}{
+\index{drive.h@{drive.h}!NORMALIZE\_\-DRIVE@{NORMALIZE\_\-DRIVE}}
+\index{NORMALIZE\_\-DRIVE@{NORMALIZE\_\-DRIVE}!drive.h@{drive.h}}
+\subsubsection[{NORMALIZE\_\-DRIVE}]{\setlength{\rightskip}{0pt plus 5cm}\#define NORMALIZE\_\-DRIVE(
+\begin{DoxyParamCaption}
+\item[{}]{x, }
+\item[{}]{m, }
+\item[{}]{n}
+\end{DoxyParamCaption}
+)~NORMALIZE(x, m, n, MOTOR\_\-MIN\_\-VALUE, MOTOR\_\-MAX\_\-VALUE)}}
+\label{drive_8h_a0df0f0c8f8623dad03adfd85f9bba17b}
+
+
+Definition at line 41 of file drive.h.
+
+\hypertarget{drive_8h_aa7157d228b08e0908de40a3a7cc280a8}{
+\index{drive.h@{drive.h}!STALL\_\-TIME@{STALL\_\-TIME}}
+\index{STALL\_\-TIME@{STALL\_\-TIME}!drive.h@{drive.h}}
+\subsubsection[{STALL\_\-TIME}]{\setlength{\rightskip}{0pt plus 5cm}\#define STALL\_\-TIME~2000}}
+\label{drive_8h_aa7157d228b08e0908de40a3a7cc280a8}
+
+
+Definition at line 36 of file drive.h.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{drive_8h_adef41eb1d529886dfce6c8f3f285e79a}{
+\index{drive.h@{drive.h}!DriveArcade@{DriveArcade}}
+\index{DriveArcade@{DriveArcade}!drive.h@{drive.h}}
+\subsubsection[{DriveArcade}]{\setlength{\rightskip}{0pt plus 5cm}void DriveArcade (
+\begin{DoxyParamCaption}
+\item[{\_\-\_\-out {\bf DRIVE} \&}]{drive, }
+\item[{\_\-\_\-in int}]{drivePower, }
+\item[{\_\-\_\-in int}]{turnPower}
+\end{DoxyParamCaption}
+)}}
+\label{drive_8h_adef41eb1d529886dfce6c8f3f285e79a}
+This function sets power of the motors for arcade drive.
+
+
+\begin{DoxyParams}{Parameters}
+{\em drive} & Points to the \hyperlink{struct_d_r_i_v_e}{DRIVE} structure. \\
+\hline
+{\em drivePower} & Specifies the drive power. \\
+\hline
+{\em turnPower} & Specifies the turn power. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 207 of file drive.h.
+
+\hypertarget{drive_8h_a93760bb7be98b28f334684cf7508c9df}{
+\index{drive.h@{drive.h}!DriveInit@{DriveInit}}
+\index{DriveInit@{DriveInit}!drive.h@{drive.h}}
+\subsubsection[{DriveInit}]{\setlength{\rightskip}{0pt plus 5cm}void DriveInit (
+\begin{DoxyParamCaption}
+\item[{\_\-\_\-out {\bf DRIVE} \&}]{drive, }
+\item[{\_\-\_\-in int}]{leftMotor, }
+\item[{\_\-\_\-in int}]{rightMotor, }
+\item[{\_\-\_\-in float}]{distPerClick, }
+\item[{\_\-\_\-in float}]{degreesPerClick}
+\end{DoxyParamCaption}
+)}}
+\label{drive_8h_a93760bb7be98b28f334684cf7508c9df}
+This function initializes the drive system.
+
+
+\begin{DoxyParams}{Parameters}
+{\em drive} & Points to the \hyperlink{struct_d_r_i_v_e}{DRIVE} structure to be initialized. \\
+\hline
+{\em leftMotor} & Specifies the left motor. \\
+\hline
+{\em rightMotor} & Specifies the right motor. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 121 of file drive.h.
+
+\hypertarget{drive_8h_a730e39ae29a0aa1ef8f9c717909f36c1}{
+\index{drive.h@{drive.h}!DriveReset@{DriveReset}}
+\index{DriveReset@{DriveReset}!drive.h@{drive.h}}
+\subsubsection[{DriveReset}]{\setlength{\rightskip}{0pt plus 5cm}void DriveReset (
+\begin{DoxyParamCaption}
+\item[{\_\-\_\-out {\bf DRIVE} \&}]{drive}
+\end{DoxyParamCaption}
+)}}
+\label{drive_8h_a730e39ae29a0aa1ef8f9c717909f36c1}
+This function resets the drive system.
+
+
+\begin{DoxyParams}{Parameters}
+{\em drive} & Points to the \hyperlink{struct_d_r_i_v_e}{DRIVE} structure to be reset. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 96 of file drive.h.
+
+\hypertarget{drive_8h_a22d0bfa5664b81aa362273bbd6bc438d}{
+\index{drive.h@{drive.h}!DriveStallProtect@{DriveStallProtect}}
+\index{DriveStallProtect@{DriveStallProtect}!drive.h@{drive.h}}
+\subsubsection[{DriveStallProtect}]{\setlength{\rightskip}{0pt plus 5cm}void DriveStallProtect (
+\begin{DoxyParamCaption}
+\item[{\_\-\_\-inout {\bf DRIVE} \&}]{drive, }
+\item[{\_\-\_\-in bool}]{fOn}
+\end{DoxyParamCaption}
+)}}
+\label{drive_8h_a22d0bfa5664b81aa362273bbd6bc438d}
+This function enables or disables stall protection.
+
+
+\begin{DoxyParams}{Parameters}
+{\em drive} & Points to the \hyperlink{struct_d_r_i_v_e}{DRIVE} structure to be initialized. \\
+\hline
+{\em fOn} & If true, enables stall protection. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 151 of file drive.h.
+
+\hypertarget{drive_8h_a13e8a4c1d90e6e19feaf7083960f7bfe}{
+\index{drive.h@{drive.h}!DriveStop@{DriveStop}}
+\index{DriveStop@{DriveStop}!drive.h@{drive.h}}
+\subsubsection[{DriveStop}]{\setlength{\rightskip}{0pt plus 5cm}void DriveStop (
+\begin{DoxyParamCaption}
+\item[{\_\-\_\-out {\bf DRIVE} \&}]{drive}
+\end{DoxyParamCaption}
+)}}
+\label{drive_8h_a13e8a4c1d90e6e19feaf7083960f7bfe}
+This function stops the motors in the drive system.
+
+
+\begin{DoxyParams}{Parameters}
+{\em drive} & Points to the \hyperlink{struct_d_r_i_v_e}{DRIVE} structure. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 66 of file drive.h.
+
+\hypertarget{drive_8h_a5c543217960780dc4da35488e9321c35}{
+\index{drive.h@{drive.h}!DriveTank@{DriveTank}}
+\index{DriveTank@{DriveTank}!drive.h@{drive.h}}
+\subsubsection[{DriveTank}]{\setlength{\rightskip}{0pt plus 5cm}void DriveTank (
+\begin{DoxyParamCaption}
+\item[{\_\-\_\-out {\bf DRIVE} \&}]{drive, }
+\item[{\_\-\_\-in int}]{leftPower, }
+\item[{\_\-\_\-in int}]{rightPower}
+\end{DoxyParamCaption}
+)}}
+\label{drive_8h_a5c543217960780dc4da35488e9321c35}
+This function sets power of the motors for tank drive.
+
+
+\begin{DoxyParams}{Parameters}
+{\em drive} & Points to the \hyperlink{struct_d_r_i_v_e}{DRIVE} structure. \\
+\hline
+{\em leftPower} & Specifies the left motor power. \\
+\hline
+{\em rightPower} & Specifies the right motor power. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 181 of file drive.h.
+
+\hypertarget{drive_8h_aecda5f9888c881c507f58239ce95659f}{
+\index{drive.h@{drive.h}!DriveTask@{DriveTask}}
+\index{DriveTask@{DriveTask}!drive.h@{drive.h}}
+\subsubsection[{DriveTask}]{\setlength{\rightskip}{0pt plus 5cm}void DriveTask (
+\begin{DoxyParamCaption}
+\item[{\_\-\_\-inout {\bf DRIVE} \&}]{drive}
+\end{DoxyParamCaption}
+)}}
+\label{drive_8h_aecda5f9888c881c507f58239ce95659f}
+This function performs the driving task according to the drive state.
+
+
+\begin{DoxyParams}{Parameters}
+{\em drive} & Points to the \hyperlink{struct_d_r_i_v_e}{DRIVE} structure. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 276 of file drive.h.
+

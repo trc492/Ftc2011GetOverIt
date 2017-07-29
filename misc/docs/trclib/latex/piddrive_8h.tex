@@ -1,0 +1,213 @@
+\hypertarget{piddrive_8h}{
+\section{C:/Users/Michael/Ftc/2011/code/trclib/piddrive.h File Reference}
+\label{piddrive_8h}\index{C:/Users/Michael/Ftc/2011/code/trclib/piddrive.h@{C:/Users/Michael/Ftc/2011/code/trclib/piddrive.h}}
+}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_p_i_d_d_r_i_v_e}{PIDDRIVE}
+\end{DoxyCompactItemize}
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{piddrive_8h_a594e93e6e8a8533e294efe18505b1b6a}{\_\-PIDDRIVE\_\-H}
+\item 
+\#define \hyperlink{piddrive_8h_ae9f4f7cf89710651cd39579c3b03ca42}{MOD\_\-ID}~MOD\_\-PIDDRIVE
+\item 
+\#define \hyperlink{piddrive_8h_a853828ae141de817165e62b39117154d}{PIDDRIVEF\_\-PIDMODE\_\-ON}~0x0100
+\item 
+\#define \hyperlink{piddrive_8h_a16e6842919a6b54b06bbea31ac0c45af}{PIDDRIVEF\_\-STOP\_\-ONTARGET}~0x0200
+\item 
+\#define \hyperlink{piddrive_8h_a287c3b37258882ed88aa222d5f8e2d6f}{PIDDRIVEF\_\-USER\_\-MASK}~0x00ff
+\item 
+\#define \hyperlink{piddrive_8h_abaee63fabd33a1f91839df1748c3e744}{PIDDRIVEF\_\-ENABLE\_\-EVENTS}~0x0001
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{piddrive_8h_a06834e19ffa656fec88fb75d46dfb8a2}{PIDDriveEvent} (\_\-\_\-in \hyperlink{struct_p_i_d_d_r_i_v_e}{PIDDRIVE} \&pidDrive)
+\item 
+void \hyperlink{piddrive_8h_a934bb59991b42403fc894c976d1e1265}{PIDDriveReset} (\_\-\_\-out \hyperlink{struct_p_i_d_d_r_i_v_e}{PIDDRIVE} \&pidDrive)
+\item 
+void \hyperlink{piddrive_8h_ad8e3264b4ac44b4dd59474205ccb2e3b}{PIDDriveInit} (\_\-\_\-out \hyperlink{struct_p_i_d_d_r_i_v_e}{PIDDRIVE} \&pidDrive, \_\-\_\-in int drive, \_\-\_\-in int drivePIDCtrl, \_\-\_\-in int turnPIDCtrl, \_\-\_\-in int pidDriveFlags)
+\item 
+void \hyperlink{piddrive_8h_a5c073a344794c3b46f6a587384b3b269}{PIDDriveSetTarget} (\_\-\_\-out \hyperlink{struct_p_i_d_d_r_i_v_e}{PIDDRIVE} \&pidDrive, \_\-\_\-in float distSetPoint, \_\-\_\-in float distTolerance, \_\-\_\-in float angleSetPoint, \_\-\_\-in float angleTolerance, \_\-\_\-in bool fStopOnTarget)
+\item 
+void \hyperlink{piddrive_8h_ac7553e3c3e644024d2e0e391d5915aef}{PIDDriveTask} (\_\-\_\-inout \hyperlink{struct_p_i_d_d_r_i_v_e}{PIDDRIVE} \&pidDrive)
+\end{DoxyCompactItemize}
+
+
+\subsection{Define Documentation}
+\hypertarget{piddrive_8h_a594e93e6e8a8533e294efe18505b1b6a}{
+\index{piddrive.h@{piddrive.h}!\_\-PIDDRIVE\_\-H@{\_\-PIDDRIVE\_\-H}}
+\index{\_\-PIDDRIVE\_\-H@{\_\-PIDDRIVE\_\-H}!piddrive.h@{piddrive.h}}
+\subsubsection[{\_\-PIDDRIVE\_\-H}]{\setlength{\rightskip}{0pt plus 5cm}\#define \_\-PIDDRIVE\_\-H}}
+\label{piddrive_8h_a594e93e6e8a8533e294efe18505b1b6a}
+
+
+Definition at line 17 of file piddrive.h.
+
+\hypertarget{piddrive_8h_ae9f4f7cf89710651cd39579c3b03ca42}{
+\index{piddrive.h@{piddrive.h}!MOD\_\-ID@{MOD\_\-ID}}
+\index{MOD\_\-ID@{MOD\_\-ID}!piddrive.h@{piddrive.h}}
+\subsubsection[{MOD\_\-ID}]{\setlength{\rightskip}{0pt plus 5cm}\#define MOD\_\-ID~MOD\_\-PIDDRIVE}}
+\label{piddrive_8h_ae9f4f7cf89710651cd39579c3b03ca42}
+
+
+Definition at line 24 of file piddrive.h.
+
+\hypertarget{piddrive_8h_abaee63fabd33a1f91839df1748c3e744}{
+\index{piddrive.h@{piddrive.h}!PIDDRIVEF\_\-ENABLE\_\-EVENTS@{PIDDRIVEF\_\-ENABLE\_\-EVENTS}}
+\index{PIDDRIVEF\_\-ENABLE\_\-EVENTS@{PIDDRIVEF\_\-ENABLE\_\-EVENTS}!piddrive.h@{piddrive.h}}
+\subsubsection[{PIDDRIVEF\_\-ENABLE\_\-EVENTS}]{\setlength{\rightskip}{0pt plus 5cm}\#define PIDDRIVEF\_\-ENABLE\_\-EVENTS~0x0001}}
+\label{piddrive_8h_abaee63fabd33a1f91839df1748c3e744}
+
+
+Definition at line 32 of file piddrive.h.
+
+\hypertarget{piddrive_8h_a853828ae141de817165e62b39117154d}{
+\index{piddrive.h@{piddrive.h}!PIDDRIVEF\_\-PIDMODE\_\-ON@{PIDDRIVEF\_\-PIDMODE\_\-ON}}
+\index{PIDDRIVEF\_\-PIDMODE\_\-ON@{PIDDRIVEF\_\-PIDMODE\_\-ON}!piddrive.h@{piddrive.h}}
+\subsubsection[{PIDDRIVEF\_\-PIDMODE\_\-ON}]{\setlength{\rightskip}{0pt plus 5cm}\#define PIDDRIVEF\_\-PIDMODE\_\-ON~0x0100}}
+\label{piddrive_8h_a853828ae141de817165e62b39117154d}
+
+
+Definition at line 29 of file piddrive.h.
+
+\hypertarget{piddrive_8h_a16e6842919a6b54b06bbea31ac0c45af}{
+\index{piddrive.h@{piddrive.h}!PIDDRIVEF\_\-STOP\_\-ONTARGET@{PIDDRIVEF\_\-STOP\_\-ONTARGET}}
+\index{PIDDRIVEF\_\-STOP\_\-ONTARGET@{PIDDRIVEF\_\-STOP\_\-ONTARGET}!piddrive.h@{piddrive.h}}
+\subsubsection[{PIDDRIVEF\_\-STOP\_\-ONTARGET}]{\setlength{\rightskip}{0pt plus 5cm}\#define PIDDRIVEF\_\-STOP\_\-ONTARGET~0x0200}}
+\label{piddrive_8h_a16e6842919a6b54b06bbea31ac0c45af}
+
+
+Definition at line 30 of file piddrive.h.
+
+\hypertarget{piddrive_8h_a287c3b37258882ed88aa222d5f8e2d6f}{
+\index{piddrive.h@{piddrive.h}!PIDDRIVEF\_\-USER\_\-MASK@{PIDDRIVEF\_\-USER\_\-MASK}}
+\index{PIDDRIVEF\_\-USER\_\-MASK@{PIDDRIVEF\_\-USER\_\-MASK}!piddrive.h@{piddrive.h}}
+\subsubsection[{PIDDRIVEF\_\-USER\_\-MASK}]{\setlength{\rightskip}{0pt plus 5cm}\#define PIDDRIVEF\_\-USER\_\-MASK~0x00ff}}
+\label{piddrive_8h_a287c3b37258882ed88aa222d5f8e2d6f}
+
+
+Definition at line 31 of file piddrive.h.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{piddrive_8h_a06834e19ffa656fec88fb75d46dfb8a2}{
+\index{piddrive.h@{piddrive.h}!PIDDriveEvent@{PIDDriveEvent}}
+\index{PIDDriveEvent@{PIDDriveEvent}!piddrive.h@{piddrive.h}}
+\subsubsection[{PIDDriveEvent}]{\setlength{\rightskip}{0pt plus 5cm}void PIDDriveEvent (
+\begin{DoxyParamCaption}
+\item[{\_\-\_\-in {\bf PIDDRIVE} \&}]{pidDrive}
+\end{DoxyParamCaption}
+)}}
+\label{piddrive_8h_a06834e19ffa656fec88fb75d46dfb8a2}
+\hypertarget{piddrive_8h_ad8e3264b4ac44b4dd59474205ccb2e3b}{
+\index{piddrive.h@{piddrive.h}!PIDDriveInit@{PIDDriveInit}}
+\index{PIDDriveInit@{PIDDriveInit}!piddrive.h@{piddrive.h}}
+\subsubsection[{PIDDriveInit}]{\setlength{\rightskip}{0pt plus 5cm}void PIDDriveInit (
+\begin{DoxyParamCaption}
+\item[{\_\-\_\-out {\bf PIDDRIVE} \&}]{pidDrive, }
+\item[{\_\-\_\-in int}]{drive, }
+\item[{\_\-\_\-in int}]{drivePIDCtrl, }
+\item[{\_\-\_\-in int}]{turnPIDCtrl, }
+\item[{\_\-\_\-in int}]{pidDriveFlags}
+\end{DoxyParamCaption}
+)}}
+\label{piddrive_8h_ad8e3264b4ac44b4dd59474205ccb2e3b}
+This function initializes the drive system.
+
+
+\begin{DoxyParams}{Parameters}
+{\em pidDrive} & Points to the \hyperlink{struct_p_i_d_d_r_i_v_e}{PIDDRIVE} structure to be initialized. \\
+\hline
+{\em drive} & Points to the \hyperlink{struct_d_r_i_v_e}{DRIVE} structure. \\
+\hline
+{\em drivePIDCtrl} & Points to the \hyperlink{struct_p_i_d_c_t_r_l}{PIDCTRL} structure for drive. \\
+\hline
+{\em turnPIDCtrl} & Points to the \hyperlink{struct_p_i_d_c_t_r_l}{PIDCTRL} structure for turn. \\
+\hline
+{\em pidDriveFlags} & Specifies the drive flags. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 93 of file piddrive.h.
+
+\hypertarget{piddrive_8h_a934bb59991b42403fc894c976d1e1265}{
+\index{piddrive.h@{piddrive.h}!PIDDriveReset@{PIDDriveReset}}
+\index{PIDDriveReset@{PIDDriveReset}!piddrive.h@{piddrive.h}}
+\subsubsection[{PIDDriveReset}]{\setlength{\rightskip}{0pt plus 5cm}void PIDDriveReset (
+\begin{DoxyParamCaption}
+\item[{\_\-\_\-out {\bf PIDDRIVE} \&}]{pidDrive}
+\end{DoxyParamCaption}
+)}}
+\label{piddrive_8h_a934bb59991b42403fc894c976d1e1265}
+This function resets the PID Drive system.
+
+
+\begin{DoxyParams}{Parameters}
+{\em pidDrive} & Points to the \hyperlink{struct_p_i_d_d_r_i_v_e}{PIDDRIVE} structure to be reset. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 62 of file piddrive.h.
+
+\hypertarget{piddrive_8h_a5c073a344794c3b46f6a587384b3b269}{
+\index{piddrive.h@{piddrive.h}!PIDDriveSetTarget@{PIDDriveSetTarget}}
+\index{PIDDriveSetTarget@{PIDDriveSetTarget}!piddrive.h@{piddrive.h}}
+\subsubsection[{PIDDriveSetTarget}]{\setlength{\rightskip}{0pt plus 5cm}void PIDDriveSetTarget (
+\begin{DoxyParamCaption}
+\item[{\_\-\_\-out {\bf PIDDRIVE} \&}]{pidDrive, }
+\item[{\_\-\_\-in float}]{distSetPoint, }
+\item[{\_\-\_\-in float}]{distTolerance, }
+\item[{\_\-\_\-in float}]{angleSetPoint, }
+\item[{\_\-\_\-in float}]{angleTolerance, }
+\item[{\_\-\_\-in bool}]{fStopOnTarget}
+\end{DoxyParamCaption}
+)}}
+\label{piddrive_8h_a5c073a344794c3b46f6a587384b3b269}
+This function sets PID drive target with the given drive distance and turn angle setpoints.
+
+
+\begin{DoxyParams}{Parameters}
+{\em pidDrive} & Points to the \hyperlink{struct_p_i_d_d_r_i_v_e}{PIDDRIVE} structure. \\
+\hline
+{\em distSetPoint} & Specifies the target distance to travel. \\
+\hline
+{\em distTolerance} & Specifies the distance tolerance when determining OnTarget. \\
+\hline
+{\em angleSetPoint} & Specifies the target angle to turn. \\
+\hline
+{\em angleTolerance} & Specifies the angle tolerance when determining OnTarget. \\
+\hline
+{\em fStopOnTarget} & If true, stop PIDDrive when target is reached. Otherwise, continue to monitor the target and readjust if necessary. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 132 of file piddrive.h.
+
+\hypertarget{piddrive_8h_ac7553e3c3e644024d2e0e391d5915aef}{
+\index{piddrive.h@{piddrive.h}!PIDDriveTask@{PIDDriveTask}}
+\index{PIDDriveTask@{PIDDriveTask}!piddrive.h@{piddrive.h}}
+\subsubsection[{PIDDriveTask}]{\setlength{\rightskip}{0pt plus 5cm}void PIDDriveTask (
+\begin{DoxyParamCaption}
+\item[{\_\-\_\-inout {\bf PIDDRIVE} \&}]{pidDrive}
+\end{DoxyParamCaption}
+)}}
+\label{piddrive_8h_ac7553e3c3e644024d2e0e391d5915aef}
+This function performs the PID drive.
+
+
+\begin{DoxyParams}{Parameters}
+{\em pidDrive} & Points to the \hyperlink{struct_p_i_d_d_r_i_v_e}{PIDDRIVE} structure. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 174 of file piddrive.h.
+

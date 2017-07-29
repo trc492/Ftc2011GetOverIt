@@ -1,0 +1,403 @@
+\hypertarget{sm_8h}{
+\section{C:/Users/Michael/Ftc/2011/code/trclib/sm.h File Reference}
+\label{sm_8h}\index{C:/Users/Michael/Ftc/2011/code/trclib/sm.h@{C:/Users/Michael/Ftc/2011/code/trclib/sm.h}}
+}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_w_a_i_t___e_v_t}{WAIT\_\-EVT}
+\item 
+struct \hyperlink{struct_s_m}{SM}
+\end{DoxyCompactItemize}
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{sm_8h_a54f39055c871b6968850924e54a7eb5c}{\_\-SM\_\-H}
+\item 
+\#define \hyperlink{sm_8h_ae9f4f7cf89710651cd39579c3b03ca42}{MOD\_\-ID}~MOD\_\-SM
+\item 
+\#define \hyperlink{sm_8h_a9b8d567d7793d96651962c0fb7c01072}{SMF\_\-READY}~0x0100
+\item 
+\#define \hyperlink{sm_8h_aa4ebc081aa2db8acabb2155f831c0d06}{SMF\_\-TIMEOUT}~0x0200
+\item 
+\#define \hyperlink{sm_8h_a82614c6000744c90ee4e47b81716b432}{SMF\_\-MASK}~0x00ff
+\item 
+\#define \hyperlink{sm_8h_a7fd996540a8b4b0bc73036155c227a80}{SMF\_\-WAIT\_\-ALL}~0x0001
+\item 
+\#define \hyperlink{sm_8h_a6f0913489af9a790111e6ab567bf43fc}{SMF\_\-CLEAR\_\-EVENTS}~0x0002
+\item 
+\#define \hyperlink{sm_8h_ade061b0ab954fda9ceef52ed0a047d78}{SMSTATE\_\-DISABLED}~0
+\item 
+\#define \hyperlink{sm_8h_a726a061a9d97ee7f968c3689158fbb46}{SMSTATE\_\-STARTED}~1
+\item 
+\#define \hyperlink{sm_8h_aa3d5e78932327569e35026c226266a0c}{EVTTYPE\_\-NONE}~0
+\item 
+\#define \hyperlink{sm_8h_a17674306a41429f40464c85634d11b9f}{MAX\_\-WAIT\_\-EVENTS}~4
+\item 
+\#define \hyperlink{sm_8h_a4874ddb717de84cba9dcd10fe1951a23}{IsSMDisabled}(s)~(s.currState == SMSTATE\_\-DISABLED)
+\item 
+\#define \hyperlink{sm_8h_a0f58799af0cd13322a5cd7a3ecd616f0}{IsSMEnabled}(s)~(s.currState != SMSTATE\_\-DISABLED)
+\item 
+\#define \hyperlink{sm_8h_ad4be4c63eba16fc1ecd4107ae276852a}{IsSMTimedOut}(s)~(s.smFlags \& SMF\_\-TIMEOUT)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{sm_8h_a2995d31dca98aeccfc06790a7a8a0d4c}{SMClearAllEvents} (\_\-\_\-out \hyperlink{struct_s_m}{SM} \&sm)
+\item 
+void \hyperlink{sm_8h_ad2cfddc7d74511f6d342c94e0bad7621}{SMInit} (\_\-\_\-out \hyperlink{struct_s_m}{SM} \&sm)
+\item 
+void \hyperlink{sm_8h_ab44ac1d04464ecd0df6cdbb0c4bb2730}{SMStart} (\_\-\_\-out \hyperlink{struct_s_m}{SM} \&sm)
+\item 
+void \hyperlink{sm_8h_a042a67b192d5e33d5a86197dc84ef289}{SMStop} (\_\-\_\-out \hyperlink{struct_s_m}{SM} \&sm)
+\item 
+bool \hyperlink{sm_8h_a62a5aa1ad04df73542a683da0281db4a}{SMIsReady} (\_\-\_\-out \hyperlink{struct_s_m}{SM} \&sm)
+\item 
+bool \hyperlink{sm_8h_a364a552b6924eae784f50cda31918784}{SMAddWaitEvent} (\_\-\_\-inout \hyperlink{struct_s_m}{SM} \&sm, \_\-\_\-in int evtType, \_\-\_\-in int evtID, \_\-\_\-in int evtData)
+\item 
+void \hyperlink{sm_8h_aba72d0583b23ffe6a14e5f3875fb9dbf}{SMWaitEvents} (\_\-\_\-inout \hyperlink{struct_s_m}{SM} \&sm, \_\-\_\-in int nextState, \_\-\_\-in int timeout, \_\-\_\-in int flags)
+\item 
+void \hyperlink{sm_8h_aadf47e3e65632c167c1e449458f7adff}{SMSetEvent} (\_\-\_\-inout \hyperlink{struct_s_m}{SM} \&sm, \_\-\_\-in int evtType, \_\-\_\-in int evtID, \_\-\_\-in int evtData, \_\-\_\-in int evtParam1, \_\-\_\-in int evtParam2)
+\end{DoxyCompactItemize}
+
+
+\subsection{Define Documentation}
+\hypertarget{sm_8h_a54f39055c871b6968850924e54a7eb5c}{
+\index{sm.h@{sm.h}!\_\-SM\_\-H@{\_\-SM\_\-H}}
+\index{\_\-SM\_\-H@{\_\-SM\_\-H}!sm.h@{sm.h}}
+\subsubsection[{\_\-SM\_\-H}]{\setlength{\rightskip}{0pt plus 5cm}\#define \_\-SM\_\-H}}
+\label{sm_8h_a54f39055c871b6968850924e54a7eb5c}
+
+
+Definition at line 16 of file sm.h.
+
+\hypertarget{sm_8h_aa3d5e78932327569e35026c226266a0c}{
+\index{sm.h@{sm.h}!EVTTYPE\_\-NONE@{EVTTYPE\_\-NONE}}
+\index{EVTTYPE\_\-NONE@{EVTTYPE\_\-NONE}!sm.h@{sm.h}}
+\subsubsection[{EVTTYPE\_\-NONE}]{\setlength{\rightskip}{0pt plus 5cm}\#define EVTTYPE\_\-NONE~0}}
+\label{sm_8h_aa3d5e78932327569e35026c226266a0c}
+
+
+Definition at line 37 of file sm.h.
+
+\hypertarget{sm_8h_a4874ddb717de84cba9dcd10fe1951a23}{
+\index{sm.h@{sm.h}!IsSMDisabled@{IsSMDisabled}}
+\index{IsSMDisabled@{IsSMDisabled}!sm.h@{sm.h}}
+\subsubsection[{IsSMDisabled}]{\setlength{\rightskip}{0pt plus 5cm}\#define IsSMDisabled(
+\begin{DoxyParamCaption}
+\item[{}]{s}
+\end{DoxyParamCaption}
+)~(s.currState == SMSTATE\_\-DISABLED)}}
+\label{sm_8h_a4874ddb717de84cba9dcd10fe1951a23}
+
+
+Definition at line 46 of file sm.h.
+
+\hypertarget{sm_8h_a0f58799af0cd13322a5cd7a3ecd616f0}{
+\index{sm.h@{sm.h}!IsSMEnabled@{IsSMEnabled}}
+\index{IsSMEnabled@{IsSMEnabled}!sm.h@{sm.h}}
+\subsubsection[{IsSMEnabled}]{\setlength{\rightskip}{0pt plus 5cm}\#define IsSMEnabled(
+\begin{DoxyParamCaption}
+\item[{}]{s}
+\end{DoxyParamCaption}
+)~(s.currState != SMSTATE\_\-DISABLED)}}
+\label{sm_8h_a0f58799af0cd13322a5cd7a3ecd616f0}
+
+
+Definition at line 47 of file sm.h.
+
+\hypertarget{sm_8h_ad4be4c63eba16fc1ecd4107ae276852a}{
+\index{sm.h@{sm.h}!IsSMTimedOut@{IsSMTimedOut}}
+\index{IsSMTimedOut@{IsSMTimedOut}!sm.h@{sm.h}}
+\subsubsection[{IsSMTimedOut}]{\setlength{\rightskip}{0pt plus 5cm}\#define IsSMTimedOut(
+\begin{DoxyParamCaption}
+\item[{}]{s}
+\end{DoxyParamCaption}
+)~(s.smFlags \& SMF\_\-TIMEOUT)}}
+\label{sm_8h_ad4be4c63eba16fc1ecd4107ae276852a}
+
+
+Definition at line 48 of file sm.h.
+
+\hypertarget{sm_8h_a17674306a41429f40464c85634d11b9f}{
+\index{sm.h@{sm.h}!MAX\_\-WAIT\_\-EVENTS@{MAX\_\-WAIT\_\-EVENTS}}
+\index{MAX\_\-WAIT\_\-EVENTS@{MAX\_\-WAIT\_\-EVENTS}!sm.h@{sm.h}}
+\subsubsection[{MAX\_\-WAIT\_\-EVENTS}]{\setlength{\rightskip}{0pt plus 5cm}\#define MAX\_\-WAIT\_\-EVENTS~4}}
+\label{sm_8h_a17674306a41429f40464c85634d11b9f}
+
+
+Definition at line 40 of file sm.h.
+
+\hypertarget{sm_8h_ae9f4f7cf89710651cd39579c3b03ca42}{
+\index{sm.h@{sm.h}!MOD\_\-ID@{MOD\_\-ID}}
+\index{MOD\_\-ID@{MOD\_\-ID}!sm.h@{sm.h}}
+\subsubsection[{MOD\_\-ID}]{\setlength{\rightskip}{0pt plus 5cm}\#define MOD\_\-ID~MOD\_\-SM}}
+\label{sm_8h_ae9f4f7cf89710651cd39579c3b03ca42}
+
+
+Definition at line 23 of file sm.h.
+
+\hypertarget{sm_8h_a6f0913489af9a790111e6ab567bf43fc}{
+\index{sm.h@{sm.h}!SMF\_\-CLEAR\_\-EVENTS@{SMF\_\-CLEAR\_\-EVENTS}}
+\index{SMF\_\-CLEAR\_\-EVENTS@{SMF\_\-CLEAR\_\-EVENTS}!sm.h@{sm.h}}
+\subsubsection[{SMF\_\-CLEAR\_\-EVENTS}]{\setlength{\rightskip}{0pt plus 5cm}\#define SMF\_\-CLEAR\_\-EVENTS~0x0002}}
+\label{sm_8h_a6f0913489af9a790111e6ab567bf43fc}
+
+
+Definition at line 32 of file sm.h.
+
+\hypertarget{sm_8h_a82614c6000744c90ee4e47b81716b432}{
+\index{sm.h@{sm.h}!SMF\_\-MASK@{SMF\_\-MASK}}
+\index{SMF\_\-MASK@{SMF\_\-MASK}!sm.h@{sm.h}}
+\subsubsection[{SMF\_\-MASK}]{\setlength{\rightskip}{0pt plus 5cm}\#define SMF\_\-MASK~0x00ff}}
+\label{sm_8h_a82614c6000744c90ee4e47b81716b432}
+
+
+Definition at line 30 of file sm.h.
+
+\hypertarget{sm_8h_a9b8d567d7793d96651962c0fb7c01072}{
+\index{sm.h@{sm.h}!SMF\_\-READY@{SMF\_\-READY}}
+\index{SMF\_\-READY@{SMF\_\-READY}!sm.h@{sm.h}}
+\subsubsection[{SMF\_\-READY}]{\setlength{\rightskip}{0pt plus 5cm}\#define SMF\_\-READY~0x0100}}
+\label{sm_8h_a9b8d567d7793d96651962c0fb7c01072}
+
+
+Definition at line 28 of file sm.h.
+
+\hypertarget{sm_8h_aa4ebc081aa2db8acabb2155f831c0d06}{
+\index{sm.h@{sm.h}!SMF\_\-TIMEOUT@{SMF\_\-TIMEOUT}}
+\index{SMF\_\-TIMEOUT@{SMF\_\-TIMEOUT}!sm.h@{sm.h}}
+\subsubsection[{SMF\_\-TIMEOUT}]{\setlength{\rightskip}{0pt plus 5cm}\#define SMF\_\-TIMEOUT~0x0200}}
+\label{sm_8h_aa4ebc081aa2db8acabb2155f831c0d06}
+
+
+Definition at line 29 of file sm.h.
+
+\hypertarget{sm_8h_a7fd996540a8b4b0bc73036155c227a80}{
+\index{sm.h@{sm.h}!SMF\_\-WAIT\_\-ALL@{SMF\_\-WAIT\_\-ALL}}
+\index{SMF\_\-WAIT\_\-ALL@{SMF\_\-WAIT\_\-ALL}!sm.h@{sm.h}}
+\subsubsection[{SMF\_\-WAIT\_\-ALL}]{\setlength{\rightskip}{0pt plus 5cm}\#define SMF\_\-WAIT\_\-ALL~0x0001}}
+\label{sm_8h_a7fd996540a8b4b0bc73036155c227a80}
+
+
+Definition at line 31 of file sm.h.
+
+\hypertarget{sm_8h_ade061b0ab954fda9ceef52ed0a047d78}{
+\index{sm.h@{sm.h}!SMSTATE\_\-DISABLED@{SMSTATE\_\-DISABLED}}
+\index{SMSTATE\_\-DISABLED@{SMSTATE\_\-DISABLED}!sm.h@{sm.h}}
+\subsubsection[{SMSTATE\_\-DISABLED}]{\setlength{\rightskip}{0pt plus 5cm}\#define SMSTATE\_\-DISABLED~0}}
+\label{sm_8h_ade061b0ab954fda9ceef52ed0a047d78}
+
+
+Definition at line 34 of file sm.h.
+
+\hypertarget{sm_8h_a726a061a9d97ee7f968c3689158fbb46}{
+\index{sm.h@{sm.h}!SMSTATE\_\-STARTED@{SMSTATE\_\-STARTED}}
+\index{SMSTATE\_\-STARTED@{SMSTATE\_\-STARTED}!sm.h@{sm.h}}
+\subsubsection[{SMSTATE\_\-STARTED}]{\setlength{\rightskip}{0pt plus 5cm}\#define SMSTATE\_\-STARTED~1}}
+\label{sm_8h_a726a061a9d97ee7f968c3689158fbb46}
+
+
+Definition at line 35 of file sm.h.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{sm_8h_a364a552b6924eae784f50cda31918784}{
+\index{sm.h@{sm.h}!SMAddWaitEvent@{SMAddWaitEvent}}
+\index{SMAddWaitEvent@{SMAddWaitEvent}!sm.h@{sm.h}}
+\subsubsection[{SMAddWaitEvent}]{\setlength{\rightskip}{0pt plus 5cm}bool SMAddWaitEvent (
+\begin{DoxyParamCaption}
+\item[{\_\-\_\-inout {\bf SM} \&}]{sm, }
+\item[{\_\-\_\-in int}]{evtType, }
+\item[{\_\-\_\-in int}]{evtID, }
+\item[{\_\-\_\-in int}]{evtData}
+\end{DoxyParamCaption}
+)}}
+\label{sm_8h_a364a552b6924eae784f50cda31918784}
+This function adds a wait event to the state machine.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sm} & Points to the \hyperlink{struct_s_m}{SM} structure. \\
+\hline
+{\em evtType} & Specifies the event type to wait for. \\
+\hline
+{\em evtID} & Specifies the event ID to wait for. \\
+\hline
+{\em evtData} & Specifies the event data to wait for.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Success: Returns true. 
+
+Failure: Returns false. 
+\end{DoxyReturn}
+
+
+Definition at line 221 of file sm.h.
+
+\hypertarget{sm_8h_a2995d31dca98aeccfc06790a7a8a0d4c}{
+\index{sm.h@{sm.h}!SMClearAllEvents@{SMClearAllEvents}}
+\index{SMClearAllEvents@{SMClearAllEvents}!sm.h@{sm.h}}
+\subsubsection[{SMClearAllEvents}]{\setlength{\rightskip}{0pt plus 5cm}void SMClearAllEvents (
+\begin{DoxyParamCaption}
+\item[{\_\-\_\-out {\bf SM} \&}]{sm}
+\end{DoxyParamCaption}
+)}}
+\label{sm_8h_a2995d31dca98aeccfc06790a7a8a0d4c}
+This function clears all wait events in the state machine.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sm} & Points to the \hyperlink{struct_s_m}{SM} structure. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 80 of file sm.h.
+
+\hypertarget{sm_8h_ad2cfddc7d74511f6d342c94e0bad7621}{
+\index{sm.h@{sm.h}!SMInit@{SMInit}}
+\index{SMInit@{SMInit}!sm.h@{sm.h}}
+\subsubsection[{SMInit}]{\setlength{\rightskip}{0pt plus 5cm}void SMInit (
+\begin{DoxyParamCaption}
+\item[{\_\-\_\-out {\bf SM} \&}]{sm}
+\end{DoxyParamCaption}
+)}}
+\label{sm_8h_ad2cfddc7d74511f6d342c94e0bad7621}
+This function initializes the state machine.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sm} & Points to the \hyperlink{struct_s_m}{SM} structure to be initialized. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 111 of file sm.h.
+
+\hypertarget{sm_8h_a62a5aa1ad04df73542a683da0281db4a}{
+\index{sm.h@{sm.h}!SMIsReady@{SMIsReady}}
+\index{SMIsReady@{SMIsReady}!sm.h@{sm.h}}
+\subsubsection[{SMIsReady}]{\setlength{\rightskip}{0pt plus 5cm}bool SMIsReady (
+\begin{DoxyParamCaption}
+\item[{\_\-\_\-out {\bf SM} \&}]{sm}
+\end{DoxyParamCaption}
+)}}
+\label{sm_8h_a62a5aa1ad04df73542a683da0281db4a}
+This function checks if the state machine is ready or timed out.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sm} & Points to the \hyperlink{struct_s_m}{SM} structure to be initialized. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 181 of file sm.h.
+
+\hypertarget{sm_8h_aadf47e3e65632c167c1e449458f7adff}{
+\index{sm.h@{sm.h}!SMSetEvent@{SMSetEvent}}
+\index{SMSetEvent@{SMSetEvent}!sm.h@{sm.h}}
+\subsubsection[{SMSetEvent}]{\setlength{\rightskip}{0pt plus 5cm}void SMSetEvent (
+\begin{DoxyParamCaption}
+\item[{\_\-\_\-inout {\bf SM} \&}]{sm, }
+\item[{\_\-\_\-in int}]{evtType, }
+\item[{\_\-\_\-in int}]{evtID, }
+\item[{\_\-\_\-in int}]{evtData, }
+\item[{\_\-\_\-in int}]{evtParam1, }
+\item[{\_\-\_\-in int}]{evtParam2}
+\end{DoxyParamCaption}
+)}}
+\label{sm_8h_aadf47e3e65632c167c1e449458f7adff}
+This function is called when an event has occurred. It will determine if the state machine is waiting for the event and will advance the state machine to the next state if necessary.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sm} & Points to the \hyperlink{struct_s_m}{SM} structure. \\
+\hline
+{\em evtType} & Specifies the event type. \\
+\hline
+{\em evtID} & Specifies the event ID. \\
+\hline
+{\em evtData} & Specifies the event data. \\
+\hline
+{\em evtParam1} & Specifies the event parameter 1. \\
+\hline
+{\em evtParam2} & Specifies the event parameter 2. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 307 of file sm.h.
+
+\hypertarget{sm_8h_ab44ac1d04464ecd0df6cdbb0c4bb2730}{
+\index{sm.h@{sm.h}!SMStart@{SMStart}}
+\index{SMStart@{SMStart}!sm.h@{sm.h}}
+\subsubsection[{SMStart}]{\setlength{\rightskip}{0pt plus 5cm}void SMStart (
+\begin{DoxyParamCaption}
+\item[{\_\-\_\-out {\bf SM} \&}]{sm}
+\end{DoxyParamCaption}
+)}}
+\label{sm_8h_ab44ac1d04464ecd0df6cdbb0c4bb2730}
+This function starts the state machine.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sm} & Points to the \hyperlink{struct_s_m}{SM} structure to be initialized. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 135 of file sm.h.
+
+\hypertarget{sm_8h_a042a67b192d5e33d5a86197dc84ef289}{
+\index{sm.h@{sm.h}!SMStop@{SMStop}}
+\index{SMStop@{SMStop}!sm.h@{sm.h}}
+\subsubsection[{SMStop}]{\setlength{\rightskip}{0pt plus 5cm}void SMStop (
+\begin{DoxyParamCaption}
+\item[{\_\-\_\-out {\bf SM} \&}]{sm}
+\end{DoxyParamCaption}
+)}}
+\label{sm_8h_a042a67b192d5e33d5a86197dc84ef289}
+This function stops the state machine.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sm} & Points to the \hyperlink{struct_s_m}{SM} structure to be initialized. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 161 of file sm.h.
+
+\hypertarget{sm_8h_aba72d0583b23ffe6a14e5f3875fb9dbf}{
+\index{sm.h@{sm.h}!SMWaitEvents@{SMWaitEvents}}
+\index{SMWaitEvents@{SMWaitEvents}!sm.h@{sm.h}}
+\subsubsection[{SMWaitEvents}]{\setlength{\rightskip}{0pt plus 5cm}void SMWaitEvents (
+\begin{DoxyParamCaption}
+\item[{\_\-\_\-inout {\bf SM} \&}]{sm, }
+\item[{\_\-\_\-in int}]{nextState, }
+\item[{\_\-\_\-in int}]{timeout, }
+\item[{\_\-\_\-in int}]{flags}
+\end{DoxyParamCaption}
+)}}
+\label{sm_8h_aba72d0583b23ffe6a14e5f3875fb9dbf}
+This function sets the wait event mode and the next state to advance to when the wait is fulfilled.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sm} & Points to the \hyperlink{struct_s_m}{SM} structure. \\
+\hline
+{\em nextState} & Specifies the next state to advance to. \\
+\hline
+{\em timeout} & Specifies the timeout value in msec for the wait. If 0, it will wait indefinitely for the events. \\
+\hline
+{\em flags} & Specifies the SMF flags. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 262 of file sm.h.
+

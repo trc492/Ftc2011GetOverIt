@@ -1,0 +1,153 @@
+\hypertarget{menu_8h}{
+\section{C:/Users/Michael/Ftc/2011/code/trclib/menu.h File Reference}
+\label{menu_8h}\index{C:/Users/Michael/Ftc/2011/code/trclib/menu.h@{C:/Users/Michael/Ftc/2011/code/trclib/menu.h}}
+}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_m_e_n_u}{MENU}
+\end{DoxyCompactItemize}
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{menu_8h_a22a1229c79f72004461320d287385ebd}{\_\-MENU\_\-H}
+\item 
+\#define \hyperlink{menu_8h_ae9f4f7cf89710651cd39579c3b03ca42}{MOD\_\-ID}~MOD\_\-MENU
+\item 
+\#define \hyperlink{menu_8h_aeb0941f8086fccd9f3f85d4fd409265f}{MAX\_\-NUM\_\-CHOICES}~6
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{menu_8h_a8bdb6f7e0656a4cbb03609513b3e9843}{MenuInit} (\_\-\_\-out \hyperlink{struct_m_e_n_u}{MENU} \&menu, \_\-\_\-in string titleText, \_\-\_\-in int startLine, \_\-\_\-in int defChoice)
+\item 
+bool \hyperlink{menu_8h_a4156b08b1c1150f3bec8cb16cb8158c6}{MenuAddChoice} (\_\-\_\-inout \hyperlink{struct_m_e_n_u}{MENU} \&menu, \_\-\_\-in string choiceText)
+\item 
+int \hyperlink{menu_8h_aa5ca6560b0015899d556fe0ea46e588a}{MenuGetChoice} (\_\-\_\-inout \hyperlink{struct_m_e_n_u}{MENU} \&menu)
+\item 
+void \hyperlink{menu_8h_a4c0c34f9a6c2cb4c004672199dd88e36}{MenuWaitStart} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Define Documentation}
+\hypertarget{menu_8h_a22a1229c79f72004461320d287385ebd}{
+\index{menu.h@{menu.h}!\_\-MENU\_\-H@{\_\-MENU\_\-H}}
+\index{\_\-MENU\_\-H@{\_\-MENU\_\-H}!menu.h@{menu.h}}
+\subsubsection[{\_\-MENU\_\-H}]{\setlength{\rightskip}{0pt plus 5cm}\#define \_\-MENU\_\-H}}
+\label{menu_8h_a22a1229c79f72004461320d287385ebd}
+
+
+Definition at line 18 of file menu.h.
+
+\hypertarget{menu_8h_aeb0941f8086fccd9f3f85d4fd409265f}{
+\index{menu.h@{menu.h}!MAX\_\-NUM\_\-CHOICES@{MAX\_\-NUM\_\-CHOICES}}
+\index{MAX\_\-NUM\_\-CHOICES@{MAX\_\-NUM\_\-CHOICES}!menu.h@{menu.h}}
+\subsubsection[{MAX\_\-NUM\_\-CHOICES}]{\setlength{\rightskip}{0pt plus 5cm}\#define MAX\_\-NUM\_\-CHOICES~6}}
+\label{menu_8h_aeb0941f8086fccd9f3f85d4fd409265f}
+
+
+Definition at line 30 of file menu.h.
+
+\hypertarget{menu_8h_ae9f4f7cf89710651cd39579c3b03ca42}{
+\index{menu.h@{menu.h}!MOD\_\-ID@{MOD\_\-ID}}
+\index{MOD\_\-ID@{MOD\_\-ID}!menu.h@{menu.h}}
+\subsubsection[{MOD\_\-ID}]{\setlength{\rightskip}{0pt plus 5cm}\#define MOD\_\-ID~MOD\_\-MENU}}
+\label{menu_8h_ae9f4f7cf89710651cd39579c3b03ca42}
+
+
+Definition at line 25 of file menu.h.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{menu_8h_a4156b08b1c1150f3bec8cb16cb8158c6}{
+\index{menu.h@{menu.h}!MenuAddChoice@{MenuAddChoice}}
+\index{MenuAddChoice@{MenuAddChoice}!menu.h@{menu.h}}
+\subsubsection[{MenuAddChoice}]{\setlength{\rightskip}{0pt plus 5cm}bool MenuAddChoice (
+\begin{DoxyParamCaption}
+\item[{\_\-\_\-inout {\bf MENU} \&}]{menu, }
+\item[{\_\-\_\-in string}]{choiceText}
+\end{DoxyParamCaption}
+)}}
+\label{menu_8h_a4156b08b1c1150f3bec8cb16cb8158c6}
+This function adds a choice to the menu.
+
+
+\begin{DoxyParams}{Parameters}
+{\em menu} & Points to the \hyperlink{struct_m_e_n_u}{MENU} structure to be initialized. \\
+\hline
+{\em choiceText} & Specifies the choice text.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true if the choice is added successful, otherwise the menu is full. 
+\end{DoxyReturn}
+
+
+Definition at line 83 of file menu.h.
+
+\hypertarget{menu_8h_aa5ca6560b0015899d556fe0ea46e588a}{
+\index{menu.h@{menu.h}!MenuGetChoice@{MenuGetChoice}}
+\index{MenuGetChoice@{MenuGetChoice}!menu.h@{menu.h}}
+\subsubsection[{MenuGetChoice}]{\setlength{\rightskip}{0pt plus 5cm}int MenuGetChoice (
+\begin{DoxyParamCaption}
+\item[{\_\-\_\-inout {\bf MENU} \&}]{menu}
+\end{DoxyParamCaption}
+)}}
+\label{menu_8h_aa5ca6560b0015899d556fe0ea46e588a}
+This function displays the menu and returns the user choice.
+
+
+\begin{DoxyParams}{Parameters}
+{\em menu} & Points to the \hyperlink{struct_m_e_n_u}{MENU} structure to be initialized.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the user choice. 
+\end{DoxyReturn}
+
+
+Definition at line 113 of file menu.h.
+
+\hypertarget{menu_8h_a8bdb6f7e0656a4cbb03609513b3e9843}{
+\index{menu.h@{menu.h}!MenuInit@{MenuInit}}
+\index{MenuInit@{MenuInit}!menu.h@{menu.h}}
+\subsubsection[{MenuInit}]{\setlength{\rightskip}{0pt plus 5cm}void MenuInit (
+\begin{DoxyParamCaption}
+\item[{\_\-\_\-out {\bf MENU} \&}]{menu, }
+\item[{\_\-\_\-in string}]{titleText, }
+\item[{\_\-\_\-in int}]{startLine, }
+\item[{\_\-\_\-in int}]{defChoice}
+\end{DoxyParamCaption}
+)}}
+\label{menu_8h_a8bdb6f7e0656a4cbb03609513b3e9843}
+This function initializes the choice menu.
+
+
+\begin{DoxyParams}{Parameters}
+{\em menu} & Points to the \hyperlink{struct_m_e_n_u}{MENU} structure to be initialized. \\
+\hline
+{\em titleText} & Specifies the title text of the menu. \\
+\hline
+{\em startLine} & Specifies the LCD line the menu starts. \\
+\hline
+{\em defChoice} & Specifies the default choice. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 53 of file menu.h.
+
+\hypertarget{menu_8h_a4c0c34f9a6c2cb4c004672199dd88e36}{
+\index{menu.h@{menu.h}!MenuWaitStart@{MenuWaitStart}}
+\index{MenuWaitStart@{MenuWaitStart}!menu.h@{menu.h}}
+\subsubsection[{MenuWaitStart}]{\setlength{\rightskip}{0pt plus 5cm}void MenuWaitStart (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{menu_8h_a4c0c34f9a6c2cb4c004672199dd88e36}
+This function waits for the start signal from the FCS or the enter button is pressed. 
+
+Definition at line 175 of file menu.h.
+

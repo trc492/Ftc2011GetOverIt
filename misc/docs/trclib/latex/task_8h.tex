@@ -1,0 +1,254 @@
+\hypertarget{task_8h}{
+\section{C:/Users/Michael/Ftc/2011/code/trclib/task.h File Reference}
+\label{task_8h}\index{C:/Users/Michael/Ftc/2011/code/trclib/task.h@{C:/Users/Michael/Ftc/2011/code/trclib/task.h}}
+}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_r_o_b_o_t_t_a_s_k}{ROBOTTASK}
+\item 
+struct \hyperlink{struct_t_a_s_k_s}{TASKS}
+\end{DoxyCompactItemize}
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{task_8h_aa4321f042fc1498e920e8d04382a971c}{\_\-TASK\_\-H}
+\item 
+\#define \hyperlink{task_8h_ae9f4f7cf89710651cd39579c3b03ca42}{MOD\_\-ID}~MOD\_\-TASK
+\item 
+\#define \hyperlink{task_8h_aedfe3133706a3a3f975f567f59ff06bd}{MAX\_\-NUM\_\-TASKS}~8
+\item 
+\#define \hyperlink{task_8h_abab09d62c6acb161d00dcdca6bf45838}{TaskRegisterHiFreq}(m)~(g\_\-HiFreqTasks $|$= (m))
+\item 
+\#define \hyperlink{task_8h_a241c6c0ae56decce1f8bce2c7ee054f8}{TaskRegisterInput}(m)~(g\_\-InputTasks $|$= (m))
+\item 
+\#define \hyperlink{task_8h_a3de910a80c1edc6d7b62f69e0241f5ec}{TaskRegisterOutput}(m)~(g\_\-OutputTask $|$= (m))
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{task_8h_ac5b15e96e8e5513b7f79ea4fa672ded8}{TaskInit} ()
+\item 
+bool \hyperlink{task_8h_a8f9d955d2a5b0b73ed6f1bf900975158}{TaskRegHiFreq} (\_\-\_\-in long module, \_\-\_\-in void \&context)
+\item 
+bool \hyperlink{task_8h_a596a4614c6b4f39b36b4407e37119faa}{TaskRegInput} (\_\-\_\-in long module, \_\-\_\-in void \&context)
+\item 
+bool \hyperlink{task_8h_aa8b8716566dd30e304a4628d8f153071}{TaskRegOutput} (\_\-\_\-in long module, \_\-\_\-in void \&context)
+\item 
+void \hyperlink{task_8h_a1e9278640b7f54be1b7f9d38e95b1d0c}{TaskProcessHiFreq} ()
+\item 
+void \hyperlink{task_8h_ae6f28b59680283e196e49708b874b783}{NxtBtnTask} (\_\-\_\-inout \hyperlink{struct_n_x_t_b_t_n}{NXTBTN} \&nxtbtn)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_t_a_s_k_s}{TASKS} \hyperlink{task_8h_ae3b5ecf08d3708322ecdbd2e098b8c83}{g\_\-RobotTasks}
+\end{DoxyCompactItemize}
+
+
+\subsection{Define Documentation}
+\hypertarget{task_8h_aa4321f042fc1498e920e8d04382a971c}{
+\index{task.h@{task.h}!\_\-TASK\_\-H@{\_\-TASK\_\-H}}
+\index{\_\-TASK\_\-H@{\_\-TASK\_\-H}!task.h@{task.h}}
+\subsubsection[{\_\-TASK\_\-H}]{\setlength{\rightskip}{0pt plus 5cm}\#define \_\-TASK\_\-H}}
+\label{task_8h_aa4321f042fc1498e920e8d04382a971c}
+
+
+Definition at line 17 of file task.h.
+
+\hypertarget{task_8h_aedfe3133706a3a3f975f567f59ff06bd}{
+\index{task.h@{task.h}!MAX\_\-NUM\_\-TASKS@{MAX\_\-NUM\_\-TASKS}}
+\index{MAX\_\-NUM\_\-TASKS@{MAX\_\-NUM\_\-TASKS}!task.h@{task.h}}
+\subsubsection[{MAX\_\-NUM\_\-TASKS}]{\setlength{\rightskip}{0pt plus 5cm}\#define MAX\_\-NUM\_\-TASKS~8}}
+\label{task_8h_aedfe3133706a3a3f975f567f59ff06bd}
+
+
+Definition at line 27 of file task.h.
+
+\hypertarget{task_8h_ae9f4f7cf89710651cd39579c3b03ca42}{
+\index{task.h@{task.h}!MOD\_\-ID@{MOD\_\-ID}}
+\index{MOD\_\-ID@{MOD\_\-ID}!task.h@{task.h}}
+\subsubsection[{MOD\_\-ID}]{\setlength{\rightskip}{0pt plus 5cm}\#define MOD\_\-ID~MOD\_\-TASK}}
+\label{task_8h_ae9f4f7cf89710651cd39579c3b03ca42}
+
+
+Definition at line 24 of file task.h.
+
+\hypertarget{task_8h_abab09d62c6acb161d00dcdca6bf45838}{
+\index{task.h@{task.h}!TaskRegisterHiFreq@{TaskRegisterHiFreq}}
+\index{TaskRegisterHiFreq@{TaskRegisterHiFreq}!task.h@{task.h}}
+\subsubsection[{TaskRegisterHiFreq}]{\setlength{\rightskip}{0pt plus 5cm}\#define TaskRegisterHiFreq(
+\begin{DoxyParamCaption}
+\item[{}]{m}
+\end{DoxyParamCaption}
+)~(g\_\-HiFreqTasks $|$= (m))}}
+\label{task_8h_abab09d62c6acb161d00dcdca6bf45838}
+
+
+Definition at line 33 of file task.h.
+
+\hypertarget{task_8h_a241c6c0ae56decce1f8bce2c7ee054f8}{
+\index{task.h@{task.h}!TaskRegisterInput@{TaskRegisterInput}}
+\index{TaskRegisterInput@{TaskRegisterInput}!task.h@{task.h}}
+\subsubsection[{TaskRegisterInput}]{\setlength{\rightskip}{0pt plus 5cm}\#define TaskRegisterInput(
+\begin{DoxyParamCaption}
+\item[{}]{m}
+\end{DoxyParamCaption}
+)~(g\_\-InputTasks $|$= (m))}}
+\label{task_8h_a241c6c0ae56decce1f8bce2c7ee054f8}
+
+
+Definition at line 34 of file task.h.
+
+\hypertarget{task_8h_a3de910a80c1edc6d7b62f69e0241f5ec}{
+\index{task.h@{task.h}!TaskRegisterOutput@{TaskRegisterOutput}}
+\index{TaskRegisterOutput@{TaskRegisterOutput}!task.h@{task.h}}
+\subsubsection[{TaskRegisterOutput}]{\setlength{\rightskip}{0pt plus 5cm}\#define TaskRegisterOutput(
+\begin{DoxyParamCaption}
+\item[{}]{m}
+\end{DoxyParamCaption}
+)~(g\_\-OutputTask $|$= (m))}}
+\label{task_8h_a3de910a80c1edc6d7b62f69e0241f5ec}
+
+
+Definition at line 35 of file task.h.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{task_8h_ae6f28b59680283e196e49708b874b783}{
+\index{task.h@{task.h}!NxtBtnTask@{NxtBtnTask}}
+\index{NxtBtnTask@{NxtBtnTask}!task.h@{task.h}}
+\subsubsection[{NxtBtnTask}]{\setlength{\rightskip}{0pt plus 5cm}void NxtBtnTask (
+\begin{DoxyParamCaption}
+\item[{\_\-\_\-inout {\bf NXTBTN} \&}]{nxtbtn}
+\end{DoxyParamCaption}
+)}}
+\label{task_8h_ae6f28b59680283e196e49708b874b783}
+This function processes the changed buttons and sends button event notifications.
+
+
+\begin{DoxyParams}{Parameters}
+{\em nxtbtn} & Points to the \hyperlink{struct_n_x_t_b_t_n}{NXTBTN} structure. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 215 of file task.h.
+
+\hypertarget{task_8h_ac5b15e96e8e5513b7f79ea4fa672ded8}{
+\index{task.h@{task.h}!TaskInit@{TaskInit}}
+\index{TaskInit@{TaskInit}!task.h@{task.h}}
+\subsubsection[{TaskInit}]{\setlength{\rightskip}{0pt plus 5cm}void TaskInit (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{task_8h_ac5b15e96e8e5513b7f79ea4fa672ded8}
+This function initializes the robot task tables. 
+
+Definition at line 65 of file task.h.
+
+\hypertarget{task_8h_a1e9278640b7f54be1b7f9d38e95b1d0c}{
+\index{task.h@{task.h}!TaskProcessHiFreq@{TaskProcessHiFreq}}
+\index{TaskProcessHiFreq@{TaskProcessHiFreq}!task.h@{task.h}}
+\subsubsection[{TaskProcessHiFreq}]{\setlength{\rightskip}{0pt plus 5cm}void TaskProcessHiFreq (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{task_8h_a1e9278640b7f54be1b7f9d38e95b1d0c}
+This function dispatches all the registered high frequency tasks. This function dispatches all the registered high frequency tasks. 
+
+Definition at line 191 of file task.h.
+
+\hypertarget{task_8h_a8f9d955d2a5b0b73ed6f1bf900975158}{
+\index{task.h@{task.h}!TaskRegHiFreq@{TaskRegHiFreq}}
+\index{TaskRegHiFreq@{TaskRegHiFreq}!task.h@{task.h}}
+\subsubsection[{TaskRegHiFreq}]{\setlength{\rightskip}{0pt plus 5cm}bool TaskRegHiFreq (
+\begin{DoxyParamCaption}
+\item[{\_\-\_\-in long}]{module, }
+\item[{\_\-\_\-in void \&}]{context}
+\end{DoxyParamCaption}
+)}}
+\label{task_8h_a8f9d955d2a5b0b73ed6f1bf900975158}
+This function registers a high frequency robot task.
+
+
+\begin{DoxyParams}{Parameters}
+{\em module} & Specifies the module that has a high frequency task. \\
+\hline
+{\em context} & Spcifies the context of the task.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true if successful, false if the task table is full. 
+\end{DoxyReturn}
+
+
+Definition at line 99 of file task.h.
+
+\hypertarget{task_8h_a596a4614c6b4f39b36b4407e37119faa}{
+\index{task.h@{task.h}!TaskRegInput@{TaskRegInput}}
+\index{TaskRegInput@{TaskRegInput}!task.h@{task.h}}
+\subsubsection[{TaskRegInput}]{\setlength{\rightskip}{0pt plus 5cm}bool TaskRegInput (
+\begin{DoxyParamCaption}
+\item[{\_\-\_\-in long}]{module, }
+\item[{\_\-\_\-in void \&}]{context}
+\end{DoxyParamCaption}
+)}}
+\label{task_8h_a596a4614c6b4f39b36b4407e37119faa}
+This function registers a robot input task.
+
+
+\begin{DoxyParams}{Parameters}
+{\em module} & Specifies the module that has an input task. \\
+\hline
+{\em context} & Spcifies the context of the task.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true if successful, false if the task table is full. 
+\end{DoxyReturn}
+
+
+Definition at line 130 of file task.h.
+
+\hypertarget{task_8h_aa8b8716566dd30e304a4628d8f153071}{
+\index{task.h@{task.h}!TaskRegOutput@{TaskRegOutput}}
+\index{TaskRegOutput@{TaskRegOutput}!task.h@{task.h}}
+\subsubsection[{TaskRegOutput}]{\setlength{\rightskip}{0pt plus 5cm}bool TaskRegOutput (
+\begin{DoxyParamCaption}
+\item[{\_\-\_\-in long}]{module, }
+\item[{\_\-\_\-in void \&}]{context}
+\end{DoxyParamCaption}
+)}}
+\label{task_8h_aa8b8716566dd30e304a4628d8f153071}
+This function registers a robot output task.
+
+
+\begin{DoxyParams}{Parameters}
+{\em module} & Specifies the module that has an output task. \\
+\hline
+{\em context} & Spcifies the context of the task.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true if successful, false if the task table is full. 
+\end{DoxyReturn}
+
+
+Definition at line 161 of file task.h.
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{task_8h_ae3b5ecf08d3708322ecdbd2e098b8c83}{
+\index{task.h@{task.h}!g\_\-RobotTasks@{g\_\-RobotTasks}}
+\index{g\_\-RobotTasks@{g\_\-RobotTasks}!task.h@{task.h}}
+\subsubsection[{g\_\-RobotTasks}]{\setlength{\rightskip}{0pt plus 5cm}{\bf TASKS} {\bf g\_\-RobotTasks}}}
+\label{task_8h_ae3b5ecf08d3708322ecdbd2e098b8c83}
+
+
+Definition at line 59 of file task.h.
+

@@ -1,0 +1,262 @@
+\hypertarget{accel_8h}{
+\section{C:/Users/Michael/Ftc/2011/code/trclib/accel.h File Reference}
+\label{accel_8h}\index{C:/Users/Michael/Ftc/2011/code/trclib/accel.h@{C:/Users/Michael/Ftc/2011/code/trclib/accel.h}}
+}
+{\ttfamily \#include \char`\"{}..$\backslash$HTDriversV1.6$\backslash$drivers$\backslash$HTAC-\/driver.h\char`\"{}}\par
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_a_c_c_e_l}{ACCEL}
+\end{DoxyCompactItemize}
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{accel_8h_a16613934ecba5c579cce208ac8557cd2}{\_\-ACCEL\_\-H}
+\item 
+\#define \hyperlink{accel_8h_ae9f4f7cf89710651cd39579c3b03ca42}{MOD\_\-ID}~MOD\_\-ACCEL
+\item 
+\#define \hyperlink{accel_8h_add1c5caf9f9bebb28c7e0082ee6f598a}{ACCELF\_\-USER\_\-MASK}~0x00ff
+\item 
+\#define \hyperlink{accel_8h_afc0ca4cfcec28a68a920568389ba63d5}{ACCEL\_\-COUNT\_\-PER\_\-G}~200
+\item 
+\#define \hyperlink{accel_8h_a988b687843f4a334cf8e322dc3e69328}{ACCEL\_\-NUM\_\-CAL\_\-SAMPLES}~50
+\item 
+\#define \hyperlink{accel_8h_a3df8eb68492d7b2fa6c581bae3316549}{ACCEL\_\-CAL\_\-INTERVAL}~10
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{accel_8h_a7895367c1039427d83f6a107b05a0fea}{AccelCal} (\_\-\_\-out \hyperlink{struct_a_c_c_e_l}{ACCEL} \&accel, \_\-\_\-in int numSamples, \_\-\_\-in int calInterval)
+\item 
+void \hyperlink{accel_8h_a8dce558a524390101233249aa3eb57d5}{AccelInit} (\_\-\_\-out \hyperlink{struct_a_c_c_e_l}{ACCEL} \&accel, \_\-\_\-in int sensorID, \_\-\_\-in int accelFlags)
+\item 
+bool \hyperlink{accel_8h_abd913ea527c40ea1c3b364a44748980d}{AccelGetX} (\_\-\_\-in \hyperlink{struct_a_c_c_e_l}{ACCEL} \&accel, \_\-\_\-out float \&value)
+\item 
+bool \hyperlink{accel_8h_a8308e9b200744e4f854f3dd798536a41}{AccelGetY} (\_\-\_\-in \hyperlink{struct_a_c_c_e_l}{ACCEL} \&accel, \_\-\_\-out float \&value)
+\item 
+bool \hyperlink{accel_8h_ada0901d347ccbe47cd56f26b614aa90b}{AccelGetZ} (\_\-\_\-in \hyperlink{struct_a_c_c_e_l}{ACCEL} \&accel, \_\-\_\-out float \&value)
+\item 
+bool \hyperlink{accel_8h_a6e713b70b8f86aa639025e82092c8c52}{AccelGetAllAxes} (\_\-\_\-in \hyperlink{struct_a_c_c_e_l}{ACCEL} \&accel, \_\-\_\-out float \&xValue, \_\-\_\-out float \&yValue, \_\-\_\-out float \&zValue)
+\end{DoxyCompactItemize}
+
+
+\subsection{Define Documentation}
+\hypertarget{accel_8h_a16613934ecba5c579cce208ac8557cd2}{
+\index{accel.h@{accel.h}!\_\-ACCEL\_\-H@{\_\-ACCEL\_\-H}}
+\index{\_\-ACCEL\_\-H@{\_\-ACCEL\_\-H}!accel.h@{accel.h}}
+\subsubsection[{\_\-ACCEL\_\-H}]{\setlength{\rightskip}{0pt plus 5cm}\#define \_\-ACCEL\_\-H}}
+\label{accel_8h_a16613934ecba5c579cce208ac8557cd2}
+
+
+Definition at line 17 of file accel.h.
+
+\hypertarget{accel_8h_a3df8eb68492d7b2fa6c581bae3316549}{
+\index{accel.h@{accel.h}!ACCEL\_\-CAL\_\-INTERVAL@{ACCEL\_\-CAL\_\-INTERVAL}}
+\index{ACCEL\_\-CAL\_\-INTERVAL@{ACCEL\_\-CAL\_\-INTERVAL}!accel.h@{accel.h}}
+\subsubsection[{ACCEL\_\-CAL\_\-INTERVAL}]{\setlength{\rightskip}{0pt plus 5cm}\#define ACCEL\_\-CAL\_\-INTERVAL~10}}
+\label{accel_8h_a3df8eb68492d7b2fa6c581bae3316549}
+
+
+Definition at line 37 of file accel.h.
+
+\hypertarget{accel_8h_afc0ca4cfcec28a68a920568389ba63d5}{
+\index{accel.h@{accel.h}!ACCEL\_\-COUNT\_\-PER\_\-G@{ACCEL\_\-COUNT\_\-PER\_\-G}}
+\index{ACCEL\_\-COUNT\_\-PER\_\-G@{ACCEL\_\-COUNT\_\-PER\_\-G}!accel.h@{accel.h}}
+\subsubsection[{ACCEL\_\-COUNT\_\-PER\_\-G}]{\setlength{\rightskip}{0pt plus 5cm}\#define ACCEL\_\-COUNT\_\-PER\_\-G~200}}
+\label{accel_8h_afc0ca4cfcec28a68a920568389ba63d5}
+
+
+Definition at line 35 of file accel.h.
+
+\hypertarget{accel_8h_a988b687843f4a334cf8e322dc3e69328}{
+\index{accel.h@{accel.h}!ACCEL\_\-NUM\_\-CAL\_\-SAMPLES@{ACCEL\_\-NUM\_\-CAL\_\-SAMPLES}}
+\index{ACCEL\_\-NUM\_\-CAL\_\-SAMPLES@{ACCEL\_\-NUM\_\-CAL\_\-SAMPLES}!accel.h@{accel.h}}
+\subsubsection[{ACCEL\_\-NUM\_\-CAL\_\-SAMPLES}]{\setlength{\rightskip}{0pt plus 5cm}\#define ACCEL\_\-NUM\_\-CAL\_\-SAMPLES~50}}
+\label{accel_8h_a988b687843f4a334cf8e322dc3e69328}
+
+
+Definition at line 36 of file accel.h.
+
+\hypertarget{accel_8h_add1c5caf9f9bebb28c7e0082ee6f598a}{
+\index{accel.h@{accel.h}!ACCELF\_\-USER\_\-MASK@{ACCELF\_\-USER\_\-MASK}}
+\index{ACCELF\_\-USER\_\-MASK@{ACCELF\_\-USER\_\-MASK}!accel.h@{accel.h}}
+\subsubsection[{ACCELF\_\-USER\_\-MASK}]{\setlength{\rightskip}{0pt plus 5cm}\#define ACCELF\_\-USER\_\-MASK~0x00ff}}
+\label{accel_8h_add1c5caf9f9bebb28c7e0082ee6f598a}
+
+
+Definition at line 31 of file accel.h.
+
+\hypertarget{accel_8h_ae9f4f7cf89710651cd39579c3b03ca42}{
+\index{accel.h@{accel.h}!MOD\_\-ID@{MOD\_\-ID}}
+\index{MOD\_\-ID@{MOD\_\-ID}!accel.h@{accel.h}}
+\subsubsection[{MOD\_\-ID}]{\setlength{\rightskip}{0pt plus 5cm}\#define MOD\_\-ID~MOD\_\-ACCEL}}
+\label{accel_8h_ae9f4f7cf89710651cd39579c3b03ca42}
+
+
+Definition at line 26 of file accel.h.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{accel_8h_a7895367c1039427d83f6a107b05a0fea}{
+\index{accel.h@{accel.h}!AccelCal@{AccelCal}}
+\index{AccelCal@{AccelCal}!accel.h@{accel.h}}
+\subsubsection[{AccelCal}]{\setlength{\rightskip}{0pt plus 5cm}void AccelCal (
+\begin{DoxyParamCaption}
+\item[{\_\-\_\-out {\bf ACCEL} \&}]{accel, }
+\item[{\_\-\_\-in int}]{numSamples, }
+\item[{\_\-\_\-in int}]{calInterval}
+\end{DoxyParamCaption}
+)}}
+\label{accel_8h_a7895367c1039427d83f6a107b05a0fea}
+This function calibrates the accelerometer for zero offsets and deadband on all axes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em accel} & Points to the \hyperlink{struct_a_c_c_e_l}{ACCEL} structure to be initialized. \\
+\hline
+{\em numSamples} & Specifies the number of calibration samples. \\
+\hline
+{\em calInterval} & Specifies the calibration interval in msec. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 63 of file accel.h.
+
+\hypertarget{accel_8h_a6e713b70b8f86aa639025e82092c8c52}{
+\index{accel.h@{accel.h}!AccelGetAllAxes@{AccelGetAllAxes}}
+\index{AccelGetAllAxes@{AccelGetAllAxes}!accel.h@{accel.h}}
+\subsubsection[{AccelGetAllAxes}]{\setlength{\rightskip}{0pt plus 5cm}bool AccelGetAllAxes (
+\begin{DoxyParamCaption}
+\item[{\_\-\_\-in {\bf ACCEL} \&}]{accel, }
+\item[{\_\-\_\-out float \&}]{xValue, }
+\item[{\_\-\_\-out float \&}]{yValue, }
+\item[{\_\-\_\-out float \&}]{zValue}
+\end{DoxyParamCaption}
+)}}
+\label{accel_8h_a6e713b70b8f86aa639025e82092c8c52}
+This function gets the current values of the accelerometer on all axes in unit G.
+
+
+\begin{DoxyParams}{Parameters}
+{\em accel} & Points to the \hyperlink{struct_a_c_c_e_l}{ACCEL} structure. \\
+\hline
+{\em xValue} & Returns the X value in G. \\
+\hline
+{\em yValue} & Returns the Y value in G. \\
+\hline
+{\em zValue} & Returns the Z value in G.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true if no error, false otherwise. 
+\end{DoxyReturn}
+
+
+Definition at line 299 of file accel.h.
+
+\hypertarget{accel_8h_abd913ea527c40ea1c3b364a44748980d}{
+\index{accel.h@{accel.h}!AccelGetX@{AccelGetX}}
+\index{AccelGetX@{AccelGetX}!accel.h@{accel.h}}
+\subsubsection[{AccelGetX}]{\setlength{\rightskip}{0pt plus 5cm}bool AccelGetX (
+\begin{DoxyParamCaption}
+\item[{\_\-\_\-in {\bf ACCEL} \&}]{accel, }
+\item[{\_\-\_\-out float \&}]{value}
+\end{DoxyParamCaption}
+)}}
+\label{accel_8h_abd913ea527c40ea1c3b364a44748980d}
+This function gets the current value of the accelerometer X-\/axis in unit G.
+
+
+\begin{DoxyParams}{Parameters}
+{\em accel} & Points to the \hyperlink{struct_a_c_c_e_l}{ACCEL} structure. \\
+\hline
+{\em value} & Returns the value in G.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true if no error, false otherwise. 
+\end{DoxyReturn}
+
+
+Definition at line 179 of file accel.h.
+
+\hypertarget{accel_8h_a8308e9b200744e4f854f3dd798536a41}{
+\index{accel.h@{accel.h}!AccelGetY@{AccelGetY}}
+\index{AccelGetY@{AccelGetY}!accel.h@{accel.h}}
+\subsubsection[{AccelGetY}]{\setlength{\rightskip}{0pt plus 5cm}bool AccelGetY (
+\begin{DoxyParamCaption}
+\item[{\_\-\_\-in {\bf ACCEL} \&}]{accel, }
+\item[{\_\-\_\-out float \&}]{value}
+\end{DoxyParamCaption}
+)}}
+\label{accel_8h_a8308e9b200744e4f854f3dd798536a41}
+This function gets the current value of the accelerometer Y-\/axis in unit G.
+
+
+\begin{DoxyParams}{Parameters}
+{\em accel} & Points to the \hyperlink{struct_a_c_c_e_l}{ACCEL} structure. \\
+\hline
+{\em value} & Returns the value in G.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true if no error, false otherwise. 
+\end{DoxyReturn}
+
+
+Definition at line 218 of file accel.h.
+
+\hypertarget{accel_8h_ada0901d347ccbe47cd56f26b614aa90b}{
+\index{accel.h@{accel.h}!AccelGetZ@{AccelGetZ}}
+\index{AccelGetZ@{AccelGetZ}!accel.h@{accel.h}}
+\subsubsection[{AccelGetZ}]{\setlength{\rightskip}{0pt plus 5cm}bool AccelGetZ (
+\begin{DoxyParamCaption}
+\item[{\_\-\_\-in {\bf ACCEL} \&}]{accel, }
+\item[{\_\-\_\-out float \&}]{value}
+\end{DoxyParamCaption}
+)}}
+\label{accel_8h_ada0901d347ccbe47cd56f26b614aa90b}
+This function gets the current value of the accelerometer Z-\/axis in unit G.
+
+
+\begin{DoxyParams}{Parameters}
+{\em accel} & Points to the \hyperlink{struct_a_c_c_e_l}{ACCEL} structure. \\
+\hline
+{\em value} & Returns the value in G.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true if no error, false otherwise. 
+\end{DoxyReturn}
+
+
+Definition at line 257 of file accel.h.
+
+\hypertarget{accel_8h_a8dce558a524390101233249aa3eb57d5}{
+\index{accel.h@{accel.h}!AccelInit@{AccelInit}}
+\index{AccelInit@{AccelInit}!accel.h@{accel.h}}
+\subsubsection[{AccelInit}]{\setlength{\rightskip}{0pt plus 5cm}void AccelInit (
+\begin{DoxyParamCaption}
+\item[{\_\-\_\-out {\bf ACCEL} \&}]{accel, }
+\item[{\_\-\_\-in int}]{sensorID, }
+\item[{\_\-\_\-in int}]{accelFlags}
+\end{DoxyParamCaption}
+)}}
+\label{accel_8h_a8dce558a524390101233249aa3eb57d5}
+This function initializes the accelerometer sensor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em accel} & Points to the \hyperlink{struct_a_c_c_e_l}{ACCEL} structure to be initialized. \\
+\hline
+{\em sensorID} & Specifies the ID of the accelerometer sensor. \\
+\hline
+{\em accelFlags} & Specifies the accelerometer flags. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 152 of file accel.h.
+

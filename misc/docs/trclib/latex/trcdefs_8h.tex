@@ -1,0 +1,173 @@
+\hypertarget{trcdefs_8h}{
+\section{C:/Users/Michael/Ftc/2011/code/trclib/trcdefs.h File Reference}
+\label{trcdefs_8h}\index{C:/Users/Michael/Ftc/2011/code/trclib/trcdefs.h@{C:/Users/Michael/Ftc/2011/code/trclib/trcdefs.h}}
+}
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{trcdefs_8h_a4701f8ac2f4ae6361ab3c804f9cf3b17}{\_\-TRCDEFS\_\-H}
+\item 
+\#define \hyperlink{trcdefs_8h_a3f6b8655e1aa9dfc15a9029f0343009e}{\_\-\_\-in}
+\item 
+\#define \hyperlink{trcdefs_8h_abb4c3c1135aab6c47cff22e7c16efb74}{\_\-\_\-out}
+\item 
+\#define \hyperlink{trcdefs_8h_a9a66acb8f87800f41a837406c837cb32}{\_\-\_\-inout}
+\item 
+\#define \hyperlink{trcdefs_8h_aad1fea22deb09279b4487665bb0b0d0e}{ARRAYSIZE}(a)~(sizeof(a)/sizeof(a\mbox{[}0\mbox{]}))
+\item 
+\#define \hyperlink{trcdefs_8h_aab1f745ee265546eb8b7eb814b4a20d0}{BOUND}(n, l, h)~(((n) $<$ (l))? (l): ((n) $>$ (h))? (h): (n))
+\item 
+\#define \hyperlink{trcdefs_8h_ab5b0d6a344f14ea2b95c3c2bcb8078a2}{NORMALIZE}(n, sl, sh, tl, th)~(int)(((long)(n) -\/ (sl))$\ast$((th) -\/ (tl))/((sh) -\/ (sl)) + (tl))
+\item 
+\#define \hyperlink{trcdefs_8h_a2becec99fd466ed5ac49faa7d5c45bac}{DEADBAND\_\-INPUT\_\-THRESHOLD}~20
+\item 
+\#define \hyperlink{trcdefs_8h_a2e7131c5e425f9deb1d336b30af3ae50}{DEADBAND}(n, t)~((abs(n) $>$ (t))? (n): 0)
+\item 
+\#define \hyperlink{trcdefs_8h_a9463149784072efc293b4500e4f6d38a}{DEADBAND\_\-INPUT}(n)~DEADBAND(n, DEADBAND\_\-INPUT\_\-THRESHOLD)
+\item 
+\#define \hyperlink{trcdefs_8h_a4bacece64508d22400d94ca2351110d1}{BOUND\_\-INPUT}(n)~BOUND(n, -\/128, 127)
+\item 
+\#define \hyperlink{trcdefs_8h_a519e5306fcaada42c552000ea4658dbe}{LOOP\_\-TIME}~10
+\end{DoxyCompactItemize}
+
+
+\subsection{Define Documentation}
+\hypertarget{trcdefs_8h_a3f6b8655e1aa9dfc15a9029f0343009e}{
+\index{trcdefs.h@{trcdefs.h}!\_\-\_\-in@{\_\-\_\-in}}
+\index{\_\-\_\-in@{\_\-\_\-in}!trcdefs.h@{trcdefs.h}}
+\subsubsection[{\_\-\_\-in}]{\setlength{\rightskip}{0pt plus 5cm}\#define \_\-\_\-in}}
+\label{trcdefs_8h_a3f6b8655e1aa9dfc15a9029f0343009e}
+
+
+Definition at line 21 of file trcdefs.h.
+
+\hypertarget{trcdefs_8h_a9a66acb8f87800f41a837406c837cb32}{
+\index{trcdefs.h@{trcdefs.h}!\_\-\_\-inout@{\_\-\_\-inout}}
+\index{\_\-\_\-inout@{\_\-\_\-inout}!trcdefs.h@{trcdefs.h}}
+\subsubsection[{\_\-\_\-inout}]{\setlength{\rightskip}{0pt plus 5cm}\#define \_\-\_\-inout}}
+\label{trcdefs_8h_a9a66acb8f87800f41a837406c837cb32}
+
+
+Definition at line 23 of file trcdefs.h.
+
+\hypertarget{trcdefs_8h_abb4c3c1135aab6c47cff22e7c16efb74}{
+\index{trcdefs.h@{trcdefs.h}!\_\-\_\-out@{\_\-\_\-out}}
+\index{\_\-\_\-out@{\_\-\_\-out}!trcdefs.h@{trcdefs.h}}
+\subsubsection[{\_\-\_\-out}]{\setlength{\rightskip}{0pt plus 5cm}\#define \_\-\_\-out}}
+\label{trcdefs_8h_abb4c3c1135aab6c47cff22e7c16efb74}
+
+
+Definition at line 22 of file trcdefs.h.
+
+\hypertarget{trcdefs_8h_a4701f8ac2f4ae6361ab3c804f9cf3b17}{
+\index{trcdefs.h@{trcdefs.h}!\_\-TRCDEFS\_\-H@{\_\-TRCDEFS\_\-H}}
+\index{\_\-TRCDEFS\_\-H@{\_\-TRCDEFS\_\-H}!trcdefs.h@{trcdefs.h}}
+\subsubsection[{\_\-TRCDEFS\_\-H}]{\setlength{\rightskip}{0pt plus 5cm}\#define \_\-TRCDEFS\_\-H}}
+\label{trcdefs_8h_a4701f8ac2f4ae6361ab3c804f9cf3b17}
+
+
+Definition at line 16 of file trcdefs.h.
+
+\hypertarget{trcdefs_8h_aad1fea22deb09279b4487665bb0b0d0e}{
+\index{trcdefs.h@{trcdefs.h}!ARRAYSIZE@{ARRAYSIZE}}
+\index{ARRAYSIZE@{ARRAYSIZE}!trcdefs.h@{trcdefs.h}}
+\subsubsection[{ARRAYSIZE}]{\setlength{\rightskip}{0pt plus 5cm}\#define ARRAYSIZE(
+\begin{DoxyParamCaption}
+\item[{}]{a}
+\end{DoxyParamCaption}
+)~(sizeof(a)/sizeof(a\mbox{[}0\mbox{]}))}}
+\label{trcdefs_8h_aad1fea22deb09279b4487665bb0b0d0e}
+
+
+Definition at line 25 of file trcdefs.h.
+
+\hypertarget{trcdefs_8h_aab1f745ee265546eb8b7eb814b4a20d0}{
+\index{trcdefs.h@{trcdefs.h}!BOUND@{BOUND}}
+\index{BOUND@{BOUND}!trcdefs.h@{trcdefs.h}}
+\subsubsection[{BOUND}]{\setlength{\rightskip}{0pt plus 5cm}\#define BOUND(
+\begin{DoxyParamCaption}
+\item[{}]{n, }
+\item[{}]{l, }
+\item[{}]{h}
+\end{DoxyParamCaption}
+)~(((n) $<$ (l))? (l): ((n) $>$ (h))? (h): (n))}}
+\label{trcdefs_8h_aab1f745ee265546eb8b7eb814b4a20d0}
+The BOUND macro limits the value (n) within the bounds between the given low (l) and high (h). 
+
+Definition at line 31 of file trcdefs.h.
+
+\hypertarget{trcdefs_8h_a4bacece64508d22400d94ca2351110d1}{
+\index{trcdefs.h@{trcdefs.h}!BOUND\_\-INPUT@{BOUND\_\-INPUT}}
+\index{BOUND\_\-INPUT@{BOUND\_\-INPUT}!trcdefs.h@{trcdefs.h}}
+\subsubsection[{BOUND\_\-INPUT}]{\setlength{\rightskip}{0pt plus 5cm}\#define BOUND\_\-INPUT(
+\begin{DoxyParamCaption}
+\item[{}]{n}
+\end{DoxyParamCaption}
+)~BOUND(n, -\/128, 127)}}
+\label{trcdefs_8h_a4bacece64508d22400d94ca2351110d1}
+This macro limits the input value (n) to the range between -\/128 and 127. This is useful when calculations on the input value may bring the result outside of the valid range. This macro will make sure the result is within bounds. 
+
+Definition at line 61 of file trcdefs.h.
+
+\hypertarget{trcdefs_8h_a2e7131c5e425f9deb1d336b30af3ae50}{
+\index{trcdefs.h@{trcdefs.h}!DEADBAND@{DEADBAND}}
+\index{DEADBAND@{DEADBAND}!trcdefs.h@{trcdefs.h}}
+\subsubsection[{DEADBAND}]{\setlength{\rightskip}{0pt plus 5cm}\#define DEADBAND(
+\begin{DoxyParamCaption}
+\item[{}]{n, }
+\item[{}]{t}
+\end{DoxyParamCaption}
+)~((abs(n) $>$ (t))? (n): 0)}}
+\label{trcdefs_8h_a2e7131c5e425f9deb1d336b30af3ae50}
+These macros ignore input value (n) that is within the DEADBAND\_\-THRESHOLD. This is necessary because analog joysticks do not always centered at zero. So if the joystick is at the rest position, we will consider it zero even though the value is non-\/zero but within DEADBAND\_\-THRESHOLD. 
+
+Definition at line 52 of file trcdefs.h.
+
+\hypertarget{trcdefs_8h_a9463149784072efc293b4500e4f6d38a}{
+\index{trcdefs.h@{trcdefs.h}!DEADBAND\_\-INPUT@{DEADBAND\_\-INPUT}}
+\index{DEADBAND\_\-INPUT@{DEADBAND\_\-INPUT}!trcdefs.h@{trcdefs.h}}
+\subsubsection[{DEADBAND\_\-INPUT}]{\setlength{\rightskip}{0pt plus 5cm}\#define DEADBAND\_\-INPUT(
+\begin{DoxyParamCaption}
+\item[{}]{n}
+\end{DoxyParamCaption}
+)~DEADBAND(n, DEADBAND\_\-INPUT\_\-THRESHOLD)}}
+\label{trcdefs_8h_a9463149784072efc293b4500e4f6d38a}
+
+
+Definition at line 53 of file trcdefs.h.
+
+\hypertarget{trcdefs_8h_a2becec99fd466ed5ac49faa7d5c45bac}{
+\index{trcdefs.h@{trcdefs.h}!DEADBAND\_\-INPUT\_\-THRESHOLD@{DEADBAND\_\-INPUT\_\-THRESHOLD}}
+\index{DEADBAND\_\-INPUT\_\-THRESHOLD@{DEADBAND\_\-INPUT\_\-THRESHOLD}!trcdefs.h@{trcdefs.h}}
+\subsubsection[{DEADBAND\_\-INPUT\_\-THRESHOLD}]{\setlength{\rightskip}{0pt plus 5cm}\#define DEADBAND\_\-INPUT\_\-THRESHOLD~20}}
+\label{trcdefs_8h_a2becec99fd466ed5ac49faa7d5c45bac}
+
+
+Definition at line 43 of file trcdefs.h.
+
+\hypertarget{trcdefs_8h_a519e5306fcaada42c552000ea4658dbe}{
+\index{trcdefs.h@{trcdefs.h}!LOOP\_\-TIME@{LOOP\_\-TIME}}
+\index{LOOP\_\-TIME@{LOOP\_\-TIME}!trcdefs.h@{trcdefs.h}}
+\subsubsection[{LOOP\_\-TIME}]{\setlength{\rightskip}{0pt plus 5cm}\#define LOOP\_\-TIME~10}}
+\label{trcdefs_8h_a519e5306fcaada42c552000ea4658dbe}
+
+
+Definition at line 64 of file trcdefs.h.
+
+\hypertarget{trcdefs_8h_ab5b0d6a344f14ea2b95c3c2bcb8078a2}{
+\index{trcdefs.h@{trcdefs.h}!NORMALIZE@{NORMALIZE}}
+\index{NORMALIZE@{NORMALIZE}!trcdefs.h@{trcdefs.h}}
+\subsubsection[{NORMALIZE}]{\setlength{\rightskip}{0pt plus 5cm}\#define NORMALIZE(
+\begin{DoxyParamCaption}
+\item[{}]{n, }
+\item[{}]{sl, }
+\item[{}]{sh, }
+\item[{}]{tl, }
+\item[{}]{th}
+\end{DoxyParamCaption}
+)~(int)(((long)(n) -\/ (sl))$\ast$((th) -\/ (tl))/((sh) -\/ (sl)) + (tl))}}
+\label{trcdefs_8h_ab5b0d6a344f14ea2b95c3c2bcb8078a2}
+The NORMALIZE macro transforms a value (n) in the range between (sl) and (sh) to the range between (tl) and (th). 
+
+Definition at line 37 of file trcdefs.h.
+

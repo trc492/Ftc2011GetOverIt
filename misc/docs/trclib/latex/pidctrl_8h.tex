@@ -1,0 +1,287 @@
+\hypertarget{pidctrl_8h}{
+\section{C:/Users/Michael/Ftc/2011/code/trclib/pidctrl.h File Reference}
+\label{pidctrl_8h}\index{C:/Users/Michael/Ftc/2011/code/trclib/pidctrl.h@{C:/Users/Michael/Ftc/2011/code/trclib/pidctrl.h}}
+}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_p_i_d_c_t_r_l}{PIDCTRL}
+\end{DoxyCompactItemize}
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{pidctrl_8h_a14b36b2b232826b3c828b148e667eb5f}{\_\-PIDCTRL\_\-H}
+\item 
+\#define \hyperlink{pidctrl_8h_ae9f4f7cf89710651cd39579c3b03ca42}{MOD\_\-ID}~MOD\_\-PIDCTRL
+\item 
+\#define \hyperlink{pidctrl_8h_a01f6b80e50bb50d7835e198ef3f56d8f}{PIDCTRLF\_\-USER\_\-MASK}~0x00ff
+\item 
+\#define \hyperlink{pidctrl_8h_a66e30bb4424640728ed46cd57ca5e83e}{PIDCTRLF\_\-INVERSE}~0x0001
+\item 
+\#define \hyperlink{pidctrl_8h_a0a934e7cdec56ebfc8b6ac9687570eb4}{PIDCTRLF\_\-ABS\_\-SETPOINT}~0x0002
+\item 
+\#define \hyperlink{pidctrl_8h_a4320bf920ca1532d7fdd8d4fc333e8be}{PID\_\-TOLERANCE\_\-NO\_\-STOP}~-\/1.0
+\item 
+\#define \hyperlink{pidctrl_8h_a24718f2fe9a171d55707c0c410d7a907}{PIDCtrlGetTarget}(p)~(p.setPoint)
+\item 
+\#define \hyperlink{pidctrl_8h_a7ed3ffa75d5f9c83de9694221bd3d0e3}{PIDCtrlIsOnTarget}(p, t)~(abs(p.prevError) $<$= p.targetTolerance)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{pidctrl_8h_a02e212d5f5b2ae3ed9831dde2679fa6b}{PIDCtrlGetInput} (\_\-\_\-in int pidCtrlID)
+\item 
+void \hyperlink{pidctrl_8h_ab3dffcdf0f03e916cf5f61b0c36af2c0}{PIDCtrlReset} (\_\-\_\-out \hyperlink{struct_p_i_d_c_t_r_l}{PIDCTRL} \&pidCtrl)
+\item 
+void \hyperlink{pidctrl_8h_ae85c592be66343be55ca51680c55d267}{PIDCtrlInit} (\_\-\_\-out \hyperlink{struct_p_i_d_c_t_r_l}{PIDCTRL} \&pidCtrl, \_\-\_\-in int pidCtrlID, \_\-\_\-in float Kp, \_\-\_\-in float Ki, \_\-\_\-in float Kd, \_\-\_\-in float minOutput, \_\-\_\-in float maxOutput, \_\-\_\-in int pidCtrlFlags)
+\item 
+void \hyperlink{pidctrl_8h_a99685bf0149cf3f2ed221d12ceedaef9}{PIDCtrlSetPowerLimit} (\_\-\_\-out \hyperlink{struct_p_i_d_c_t_r_l}{PIDCTRL} \&pidCtrl, \_\-\_\-in float minOutput, \_\-\_\-in float maxOutput)
+\item 
+void \hyperlink{pidctrl_8h_a70fcaeea1c58cadf2fa7a9ab7226124c}{PIDCtrlSetTarget} (\_\-\_\-inout \hyperlink{struct_p_i_d_c_t_r_l}{PIDCTRL} \&pidCtrl, \_\-\_\-in float setPoint, \_\-\_\-in float targetTolerance)
+\item 
+float \hyperlink{pidctrl_8h_a4b477e8287b2b79e5b47804d8bc03fd9}{PIDCtrlOutput} (\_\-\_\-inout \hyperlink{struct_p_i_d_c_t_r_l}{PIDCTRL} \&pidCtrl)
+\end{DoxyCompactItemize}
+
+
+\subsection{Define Documentation}
+\hypertarget{pidctrl_8h_a14b36b2b232826b3c828b148e667eb5f}{
+\index{pidctrl.h@{pidctrl.h}!\_\-PIDCTRL\_\-H@{\_\-PIDCTRL\_\-H}}
+\index{\_\-PIDCTRL\_\-H@{\_\-PIDCTRL\_\-H}!pidctrl.h@{pidctrl.h}}
+\subsubsection[{\_\-PIDCTRL\_\-H}]{\setlength{\rightskip}{0pt plus 5cm}\#define \_\-PIDCTRL\_\-H}}
+\label{pidctrl_8h_a14b36b2b232826b3c828b148e667eb5f}
+
+
+Definition at line 16 of file pidctrl.h.
+
+\hypertarget{pidctrl_8h_ae9f4f7cf89710651cd39579c3b03ca42}{
+\index{pidctrl.h@{pidctrl.h}!MOD\_\-ID@{MOD\_\-ID}}
+\index{MOD\_\-ID@{MOD\_\-ID}!pidctrl.h@{pidctrl.h}}
+\subsubsection[{MOD\_\-ID}]{\setlength{\rightskip}{0pt plus 5cm}\#define MOD\_\-ID~MOD\_\-PIDCTRL}}
+\label{pidctrl_8h_ae9f4f7cf89710651cd39579c3b03ca42}
+
+
+Definition at line 23 of file pidctrl.h.
+
+\hypertarget{pidctrl_8h_a4320bf920ca1532d7fdd8d4fc333e8be}{
+\index{pidctrl.h@{pidctrl.h}!PID\_\-TOLERANCE\_\-NO\_\-STOP@{PID\_\-TOLERANCE\_\-NO\_\-STOP}}
+\index{PID\_\-TOLERANCE\_\-NO\_\-STOP@{PID\_\-TOLERANCE\_\-NO\_\-STOP}!pidctrl.h@{pidctrl.h}}
+\subsubsection[{PID\_\-TOLERANCE\_\-NO\_\-STOP}]{\setlength{\rightskip}{0pt plus 5cm}\#define PID\_\-TOLERANCE\_\-NO\_\-STOP~-\/1.0}}
+\label{pidctrl_8h_a4320bf920ca1532d7fdd8d4fc333e8be}
+
+
+Definition at line 32 of file pidctrl.h.
+
+\hypertarget{pidctrl_8h_a0a934e7cdec56ebfc8b6ac9687570eb4}{
+\index{pidctrl.h@{pidctrl.h}!PIDCTRLF\_\-ABS\_\-SETPOINT@{PIDCTRLF\_\-ABS\_\-SETPOINT}}
+\index{PIDCTRLF\_\-ABS\_\-SETPOINT@{PIDCTRLF\_\-ABS\_\-SETPOINT}!pidctrl.h@{pidctrl.h}}
+\subsubsection[{PIDCTRLF\_\-ABS\_\-SETPOINT}]{\setlength{\rightskip}{0pt plus 5cm}\#define PIDCTRLF\_\-ABS\_\-SETPOINT~0x0002}}
+\label{pidctrl_8h_a0a934e7cdec56ebfc8b6ac9687570eb4}
+
+
+Definition at line 30 of file pidctrl.h.
+
+\hypertarget{pidctrl_8h_a66e30bb4424640728ed46cd57ca5e83e}{
+\index{pidctrl.h@{pidctrl.h}!PIDCTRLF\_\-INVERSE@{PIDCTRLF\_\-INVERSE}}
+\index{PIDCTRLF\_\-INVERSE@{PIDCTRLF\_\-INVERSE}!pidctrl.h@{pidctrl.h}}
+\subsubsection[{PIDCTRLF\_\-INVERSE}]{\setlength{\rightskip}{0pt plus 5cm}\#define PIDCTRLF\_\-INVERSE~0x0001}}
+\label{pidctrl_8h_a66e30bb4424640728ed46cd57ca5e83e}
+
+
+Definition at line 29 of file pidctrl.h.
+
+\hypertarget{pidctrl_8h_a01f6b80e50bb50d7835e198ef3f56d8f}{
+\index{pidctrl.h@{pidctrl.h}!PIDCTRLF\_\-USER\_\-MASK@{PIDCTRLF\_\-USER\_\-MASK}}
+\index{PIDCTRLF\_\-USER\_\-MASK@{PIDCTRLF\_\-USER\_\-MASK}!pidctrl.h@{pidctrl.h}}
+\subsubsection[{PIDCTRLF\_\-USER\_\-MASK}]{\setlength{\rightskip}{0pt plus 5cm}\#define PIDCTRLF\_\-USER\_\-MASK~0x00ff}}
+\label{pidctrl_8h_a01f6b80e50bb50d7835e198ef3f56d8f}
+
+
+Definition at line 28 of file pidctrl.h.
+
+\hypertarget{pidctrl_8h_a24718f2fe9a171d55707c0c410d7a907}{
+\index{pidctrl.h@{pidctrl.h}!PIDCtrlGetTarget@{PIDCtrlGetTarget}}
+\index{PIDCtrlGetTarget@{PIDCtrlGetTarget}!pidctrl.h@{pidctrl.h}}
+\subsubsection[{PIDCtrlGetTarget}]{\setlength{\rightskip}{0pt plus 5cm}\#define PIDCtrlGetTarget(
+\begin{DoxyParamCaption}
+\item[{}]{p}
+\end{DoxyParamCaption}
+)~(p.setPoint)}}
+\label{pidctrl_8h_a24718f2fe9a171d55707c0c410d7a907}
+
+
+Definition at line 34 of file pidctrl.h.
+
+\hypertarget{pidctrl_8h_a7ed3ffa75d5f9c83de9694221bd3d0e3}{
+\index{pidctrl.h@{pidctrl.h}!PIDCtrlIsOnTarget@{PIDCtrlIsOnTarget}}
+\index{PIDCtrlIsOnTarget@{PIDCtrlIsOnTarget}!pidctrl.h@{pidctrl.h}}
+\subsubsection[{PIDCtrlIsOnTarget}]{\setlength{\rightskip}{0pt plus 5cm}\#define PIDCtrlIsOnTarget(
+\begin{DoxyParamCaption}
+\item[{}]{p, }
+\item[{}]{t}
+\end{DoxyParamCaption}
+)~(abs(p.prevError) $<$= p.targetTolerance)}}
+\label{pidctrl_8h_a7ed3ffa75d5f9c83de9694221bd3d0e3}
+This macro determines if we are on target by comparing the last error to the given tolerance.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & Points to the PID Control structure. \\
+\hline
+{\em t} & Specifies the error tolerance.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true if the last error is within the given tolerance. 
+\end{DoxyReturn}
+
+
+Definition at line 73 of file pidctrl.h.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{pidctrl_8h_a02e212d5f5b2ae3ed9831dde2679fa6b}{
+\index{pidctrl.h@{pidctrl.h}!PIDCtrlGetInput@{PIDCtrlGetInput}}
+\index{PIDCtrlGetInput@{PIDCtrlGetInput}!pidctrl.h@{pidctrl.h}}
+\subsubsection[{PIDCtrlGetInput}]{\setlength{\rightskip}{0pt plus 5cm}float PIDCtrlGetInput (
+\begin{DoxyParamCaption}
+\item[{\_\-\_\-in int}]{pidCtrlID}
+\end{DoxyParamCaption}
+)}}
+\label{pidctrl_8h_a02e212d5f5b2ae3ed9831dde2679fa6b}
+\hypertarget{pidctrl_8h_ae85c592be66343be55ca51680c55d267}{
+\index{pidctrl.h@{pidctrl.h}!PIDCtrlInit@{PIDCtrlInit}}
+\index{PIDCtrlInit@{PIDCtrlInit}!pidctrl.h@{pidctrl.h}}
+\subsubsection[{PIDCtrlInit}]{\setlength{\rightskip}{0pt plus 5cm}void PIDCtrlInit (
+\begin{DoxyParamCaption}
+\item[{\_\-\_\-out {\bf PIDCTRL} \&}]{pidCtrl, }
+\item[{\_\-\_\-in int}]{pidCtrlID, }
+\item[{\_\-\_\-in float}]{Kp, }
+\item[{\_\-\_\-in float}]{Ki, }
+\item[{\_\-\_\-in float}]{Kd, }
+\item[{\_\-\_\-in float}]{minOutput, }
+\item[{\_\-\_\-in float}]{maxOutput, }
+\item[{\_\-\_\-in int}]{pidCtrlFlags}
+\end{DoxyParamCaption}
+)}}
+\label{pidctrl_8h_ae85c592be66343be55ca51680c55d267}
+This function initializes the PID control object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em pidCtrl} & Points to the PID Control structure to be initialized. \\
+\hline
+{\em pidCtrlID} & Specifies the PID controller ID. \\
+\hline
+{\em Kp} & Specifies the Kp constant. \\
+\hline
+{\em Ki} & Specifies the Ki constant. \\
+\hline
+{\em Kd} & Specifies the Kd constant. \\
+\hline
+{\em minOutput} & Specifies the minimum value of the output range. \\
+\hline
+{\em maxOutput} & Specifies the maximum value of the output range. \\
+\hline
+{\em pidCtrlFlags} & Specifies the PID controller flags. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 111 of file pidctrl.h.
+
+\hypertarget{pidctrl_8h_a4b477e8287b2b79e5b47804d8bc03fd9}{
+\index{pidctrl.h@{pidctrl.h}!PIDCtrlOutput@{PIDCtrlOutput}}
+\index{PIDCtrlOutput@{PIDCtrlOutput}!pidctrl.h@{pidctrl.h}}
+\subsubsection[{PIDCtrlOutput}]{\setlength{\rightskip}{0pt plus 5cm}float PIDCtrlOutput (
+\begin{DoxyParamCaption}
+\item[{\_\-\_\-inout {\bf PIDCTRL} \&}]{pidCtrl}
+\end{DoxyParamCaption}
+)}}
+\label{pidctrl_8h_a4b477e8287b2b79e5b47804d8bc03fd9}
+This function calculates the output based on the current input.
+
+
+\begin{DoxyParams}{Parameters}
+{\em pidCtrl} & Points to the PID structure.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the calculate output value. 
+\end{DoxyReturn}
+
+
+Definition at line 203 of file pidctrl.h.
+
+\hypertarget{pidctrl_8h_ab3dffcdf0f03e916cf5f61b0c36af2c0}{
+\index{pidctrl.h@{pidctrl.h}!PIDCtrlReset@{PIDCtrlReset}}
+\index{PIDCtrlReset@{PIDCtrlReset}!pidctrl.h@{pidctrl.h}}
+\subsubsection[{PIDCtrlReset}]{\setlength{\rightskip}{0pt plus 5cm}void PIDCtrlReset (
+\begin{DoxyParamCaption}
+\item[{\_\-\_\-out {\bf PIDCTRL} \&}]{pidCtrl}
+\end{DoxyParamCaption}
+)}}
+\label{pidctrl_8h_ab3dffcdf0f03e916cf5f61b0c36af2c0}
+This function resets the PID control.
+
+
+\begin{DoxyParams}{Parameters}
+{\em pidCtrl} & Points to the PID Control structure to be reset. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 81 of file pidctrl.h.
+
+\hypertarget{pidctrl_8h_a99685bf0149cf3f2ed221d12ceedaef9}{
+\index{pidctrl.h@{pidctrl.h}!PIDCtrlSetPowerLimit@{PIDCtrlSetPowerLimit}}
+\index{PIDCtrlSetPowerLimit@{PIDCtrlSetPowerLimit}!pidctrl.h@{pidctrl.h}}
+\subsubsection[{PIDCtrlSetPowerLimit}]{\setlength{\rightskip}{0pt plus 5cm}void PIDCtrlSetPowerLimit (
+\begin{DoxyParamCaption}
+\item[{\_\-\_\-out {\bf PIDCTRL} \&}]{pidCtrl, }
+\item[{\_\-\_\-in float}]{minOutput, }
+\item[{\_\-\_\-in float}]{maxOutput}
+\end{DoxyParamCaption}
+)}}
+\label{pidctrl_8h_a99685bf0149cf3f2ed221d12ceedaef9}
+This function sets the output power limit.
+
+
+\begin{DoxyParams}{Parameters}
+{\em pidCtrl} & Points to the PID Control structure. \\
+\hline
+{\em minOutput} & Specifies the minimum output level. \\
+\hline
+{\em maxOutput} & Specifies the maximum output level. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 149 of file pidctrl.h.
+
+\hypertarget{pidctrl_8h_a70fcaeea1c58cadf2fa7a9ab7226124c}{
+\index{pidctrl.h@{pidctrl.h}!PIDCtrlSetTarget@{PIDCtrlSetTarget}}
+\index{PIDCtrlSetTarget@{PIDCtrlSetTarget}!pidctrl.h@{pidctrl.h}}
+\subsubsection[{PIDCtrlSetTarget}]{\setlength{\rightskip}{0pt plus 5cm}void PIDCtrlSetTarget (
+\begin{DoxyParamCaption}
+\item[{\_\-\_\-inout {\bf PIDCTRL} \&}]{pidCtrl, }
+\item[{\_\-\_\-in float}]{setPoint, }
+\item[{\_\-\_\-in float}]{targetTolerance}
+\end{DoxyParamCaption}
+)}}
+\label{pidctrl_8h_a70fcaeea1c58cadf2fa7a9ab7226124c}
+This function sets the SetPoint.
+
+
+\begin{DoxyParams}{Parameters}
+{\em pidCtrl} & Points to the PID Control structure. \\
+\hline
+{\em setPoint} & Specifies the SetPoint target. \\
+\hline
+{\em targetTolerance} & Specifies the the target tolerance of PID control. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 174 of file pidctrl.h.
+

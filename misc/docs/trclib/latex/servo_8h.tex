@@ -1,0 +1,148 @@
+\hypertarget{servo_8h}{
+\section{C:/Users/Michael/Ftc/2011/code/trclib/servo.h File Reference}
+\label{servo_8h}\index{C:/Users/Michael/Ftc/2011/code/trclib/servo.h@{C:/Users/Michael/Ftc/2011/code/trclib/servo.h}}
+}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_s_e_r_v_o}{SERVO}
+\end{DoxyCompactItemize}
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{servo_8h_ae5723a3e69e441f6402c680c5f99d24d}{\_\-SERVO\_\-H}
+\item 
+\#define \hyperlink{servo_8h_ae9f4f7cf89710651cd39579c3b03ca42}{MOD\_\-ID}~MOD\_\-SERVO
+\item 
+\#define \hyperlink{servo_8h_a12d4eb95eb0de1e5856052e5acee2862}{MIN\_\-SERVO\_\-VALUE}~0
+\item 
+\#define \hyperlink{servo_8h_a1a07bf7724d8ffd0bcbc29d1ef25a224}{MAX\_\-SERVO\_\-VALUE}~255
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{servo_8h_a313f3577a6c38cf1dbe555200430599a}{ServoInit} (\_\-\_\-out \hyperlink{struct_s_e_r_v_o}{SERVO} \&serv, \_\-\_\-in int servoMotor, \_\-\_\-in float posPerDegree, \_\-\_\-in float initDegrees)
+\item 
+float \hyperlink{servo_8h_a5ef5bcda806773b44d5c9ff95d7fab33}{ServoGetAngle} (\_\-\_\-out \hyperlink{struct_s_e_r_v_o}{SERVO} \&serv)
+\item 
+void \hyperlink{servo_8h_a0546187141135098e0dc3032d5dc92bb}{ServoSetAngle} (\_\-\_\-out \hyperlink{struct_s_e_r_v_o}{SERVO} \&serv, \_\-\_\-in float degree)
+\end{DoxyCompactItemize}
+
+
+\subsection{Define Documentation}
+\hypertarget{servo_8h_ae5723a3e69e441f6402c680c5f99d24d}{
+\index{servo.h@{servo.h}!\_\-SERVO\_\-H@{\_\-SERVO\_\-H}}
+\index{\_\-SERVO\_\-H@{\_\-SERVO\_\-H}!servo.h@{servo.h}}
+\subsubsection[{\_\-SERVO\_\-H}]{\setlength{\rightskip}{0pt plus 5cm}\#define \_\-SERVO\_\-H}}
+\label{servo_8h_ae5723a3e69e441f6402c680c5f99d24d}
+
+
+Definition at line 16 of file servo.h.
+
+\hypertarget{servo_8h_a1a07bf7724d8ffd0bcbc29d1ef25a224}{
+\index{servo.h@{servo.h}!MAX\_\-SERVO\_\-VALUE@{MAX\_\-SERVO\_\-VALUE}}
+\index{MAX\_\-SERVO\_\-VALUE@{MAX\_\-SERVO\_\-VALUE}!servo.h@{servo.h}}
+\subsubsection[{MAX\_\-SERVO\_\-VALUE}]{\setlength{\rightskip}{0pt plus 5cm}\#define MAX\_\-SERVO\_\-VALUE~255}}
+\label{servo_8h_a1a07bf7724d8ffd0bcbc29d1ef25a224}
+
+
+Definition at line 29 of file servo.h.
+
+\hypertarget{servo_8h_a12d4eb95eb0de1e5856052e5acee2862}{
+\index{servo.h@{servo.h}!MIN\_\-SERVO\_\-VALUE@{MIN\_\-SERVO\_\-VALUE}}
+\index{MIN\_\-SERVO\_\-VALUE@{MIN\_\-SERVO\_\-VALUE}!servo.h@{servo.h}}
+\subsubsection[{MIN\_\-SERVO\_\-VALUE}]{\setlength{\rightskip}{0pt plus 5cm}\#define MIN\_\-SERVO\_\-VALUE~0}}
+\label{servo_8h_a12d4eb95eb0de1e5856052e5acee2862}
+
+
+Definition at line 28 of file servo.h.
+
+\hypertarget{servo_8h_ae9f4f7cf89710651cd39579c3b03ca42}{
+\index{servo.h@{servo.h}!MOD\_\-ID@{MOD\_\-ID}}
+\index{MOD\_\-ID@{MOD\_\-ID}!servo.h@{servo.h}}
+\subsubsection[{MOD\_\-ID}]{\setlength{\rightskip}{0pt plus 5cm}\#define MOD\_\-ID~MOD\_\-SERVO}}
+\label{servo_8h_ae9f4f7cf89710651cd39579c3b03ca42}
+
+
+Definition at line 23 of file servo.h.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{servo_8h_a5ef5bcda806773b44d5c9ff95d7fab33}{
+\index{servo.h@{servo.h}!ServoGetAngle@{ServoGetAngle}}
+\index{ServoGetAngle@{ServoGetAngle}!servo.h@{servo.h}}
+\subsubsection[{ServoGetAngle}]{\setlength{\rightskip}{0pt plus 5cm}float ServoGetAngle (
+\begin{DoxyParamCaption}
+\item[{\_\-\_\-out {\bf SERVO} \&}]{serv}
+\end{DoxyParamCaption}
+)}}
+\label{servo_8h_a5ef5bcda806773b44d5c9ff95d7fab33}
+This function gets the current servo position in degrees.
+
+
+\begin{DoxyParams}{Parameters}
+{\em serv} & Points to the \hyperlink{struct_s_e_r_v_o}{SERVO} structure.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the current servo position in degrees. 
+\end{DoxyReturn}
+
+
+Definition at line 102 of file servo.h.
+
+\hypertarget{servo_8h_a313f3577a6c38cf1dbe555200430599a}{
+\index{servo.h@{servo.h}!ServoInit@{ServoInit}}
+\index{ServoInit@{ServoInit}!servo.h@{servo.h}}
+\subsubsection[{ServoInit}]{\setlength{\rightskip}{0pt plus 5cm}void ServoInit (
+\begin{DoxyParamCaption}
+\item[{\_\-\_\-out {\bf SERVO} \&}]{serv, }
+\item[{\_\-\_\-in int}]{servoMotor, }
+\item[{\_\-\_\-in float}]{posPerDegree, }
+\item[{\_\-\_\-in float}]{initDegrees}
+\end{DoxyParamCaption}
+)}}
+\label{servo_8h_a313f3577a6c38cf1dbe555200430599a}
+This function initializes the servo system.
+
+
+\begin{DoxyParams}{Parameters}
+{\em serv} & Points to the \hyperlink{struct_s_e_r_v_o}{SERVO} structure to be initialized. \\
+\hline
+{\em servoMotor} & Specifies the servo motor ID. \\
+\hline
+{\em posPerDegree} & Specifies the position value per degree. \\
+\hline
+{\em initDegrees} & Specifies the initial position in degrees. \\
+\hline
+{\em servoFlags} & Specifies the servo flags. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 68 of file servo.h.
+
+\hypertarget{servo_8h_a0546187141135098e0dc3032d5dc92bb}{
+\index{servo.h@{servo.h}!ServoSetAngle@{ServoSetAngle}}
+\index{ServoSetAngle@{ServoSetAngle}!servo.h@{servo.h}}
+\subsubsection[{ServoSetAngle}]{\setlength{\rightskip}{0pt plus 5cm}void ServoSetAngle (
+\begin{DoxyParamCaption}
+\item[{\_\-\_\-out {\bf SERVO} \&}]{serv, }
+\item[{\_\-\_\-in float}]{degree}
+\end{DoxyParamCaption}
+)}}
+\label{servo_8h_a0546187141135098e0dc3032d5dc92bb}
+This function sets servo position in degrees.
+
+
+\begin{DoxyParams}{Parameters}
+{\em serv} & Points to the \hyperlink{struct_s_e_r_v_o}{SERVO} structure. \\
+\hline
+{\em degree} & Specifies the servo position in degrees. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 125 of file servo.h.
+

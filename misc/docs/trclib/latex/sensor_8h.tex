@@ -1,0 +1,238 @@
+\hypertarget{sensor_8h}{
+\section{C:/Users/Michael/Ftc/2011/code/trclib/sensor.h File Reference}
+\label{sensor_8h}\index{C:/Users/Michael/Ftc/2011/code/trclib/sensor.h@{C:/Users/Michael/Ftc/2011/code/trclib/sensor.h}}
+}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_s_e_n_s_o_r}{SENSOR}
+\end{DoxyCompactItemize}
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{sensor_8h_a78aa7d7ea4702b927936ec6ddacd8ec8}{\_\-SENSOR\_\-H}
+\item 
+\#define \hyperlink{sensor_8h_ae9f4f7cf89710651cd39579c3b03ca42}{MOD\_\-ID}~MOD\_\-SENSOR
+\item 
+\#define \hyperlink{sensor_8h_a2ff6f67cdb4bf25ae156c70dfafbee1d}{SENSORZONE\_\-LO}~0
+\item 
+\#define \hyperlink{sensor_8h_aa404151c017585badf93324943bb744f}{SENSORZONE\_\-MID}~1
+\item 
+\#define \hyperlink{sensor_8h_a51318fce7d49f76371f650b4d4139697}{SENSORZONE\_\-HI}~2
+\item 
+\#define \hyperlink{sensor_8h_af26fbd2ae0e74aeea4403a7e7ead8783}{NUM\_\-SENSOR\_\-ZONES}~3
+\item 
+\#define \hyperlink{sensor_8h_a2ff66f01e45a3ed7b7b0e6d4046331db}{SENSORF\_\-USER\_\-MASK}~0x00ff
+\item 
+\#define \hyperlink{sensor_8h_a62a0212876813ce53be6ff9398d540c3}{SENSORF\_\-ENABLE\_\-EVENTS}~0x0001
+\item 
+\#define \hyperlink{sensor_8h_abee4e5a2580b4d85d753f35366327d02}{SENSORF\_\-INVERSE}~0x0002
+\item 
+\#define \hyperlink{sensor_8h_a94a23dc8badfb21c43b3742f4603fb88}{SENSORF\_\-CALIBRATING}~0x0100
+\item 
+\#define \hyperlink{sensor_8h_a31ca2c9ec7ca151c269d7d1647d5f5d0}{SensorCalibrating}(s)~(s.sensorFlags \& SENSORF\_\-CALIBRATING)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{sensor_8h_a0ec7482c9f95826cc83703955c269f91}{SensorEvent} (\_\-\_\-in \hyperlink{struct_s_e_n_s_o_r}{SENSOR} \&sensor)
+\item 
+void \hyperlink{sensor_8h_a656c72964f285939d3052ea8bfc4a1dc}{SensorInit} (\_\-\_\-out \hyperlink{struct_s_e_n_s_o_r}{SENSOR} \&sensor, \_\-\_\-in int sensorID, \_\-\_\-in int lowThreshold, \_\-\_\-in int highThreshold, \_\-\_\-in int sensorFlags)
+\item 
+void \hyperlink{sensor_8h_a80bbe150ad9be0b41249e075c484d585}{SensorCal} (\_\-\_\-inout \hyperlink{struct_s_e_n_s_o_r}{SENSOR} \&sensor, \_\-\_\-in bool fStart)
+\item 
+void \hyperlink{sensor_8h_aa5ad5d9d82b49930ed25b836329cc4ae}{SensorTask} (\_\-\_\-inout \hyperlink{struct_s_e_n_s_o_r}{SENSOR} \&sensor)
+\end{DoxyCompactItemize}
+
+
+\subsection{Define Documentation}
+\hypertarget{sensor_8h_a78aa7d7ea4702b927936ec6ddacd8ec8}{
+\index{sensor.h@{sensor.h}!\_\-SENSOR\_\-H@{\_\-SENSOR\_\-H}}
+\index{\_\-SENSOR\_\-H@{\_\-SENSOR\_\-H}!sensor.h@{sensor.h}}
+\subsubsection[{\_\-SENSOR\_\-H}]{\setlength{\rightskip}{0pt plus 5cm}\#define \_\-SENSOR\_\-H}}
+\label{sensor_8h_a78aa7d7ea4702b927936ec6ddacd8ec8}
+
+
+Definition at line 16 of file sensor.h.
+
+\hypertarget{sensor_8h_ae9f4f7cf89710651cd39579c3b03ca42}{
+\index{sensor.h@{sensor.h}!MOD\_\-ID@{MOD\_\-ID}}
+\index{MOD\_\-ID@{MOD\_\-ID}!sensor.h@{sensor.h}}
+\subsubsection[{MOD\_\-ID}]{\setlength{\rightskip}{0pt plus 5cm}\#define MOD\_\-ID~MOD\_\-SENSOR}}
+\label{sensor_8h_ae9f4f7cf89710651cd39579c3b03ca42}
+
+
+Definition at line 23 of file sensor.h.
+
+\hypertarget{sensor_8h_af26fbd2ae0e74aeea4403a7e7ead8783}{
+\index{sensor.h@{sensor.h}!NUM\_\-SENSOR\_\-ZONES@{NUM\_\-SENSOR\_\-ZONES}}
+\index{NUM\_\-SENSOR\_\-ZONES@{NUM\_\-SENSOR\_\-ZONES}!sensor.h@{sensor.h}}
+\subsubsection[{NUM\_\-SENSOR\_\-ZONES}]{\setlength{\rightskip}{0pt plus 5cm}\#define NUM\_\-SENSOR\_\-ZONES~3}}
+\label{sensor_8h_af26fbd2ae0e74aeea4403a7e7ead8783}
+
+
+Definition at line 31 of file sensor.h.
+
+\hypertarget{sensor_8h_a31ca2c9ec7ca151c269d7d1647d5f5d0}{
+\index{sensor.h@{sensor.h}!SensorCalibrating@{SensorCalibrating}}
+\index{SensorCalibrating@{SensorCalibrating}!sensor.h@{sensor.h}}
+\subsubsection[{SensorCalibrating}]{\setlength{\rightskip}{0pt plus 5cm}\#define SensorCalibrating(
+\begin{DoxyParamCaption}
+\item[{}]{s}
+\end{DoxyParamCaption}
+)~(s.sensorFlags \& SENSORF\_\-CALIBRATING)}}
+\label{sensor_8h_a31ca2c9ec7ca151c269d7d1647d5f5d0}
+
+
+Definition at line 41 of file sensor.h.
+
+\hypertarget{sensor_8h_a94a23dc8badfb21c43b3742f4603fb88}{
+\index{sensor.h@{sensor.h}!SENSORF\_\-CALIBRATING@{SENSORF\_\-CALIBRATING}}
+\index{SENSORF\_\-CALIBRATING@{SENSORF\_\-CALIBRATING}!sensor.h@{sensor.h}}
+\subsubsection[{SENSORF\_\-CALIBRATING}]{\setlength{\rightskip}{0pt plus 5cm}\#define SENSORF\_\-CALIBRATING~0x0100}}
+\label{sensor_8h_a94a23dc8badfb21c43b3742f4603fb88}
+
+
+Definition at line 39 of file sensor.h.
+
+\hypertarget{sensor_8h_a62a0212876813ce53be6ff9398d540c3}{
+\index{sensor.h@{sensor.h}!SENSORF\_\-ENABLE\_\-EVENTS@{SENSORF\_\-ENABLE\_\-EVENTS}}
+\index{SENSORF\_\-ENABLE\_\-EVENTS@{SENSORF\_\-ENABLE\_\-EVENTS}!sensor.h@{sensor.h}}
+\subsubsection[{SENSORF\_\-ENABLE\_\-EVENTS}]{\setlength{\rightskip}{0pt plus 5cm}\#define SENSORF\_\-ENABLE\_\-EVENTS~0x0001}}
+\label{sensor_8h_a62a0212876813ce53be6ff9398d540c3}
+
+
+Definition at line 34 of file sensor.h.
+
+\hypertarget{sensor_8h_abee4e5a2580b4d85d753f35366327d02}{
+\index{sensor.h@{sensor.h}!SENSORF\_\-INVERSE@{SENSORF\_\-INVERSE}}
+\index{SENSORF\_\-INVERSE@{SENSORF\_\-INVERSE}!sensor.h@{sensor.h}}
+\subsubsection[{SENSORF\_\-INVERSE}]{\setlength{\rightskip}{0pt plus 5cm}\#define SENSORF\_\-INVERSE~0x0002}}
+\label{sensor_8h_abee4e5a2580b4d85d753f35366327d02}
+
+
+Definition at line 35 of file sensor.h.
+
+\hypertarget{sensor_8h_a2ff66f01e45a3ed7b7b0e6d4046331db}{
+\index{sensor.h@{sensor.h}!SENSORF\_\-USER\_\-MASK@{SENSORF\_\-USER\_\-MASK}}
+\index{SENSORF\_\-USER\_\-MASK@{SENSORF\_\-USER\_\-MASK}!sensor.h@{sensor.h}}
+\subsubsection[{SENSORF\_\-USER\_\-MASK}]{\setlength{\rightskip}{0pt plus 5cm}\#define SENSORF\_\-USER\_\-MASK~0x00ff}}
+\label{sensor_8h_a2ff66f01e45a3ed7b7b0e6d4046331db}
+
+
+Definition at line 33 of file sensor.h.
+
+\hypertarget{sensor_8h_a51318fce7d49f76371f650b4d4139697}{
+\index{sensor.h@{sensor.h}!SENSORZONE\_\-HI@{SENSORZONE\_\-HI}}
+\index{SENSORZONE\_\-HI@{SENSORZONE\_\-HI}!sensor.h@{sensor.h}}
+\subsubsection[{SENSORZONE\_\-HI}]{\setlength{\rightskip}{0pt plus 5cm}\#define SENSORZONE\_\-HI~2}}
+\label{sensor_8h_a51318fce7d49f76371f650b4d4139697}
+
+
+Definition at line 30 of file sensor.h.
+
+\hypertarget{sensor_8h_a2ff6f67cdb4bf25ae156c70dfafbee1d}{
+\index{sensor.h@{sensor.h}!SENSORZONE\_\-LO@{SENSORZONE\_\-LO}}
+\index{SENSORZONE\_\-LO@{SENSORZONE\_\-LO}!sensor.h@{sensor.h}}
+\subsubsection[{SENSORZONE\_\-LO}]{\setlength{\rightskip}{0pt plus 5cm}\#define SENSORZONE\_\-LO~0}}
+\label{sensor_8h_a2ff6f67cdb4bf25ae156c70dfafbee1d}
+
+
+Definition at line 28 of file sensor.h.
+
+\hypertarget{sensor_8h_aa404151c017585badf93324943bb744f}{
+\index{sensor.h@{sensor.h}!SENSORZONE\_\-MID@{SENSORZONE\_\-MID}}
+\index{SENSORZONE\_\-MID@{SENSORZONE\_\-MID}!sensor.h@{sensor.h}}
+\subsubsection[{SENSORZONE\_\-MID}]{\setlength{\rightskip}{0pt plus 5cm}\#define SENSORZONE\_\-MID~1}}
+\label{sensor_8h_aa404151c017585badf93324943bb744f}
+
+
+Definition at line 29 of file sensor.h.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{sensor_8h_a80bbe150ad9be0b41249e075c484d585}{
+\index{sensor.h@{sensor.h}!SensorCal@{SensorCal}}
+\index{SensorCal@{SensorCal}!sensor.h@{sensor.h}}
+\subsubsection[{SensorCal}]{\setlength{\rightskip}{0pt plus 5cm}void SensorCal (
+\begin{DoxyParamCaption}
+\item[{\_\-\_\-inout {\bf SENSOR} \&}]{sensor, }
+\item[{\_\-\_\-in bool}]{fStart}
+\end{DoxyParamCaption}
+)}}
+\label{sensor_8h_a80bbe150ad9be0b41249e075c484d585}
+This function starts or stops the sensor calibration process.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sensor} & Points to the \hyperlink{struct_s_e_n_s_o_r}{SENSOR} structure. \\
+\hline
+{\em fStart} & Specifies whether to start or stop the calibration. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 106 of file sensor.h.
+
+\hypertarget{sensor_8h_a0ec7482c9f95826cc83703955c269f91}{
+\index{sensor.h@{sensor.h}!SensorEvent@{SensorEvent}}
+\index{SensorEvent@{SensorEvent}!sensor.h@{sensor.h}}
+\subsubsection[{SensorEvent}]{\setlength{\rightskip}{0pt plus 5cm}void SensorEvent (
+\begin{DoxyParamCaption}
+\item[{\_\-\_\-in {\bf SENSOR} \&}]{sensor}
+\end{DoxyParamCaption}
+)}}
+\label{sensor_8h_a0ec7482c9f95826cc83703955c269f91}
+\hypertarget{sensor_8h_a656c72964f285939d3052ea8bfc4a1dc}{
+\index{sensor.h@{sensor.h}!SensorInit@{SensorInit}}
+\index{SensorInit@{SensorInit}!sensor.h@{sensor.h}}
+\subsubsection[{SensorInit}]{\setlength{\rightskip}{0pt plus 5cm}void SensorInit (
+\begin{DoxyParamCaption}
+\item[{\_\-\_\-out {\bf SENSOR} \&}]{sensor, }
+\item[{\_\-\_\-in int}]{sensorID, }
+\item[{\_\-\_\-in int}]{lowThreshold, }
+\item[{\_\-\_\-in int}]{highThreshold, }
+\item[{\_\-\_\-in int}]{sensorFlags}
+\end{DoxyParamCaption}
+)}}
+\label{sensor_8h_a656c72964f285939d3052ea8bfc4a1dc}
+This function initializes the sensor system.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sensor} & Points to the \hyperlink{struct_s_e_n_s_o_r}{SENSOR} structure to be initialized. \\
+\hline
+{\em sensorID} & Specifies the sensor ID. \\
+\hline
+{\em lowThreshold} & Specifies the low threshold value. \\
+\hline
+{\em highThreshold} & Specifies the high threshold value. \\
+\hline
+{\em sensorFlags} & Specifies the sensor flags. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 76 of file sensor.h.
+
+\hypertarget{sensor_8h_aa5ad5d9d82b49930ed25b836329cc4ae}{
+\index{sensor.h@{sensor.h}!SensorTask@{SensorTask}}
+\index{SensorTask@{SensorTask}!sensor.h@{sensor.h}}
+\subsubsection[{SensorTask}]{\setlength{\rightskip}{0pt plus 5cm}void SensorTask (
+\begin{DoxyParamCaption}
+\item[{\_\-\_\-inout {\bf SENSOR} \&}]{sensor}
+\end{DoxyParamCaption}
+)}}
+\label{sensor_8h_aa5ad5d9d82b49930ed25b836329cc4ae}
+This function processes the sensor reading and sends a trigger event if necessary.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sensor} & Points to the \hyperlink{struct_s_e_n_s_o_r}{SENSOR} structure. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 143 of file sensor.h.
+

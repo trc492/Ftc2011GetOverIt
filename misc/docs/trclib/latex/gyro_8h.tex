@@ -1,0 +1,218 @@
+\hypertarget{gyro_8h}{
+\section{C:/Users/Michael/Ftc/2011/code/trclib/gyro.h File Reference}
+\label{gyro_8h}\index{C:/Users/Michael/Ftc/2011/code/trclib/gyro.h@{C:/Users/Michael/Ftc/2011/code/trclib/gyro.h}}
+}
+{\ttfamily \#include \char`\"{}..$\backslash$HTDriversV1.6$\backslash$drivers$\backslash$HTGYRO-\/driver.h\char`\"{}}\par
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_g_y_r_o}{GYRO}
+\end{DoxyCompactItemize}
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{gyro_8h_a95b57c69bb04ab68d857679a0ceb6784}{\_\-GYRO\_\-H}
+\item 
+\#define \hyperlink{gyro_8h_ae9f4f7cf89710651cd39579c3b03ca42}{MOD\_\-ID}~MOD\_\-GYRO
+\item 
+\#define \hyperlink{gyro_8h_a553260343917c0112536780caa1cd28b}{GYROF\_\-USER\_\-MASK}~0x00ff
+\item 
+\#define \hyperlink{gyro_8h_a1f4d6b33c1622f02babfbedc7f3c1718}{GYROF\_\-INVERSE}~0x0001
+\item 
+\#define \hyperlink{gyro_8h_a0a4b536a2418fd826a51c29a876c5f39}{GYRO\_\-NUM\_\-CAL\_\-SAMPLES}~50
+\item 
+\#define \hyperlink{gyro_8h_a39b64b2428044ba8de7b40c3e00acee5}{GYRO\_\-CAL\_\-INTERVAL}~10
+\item 
+\#define \hyperlink{gyro_8h_ad649f35765ac06a5e08229afa2002672}{GyroGetTurnRate}(p)~(p.turnRate)
+\item 
+\#define \hyperlink{gyro_8h_a0162aeabb3375036943ce4811f9fd44a}{GyroGetHeading}(p)~(p.heading)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{gyro_8h_a0c77bd199e3a6c1c0248c94c17e3555f}{GyroCal} (\_\-\_\-out \hyperlink{struct_g_y_r_o}{GYRO} \&gyro, \_\-\_\-in int numSamples, \_\-\_\-in int calInterval)
+\item 
+void \hyperlink{gyro_8h_a282554724fc1810e6e0d7a7bf3b2a35e}{GyroTask} (\_\-\_\-inout \hyperlink{struct_g_y_r_o}{GYRO} \&gyro)
+\item 
+void \hyperlink{gyro_8h_ab338ed7f7f0a8d1838e8b02f022501d4}{GyroReset} (\_\-\_\-out \hyperlink{struct_g_y_r_o}{GYRO} \&gyro)
+\item 
+void \hyperlink{gyro_8h_acea7a823ed4d185a026389b3cd0915cb}{GyroInit} (\_\-\_\-out \hyperlink{struct_g_y_r_o}{GYRO} \&gyro, \_\-\_\-in int sensorID, \_\-\_\-in int gyroFlags)
+\end{DoxyCompactItemize}
+
+
+\subsection{Define Documentation}
+\hypertarget{gyro_8h_a95b57c69bb04ab68d857679a0ceb6784}{
+\index{gyro.h@{gyro.h}!\_\-GYRO\_\-H@{\_\-GYRO\_\-H}}
+\index{\_\-GYRO\_\-H@{\_\-GYRO\_\-H}!gyro.h@{gyro.h}}
+\subsubsection[{\_\-GYRO\_\-H}]{\setlength{\rightskip}{0pt plus 5cm}\#define \_\-GYRO\_\-H}}
+\label{gyro_8h_a95b57c69bb04ab68d857679a0ceb6784}
+
+
+Definition at line 16 of file gyro.h.
+
+\hypertarget{gyro_8h_a39b64b2428044ba8de7b40c3e00acee5}{
+\index{gyro.h@{gyro.h}!GYRO\_\-CAL\_\-INTERVAL@{GYRO\_\-CAL\_\-INTERVAL}}
+\index{GYRO\_\-CAL\_\-INTERVAL@{GYRO\_\-CAL\_\-INTERVAL}!gyro.h@{gyro.h}}
+\subsubsection[{GYRO\_\-CAL\_\-INTERVAL}]{\setlength{\rightskip}{0pt plus 5cm}\#define GYRO\_\-CAL\_\-INTERVAL~10}}
+\label{gyro_8h_a39b64b2428044ba8de7b40c3e00acee5}
+
+
+Definition at line 37 of file gyro.h.
+
+\hypertarget{gyro_8h_a0a4b536a2418fd826a51c29a876c5f39}{
+\index{gyro.h@{gyro.h}!GYRO\_\-NUM\_\-CAL\_\-SAMPLES@{GYRO\_\-NUM\_\-CAL\_\-SAMPLES}}
+\index{GYRO\_\-NUM\_\-CAL\_\-SAMPLES@{GYRO\_\-NUM\_\-CAL\_\-SAMPLES}!gyro.h@{gyro.h}}
+\subsubsection[{GYRO\_\-NUM\_\-CAL\_\-SAMPLES}]{\setlength{\rightskip}{0pt plus 5cm}\#define GYRO\_\-NUM\_\-CAL\_\-SAMPLES~50}}
+\label{gyro_8h_a0a4b536a2418fd826a51c29a876c5f39}
+
+
+Definition at line 36 of file gyro.h.
+
+\hypertarget{gyro_8h_a1f4d6b33c1622f02babfbedc7f3c1718}{
+\index{gyro.h@{gyro.h}!GYROF\_\-INVERSE@{GYROF\_\-INVERSE}}
+\index{GYROF\_\-INVERSE@{GYROF\_\-INVERSE}!gyro.h@{gyro.h}}
+\subsubsection[{GYROF\_\-INVERSE}]{\setlength{\rightskip}{0pt plus 5cm}\#define GYROF\_\-INVERSE~0x0001}}
+\label{gyro_8h_a1f4d6b33c1622f02babfbedc7f3c1718}
+
+
+Definition at line 31 of file gyro.h.
+
+\hypertarget{gyro_8h_a553260343917c0112536780caa1cd28b}{
+\index{gyro.h@{gyro.h}!GYROF\_\-USER\_\-MASK@{GYROF\_\-USER\_\-MASK}}
+\index{GYROF\_\-USER\_\-MASK@{GYROF\_\-USER\_\-MASK}!gyro.h@{gyro.h}}
+\subsubsection[{GYROF\_\-USER\_\-MASK}]{\setlength{\rightskip}{0pt plus 5cm}\#define GYROF\_\-USER\_\-MASK~0x00ff}}
+\label{gyro_8h_a553260343917c0112536780caa1cd28b}
+
+
+Definition at line 30 of file gyro.h.
+
+\hypertarget{gyro_8h_a0162aeabb3375036943ce4811f9fd44a}{
+\index{gyro.h@{gyro.h}!GyroGetHeading@{GyroGetHeading}}
+\index{GyroGetHeading@{GyroGetHeading}!gyro.h@{gyro.h}}
+\subsubsection[{GyroGetHeading}]{\setlength{\rightskip}{0pt plus 5cm}\#define GyroGetHeading(
+\begin{DoxyParamCaption}
+\item[{}]{p}
+\end{DoxyParamCaption}
+)~(p.heading)}}
+\label{gyro_8h_a0162aeabb3375036943ce4811f9fd44a}
+
+
+Definition at line 43 of file gyro.h.
+
+\hypertarget{gyro_8h_ad649f35765ac06a5e08229afa2002672}{
+\index{gyro.h@{gyro.h}!GyroGetTurnRate@{GyroGetTurnRate}}
+\index{GyroGetTurnRate@{GyroGetTurnRate}!gyro.h@{gyro.h}}
+\subsubsection[{GyroGetTurnRate}]{\setlength{\rightskip}{0pt plus 5cm}\#define GyroGetTurnRate(
+\begin{DoxyParamCaption}
+\item[{}]{p}
+\end{DoxyParamCaption}
+)~(p.turnRate)}}
+\label{gyro_8h_ad649f35765ac06a5e08229afa2002672}
+
+
+Definition at line 42 of file gyro.h.
+
+\hypertarget{gyro_8h_ae9f4f7cf89710651cd39579c3b03ca42}{
+\index{gyro.h@{gyro.h}!MOD\_\-ID@{MOD\_\-ID}}
+\index{MOD\_\-ID@{MOD\_\-ID}!gyro.h@{gyro.h}}
+\subsubsection[{MOD\_\-ID}]{\setlength{\rightskip}{0pt plus 5cm}\#define MOD\_\-ID~MOD\_\-GYRO}}
+\label{gyro_8h_ae9f4f7cf89710651cd39579c3b03ca42}
+
+
+Definition at line 25 of file gyro.h.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{gyro_8h_a0c77bd199e3a6c1c0248c94c17e3555f}{
+\index{gyro.h@{gyro.h}!GyroCal@{GyroCal}}
+\index{GyroCal@{GyroCal}!gyro.h@{gyro.h}}
+\subsubsection[{GyroCal}]{\setlength{\rightskip}{0pt plus 5cm}void GyroCal (
+\begin{DoxyParamCaption}
+\item[{\_\-\_\-out {\bf GYRO} \&}]{gyro, }
+\item[{\_\-\_\-in int}]{numSamples, }
+\item[{\_\-\_\-in int}]{calInterval}
+\end{DoxyParamCaption}
+)}}
+\label{gyro_8h_a0c77bd199e3a6c1c0248c94c17e3555f}
+This function calibrates the gyro for zero offset and deadband.
+
+
+\begin{DoxyParams}{Parameters}
+{\em gyro} & Points to the \hyperlink{struct_g_y_r_o}{GYRO} structure to be initialized. \\
+\hline
+{\em numSamples} & Specifies the number of calibration samples. \\
+\hline
+{\em calInterval} & Specifies the calibration interval in msec. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 67 of file gyro.h.
+
+\hypertarget{gyro_8h_acea7a823ed4d185a026389b3cd0915cb}{
+\index{gyro.h@{gyro.h}!GyroInit@{GyroInit}}
+\index{GyroInit@{GyroInit}!gyro.h@{gyro.h}}
+\subsubsection[{GyroInit}]{\setlength{\rightskip}{0pt plus 5cm}void GyroInit (
+\begin{DoxyParamCaption}
+\item[{\_\-\_\-out {\bf GYRO} \&}]{gyro, }
+\item[{\_\-\_\-in int}]{sensorID, }
+\item[{\_\-\_\-in int}]{gyroFlags}
+\end{DoxyParamCaption}
+)}}
+\label{gyro_8h_acea7a823ed4d185a026389b3cd0915cb}
+This function initializes the gyro sensor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em gyro} & Points to the \hyperlink{struct_g_y_r_o}{GYRO} structure to be initialized. \\
+\hline
+{\em sensorID} & Specifies the ID of the gyro sensor. \\
+\hline
+{\em gyroFlags} & Specifies the gyro flags. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 182 of file gyro.h.
+
+\hypertarget{gyro_8h_ab338ed7f7f0a8d1838e8b02f022501d4}{
+\index{gyro.h@{gyro.h}!GyroReset@{GyroReset}}
+\index{GyroReset@{GyroReset}!gyro.h@{gyro.h}}
+\subsubsection[{GyroReset}]{\setlength{\rightskip}{0pt plus 5cm}void GyroReset (
+\begin{DoxyParamCaption}
+\item[{\_\-\_\-out {\bf GYRO} \&}]{gyro}
+\end{DoxyParamCaption}
+)}}
+\label{gyro_8h_ab338ed7f7f0a8d1838e8b02f022501d4}
+This function resets the gyro heading.
+
+
+\begin{DoxyParams}{Parameters}
+{\em gyro} & Points to the \hyperlink{struct_g_y_r_o}{GYRO} structure to be reset. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 159 of file gyro.h.
+
+\hypertarget{gyro_8h_a282554724fc1810e6e0d7a7bf3b2a35e}{
+\index{gyro.h@{gyro.h}!GyroTask@{GyroTask}}
+\index{GyroTask@{GyroTask}!gyro.h@{gyro.h}}
+\subsubsection[{GyroTask}]{\setlength{\rightskip}{0pt plus 5cm}void GyroTask (
+\begin{DoxyParamCaption}
+\item[{\_\-\_\-inout {\bf GYRO} \&}]{gyro}
+\end{DoxyParamCaption}
+)}}
+\label{gyro_8h_a282554724fc1810e6e0d7a7bf3b2a35e}
+This function performs the gyro task where it integrates the turn rate into a heading value.
+
+
+\begin{DoxyParams}{Parameters}
+{\em gyro} & Points to the \hyperlink{struct_g_y_r_o}{GYRO} structure. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 122 of file gyro.h.
+

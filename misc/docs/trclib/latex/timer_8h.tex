@@ -1,0 +1,181 @@
+\hypertarget{timer_8h}{
+\section{C:/Users/Michael/Ftc/2011/code/trclib/timer.h File Reference}
+\label{timer_8h}\index{C:/Users/Michael/Ftc/2011/code/trclib/timer.h@{C:/Users/Michael/Ftc/2011/code/trclib/timer.h}}
+}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_t_i_m_e_r}{TIMER}
+\end{DoxyCompactItemize}
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{timer_8h_aac2ed47b064d89ce44a78d7d8067b38f}{\_\-TIMER\_\-H}
+\item 
+\#define \hyperlink{timer_8h_ae9f4f7cf89710651cd39579c3b03ca42}{MOD\_\-ID}~MOD\_\-TIMER
+\item 
+\#define \hyperlink{timer_8h_a6c5d708c5f0779757592e34c5fc10058}{TIMERF\_\-USER\_\-MASK}~0x00ff
+\item 
+\#define \hyperlink{timer_8h_ac6c12825a72d2f2e5463b795e0ed468b}{TIMERF\_\-ENABLED}~0x0100
+\item 
+\#define \hyperlink{timer_8h_a00b7486c59d729cc9585c6e2ea33f35c}{TIMERF\_\-ENABLE\_\-EVENTS}~0x0001
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{timer_8h_a41f1b7726db86f86a43dcc8ecef61573}{TimerEvent} (\_\-\_\-in \hyperlink{struct_t_i_m_e_r}{TIMER} \&timer)
+\item 
+void \hyperlink{timer_8h_ab538a6f6a8fa5a89bf1d495ffce1f77d}{TimerInit} (\_\-\_\-out \hyperlink{struct_t_i_m_e_r}{TIMER} \&timer, \_\-\_\-in int timerFlags)
+\item 
+void \hyperlink{timer_8h_a2cb31846533a35199ea402e192994213}{TimerSet} (\_\-\_\-out \hyperlink{struct_t_i_m_e_r}{TIMER} \&timer, \_\-\_\-in int time)
+\item 
+void \hyperlink{timer_8h_a31877004a970edd4af84ce08bb510226}{TimerReset} (\_\-\_\-out \hyperlink{struct_t_i_m_e_r}{TIMER} \&timer)
+\item 
+void \hyperlink{timer_8h_a657b2ea758d2eff117d495c5a8f56366}{TimerTask} (\_\-\_\-inout \hyperlink{struct_t_i_m_e_r}{TIMER} \&timer)
+\end{DoxyCompactItemize}
+
+
+\subsection{Define Documentation}
+\hypertarget{timer_8h_aac2ed47b064d89ce44a78d7d8067b38f}{
+\index{timer.h@{timer.h}!\_\-TIMER\_\-H@{\_\-TIMER\_\-H}}
+\index{\_\-TIMER\_\-H@{\_\-TIMER\_\-H}!timer.h@{timer.h}}
+\subsubsection[{\_\-TIMER\_\-H}]{\setlength{\rightskip}{0pt plus 5cm}\#define \_\-TIMER\_\-H}}
+\label{timer_8h_aac2ed47b064d89ce44a78d7d8067b38f}
+
+
+Definition at line 16 of file timer.h.
+
+\hypertarget{timer_8h_ae9f4f7cf89710651cd39579c3b03ca42}{
+\index{timer.h@{timer.h}!MOD\_\-ID@{MOD\_\-ID}}
+\index{MOD\_\-ID@{MOD\_\-ID}!timer.h@{timer.h}}
+\subsubsection[{MOD\_\-ID}]{\setlength{\rightskip}{0pt plus 5cm}\#define MOD\_\-ID~MOD\_\-TIMER}}
+\label{timer_8h_ae9f4f7cf89710651cd39579c3b03ca42}
+
+
+Definition at line 23 of file timer.h.
+
+\hypertarget{timer_8h_a00b7486c59d729cc9585c6e2ea33f35c}{
+\index{timer.h@{timer.h}!TIMERF\_\-ENABLE\_\-EVENTS@{TIMERF\_\-ENABLE\_\-EVENTS}}
+\index{TIMERF\_\-ENABLE\_\-EVENTS@{TIMERF\_\-ENABLE\_\-EVENTS}!timer.h@{timer.h}}
+\subsubsection[{TIMERF\_\-ENABLE\_\-EVENTS}]{\setlength{\rightskip}{0pt plus 5cm}\#define TIMERF\_\-ENABLE\_\-EVENTS~0x0001}}
+\label{timer_8h_a00b7486c59d729cc9585c6e2ea33f35c}
+
+
+Definition at line 30 of file timer.h.
+
+\hypertarget{timer_8h_ac6c12825a72d2f2e5463b795e0ed468b}{
+\index{timer.h@{timer.h}!TIMERF\_\-ENABLED@{TIMERF\_\-ENABLED}}
+\index{TIMERF\_\-ENABLED@{TIMERF\_\-ENABLED}!timer.h@{timer.h}}
+\subsubsection[{TIMERF\_\-ENABLED}]{\setlength{\rightskip}{0pt plus 5cm}\#define TIMERF\_\-ENABLED~0x0100}}
+\label{timer_8h_ac6c12825a72d2f2e5463b795e0ed468b}
+
+
+Definition at line 29 of file timer.h.
+
+\hypertarget{timer_8h_a6c5d708c5f0779757592e34c5fc10058}{
+\index{timer.h@{timer.h}!TIMERF\_\-USER\_\-MASK@{TIMERF\_\-USER\_\-MASK}}
+\index{TIMERF\_\-USER\_\-MASK@{TIMERF\_\-USER\_\-MASK}!timer.h@{timer.h}}
+\subsubsection[{TIMERF\_\-USER\_\-MASK}]{\setlength{\rightskip}{0pt plus 5cm}\#define TIMERF\_\-USER\_\-MASK~0x00ff}}
+\label{timer_8h_a6c5d708c5f0779757592e34c5fc10058}
+
+
+Definition at line 28 of file timer.h.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{timer_8h_a41f1b7726db86f86a43dcc8ecef61573}{
+\index{timer.h@{timer.h}!TimerEvent@{TimerEvent}}
+\index{TimerEvent@{TimerEvent}!timer.h@{timer.h}}
+\subsubsection[{TimerEvent}]{\setlength{\rightskip}{0pt plus 5cm}void TimerEvent (
+\begin{DoxyParamCaption}
+\item[{\_\-\_\-in {\bf TIMER} \&}]{timer}
+\end{DoxyParamCaption}
+)}}
+\label{timer_8h_a41f1b7726db86f86a43dcc8ecef61573}
+\hypertarget{timer_8h_ab538a6f6a8fa5a89bf1d495ffce1f77d}{
+\index{timer.h@{timer.h}!TimerInit@{TimerInit}}
+\index{TimerInit@{TimerInit}!timer.h@{timer.h}}
+\subsubsection[{TimerInit}]{\setlength{\rightskip}{0pt plus 5cm}void TimerInit (
+\begin{DoxyParamCaption}
+\item[{\_\-\_\-out {\bf TIMER} \&}]{timer, }
+\item[{\_\-\_\-in int}]{timerFlags}
+\end{DoxyParamCaption}
+)}}
+\label{timer_8h_ab538a6f6a8fa5a89bf1d495ffce1f77d}
+This function initializes the event timer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em timer} & Points to the \hyperlink{struct_t_i_m_e_r}{TIMER} structure to be initialized. \\
+\hline
+{\em timerFlags} & Specifies the timer flags. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 56 of file timer.h.
+
+\hypertarget{timer_8h_a31877004a970edd4af84ce08bb510226}{
+\index{timer.h@{timer.h}!TimerReset@{TimerReset}}
+\index{TimerReset@{TimerReset}!timer.h@{timer.h}}
+\subsubsection[{TimerReset}]{\setlength{\rightskip}{0pt plus 5cm}void TimerReset (
+\begin{DoxyParamCaption}
+\item[{\_\-\_\-out {\bf TIMER} \&}]{timer}
+\end{DoxyParamCaption}
+)}}
+\label{timer_8h_a31877004a970edd4af84ce08bb510226}
+This function resets the event timer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em timer} & Points to the \hyperlink{struct_t_i_m_e_r}{TIMER} structure. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 100 of file timer.h.
+
+\hypertarget{timer_8h_a2cb31846533a35199ea402e192994213}{
+\index{timer.h@{timer.h}!TimerSet@{TimerSet}}
+\index{TimerSet@{TimerSet}!timer.h@{timer.h}}
+\subsubsection[{TimerSet}]{\setlength{\rightskip}{0pt plus 5cm}void TimerSet (
+\begin{DoxyParamCaption}
+\item[{\_\-\_\-out {\bf TIMER} \&}]{timer, }
+\item[{\_\-\_\-in int}]{time}
+\end{DoxyParamCaption}
+)}}
+\label{timer_8h_a2cb31846533a35199ea402e192994213}
+This function sets the event timer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em timer} & Points to the \hyperlink{struct_t_i_m_e_r}{TIMER} structure. \\
+\hline
+{\em time} & Specifies the expire time relative to current time in msec. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 79 of file timer.h.
+
+\hypertarget{timer_8h_a657b2ea758d2eff117d495c5a8f56366}{
+\index{timer.h@{timer.h}!TimerTask@{TimerTask}}
+\index{TimerTask@{TimerTask}!timer.h@{timer.h}}
+\subsubsection[{TimerTask}]{\setlength{\rightskip}{0pt plus 5cm}void TimerTask (
+\begin{DoxyParamCaption}
+\item[{\_\-\_\-inout {\bf TIMER} \&}]{timer}
+\end{DoxyParamCaption}
+)}}
+\label{timer_8h_a657b2ea758d2eff117d495c5a8f56366}
+This function performs the timer task.
+
+
+\begin{DoxyParams}{Parameters}
+{\em timer} & Points to the \hyperlink{struct_t_i_m_e_r}{TIMER} structure. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 120 of file timer.h.
+

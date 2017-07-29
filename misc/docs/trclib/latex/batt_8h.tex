@@ -1,0 +1,138 @@
+\hypertarget{batt_8h}{
+\section{C:/Users/Michael/Ftc/2011/code/trclib/batt.h File Reference}
+\label{batt_8h}\index{C:/Users/Michael/Ftc/2011/code/trclib/batt.h@{C:/Users/Michael/Ftc/2011/code/trclib/batt.h}}
+}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_b_a_t_t}{BATT}
+\end{DoxyCompactItemize}
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{batt_8h_a262f91efe7928e6295108845feb1db9e}{\_\-BATT\_\-H}
+\item 
+\#define \hyperlink{batt_8h_ae9f4f7cf89710651cd39579c3b03ca42}{MOD\_\-ID}~MOD\_\-BATT
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{batt_8h_ac15577ac8dccdfab2c0d8406ae75eb47}{BattShowInfo} (\_\-\_\-in \hyperlink{struct_b_a_t_t}{BATT} \&batt, \_\-\_\-in int lineNum, \_\-\_\-in bool fDetails)
+\item 
+void \hyperlink{batt_8h_a8612083ec4b79cb4d5f0a3526f137099}{BattInit} (\_\-\_\-out \hyperlink{struct_b_a_t_t}{BATT} \&batt, \_\-\_\-in int summaryLineNum, \_\-\_\-in bool fDetails)
+\item 
+void \hyperlink{batt_8h_af7ab3efbedd500fe564d47094771912a}{BattTask} (\_\-\_\-inout \hyperlink{struct_b_a_t_t}{BATT} \&batt)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_b_a_t_t}{BATT} \hyperlink{batt_8h_a71aaa35fa2e831db2bcaaaaa239435b8}{l\_\-Batt}
+\end{DoxyCompactItemize}
+
+
+\subsection{Define Documentation}
+\hypertarget{batt_8h_a262f91efe7928e6295108845feb1db9e}{
+\index{batt.h@{batt.h}!\_\-BATT\_\-H@{\_\-BATT\_\-H}}
+\index{\_\-BATT\_\-H@{\_\-BATT\_\-H}!batt.h@{batt.h}}
+\subsubsection[{\_\-BATT\_\-H}]{\setlength{\rightskip}{0pt plus 5cm}\#define \_\-BATT\_\-H}}
+\label{batt_8h_a262f91efe7928e6295108845feb1db9e}
+
+
+Definition at line 17 of file batt.h.
+
+\hypertarget{batt_8h_ae9f4f7cf89710651cd39579c3b03ca42}{
+\index{batt.h@{batt.h}!MOD\_\-ID@{MOD\_\-ID}}
+\index{MOD\_\-ID@{MOD\_\-ID}!batt.h@{batt.h}}
+\subsubsection[{MOD\_\-ID}]{\setlength{\rightskip}{0pt plus 5cm}\#define MOD\_\-ID~MOD\_\-BATT}}
+\label{batt_8h_ae9f4f7cf89710651cd39579c3b03ca42}
+
+
+Definition at line 24 of file batt.h.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{batt_8h_a8612083ec4b79cb4d5f0a3526f137099}{
+\index{batt.h@{batt.h}!BattInit@{BattInit}}
+\index{BattInit@{BattInit}!batt.h@{batt.h}}
+\subsubsection[{BattInit}]{\setlength{\rightskip}{0pt plus 5cm}void BattInit (
+\begin{DoxyParamCaption}
+\item[{\_\-\_\-out {\bf BATT} \&}]{batt, }
+\item[{\_\-\_\-in int}]{summaryLineNum, }
+\item[{\_\-\_\-in bool}]{fDetails}
+\end{DoxyParamCaption}
+)}}
+\label{batt_8h_a8612083ec4b79cb4d5f0a3526f137099}
+This function initializes the \hyperlink{struct_b_a_t_t}{BATT} info.
+
+
+\begin{DoxyParams}{Parameters}
+{\em batt} & Specifies the \hyperlink{struct_b_a_t_t}{BATT} structure to be initialized. \\
+\hline
+{\em summaryLineNum} & If positive, a battery summary line will be displayed at the given line number. If -\/1, no battery summary is displayed. \\
+\hline
+{\em fDetails} & If true, show detail voltage range of the batteries. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 84 of file batt.h.
+
+\hypertarget{batt_8h_ac15577ac8dccdfab2c0d8406ae75eb47}{
+\index{batt.h@{batt.h}!BattShowInfo@{BattShowInfo}}
+\index{BattShowInfo@{BattShowInfo}!batt.h@{batt.h}}
+\subsubsection[{BattShowInfo}]{\setlength{\rightskip}{0pt plus 5cm}void BattShowInfo (
+\begin{DoxyParamCaption}
+\item[{\_\-\_\-in {\bf BATT} \&}]{batt, }
+\item[{\_\-\_\-in int}]{lineNum, }
+\item[{\_\-\_\-in bool}]{fDetails}
+\end{DoxyParamCaption}
+)}}
+\label{batt_8h_ac15577ac8dccdfab2c0d8406ae75eb47}
+This function display the battery info on the NXT LCD screen.
+
+
+\begin{DoxyParams}{Parameters}
+{\em batt} & Points to the \hyperlink{struct_b_a_t_t}{BATT} structure. \\
+\hline
+{\em lineNum} & Specifies the line number to display the info. \\
+\hline
+{\em fDetails} & If true, also display the min and max voltages of the external battery \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 50 of file batt.h.
+
+\hypertarget{batt_8h_af7ab3efbedd500fe564d47094771912a}{
+\index{batt.h@{batt.h}!BattTask@{BattTask}}
+\index{BattTask@{BattTask}!batt.h@{batt.h}}
+\subsubsection[{BattTask}]{\setlength{\rightskip}{0pt plus 5cm}void BattTask (
+\begin{DoxyParamCaption}
+\item[{\_\-\_\-inout {\bf BATT} \&}]{batt}
+\end{DoxyParamCaption}
+)}}
+\label{batt_8h_af7ab3efbedd500fe564d47094771912a}
+This function checks the battery voltages against the min and max values for determining the operating voltage range. This is helpful to determine if the batteries are running low under load.
+
+
+\begin{DoxyParams}{Parameters}
+{\em batt} & Points to the \hyperlink{struct_b_a_t_t}{BATT} structure. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 115 of file batt.h.
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{batt_8h_a71aaa35fa2e831db2bcaaaaa239435b8}{
+\index{batt.h@{batt.h}!l\_\-Batt@{l\_\-Batt}}
+\index{l\_\-Batt@{l\_\-Batt}!batt.h@{batt.h}}
+\subsubsection[{l\_\-Batt}]{\setlength{\rightskip}{0pt plus 5cm}{\bf BATT} {\bf l\_\-Batt}}}
+\label{batt_8h_a71aaa35fa2e831db2bcaaaaa239435b8}
+
+
+Definition at line 39 of file batt.h.
+

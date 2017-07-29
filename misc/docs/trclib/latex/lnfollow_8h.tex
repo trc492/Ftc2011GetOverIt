@@ -1,0 +1,212 @@
+\hypertarget{lnfollow_8h}{
+\section{C:/Users/Michael/Ftc/2011/code/trclib/lnfollow.h File Reference}
+\label{lnfollow_8h}\index{C:/Users/Michael/Ftc/2011/code/trclib/lnfollow.h@{C:/Users/Michael/Ftc/2011/code/trclib/lnfollow.h}}
+}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_l_n_f_o_l_l_o_w}{LNFOLLOW}
+\end{DoxyCompactItemize}
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{lnfollow_8h_a4597b2d72f32493a16bf1e953cdd17ed}{\_\-LNFOLLOW\_\-H}
+\item 
+\#define \hyperlink{lnfollow_8h_ae9f4f7cf89710651cd39579c3b03ca42}{MOD\_\-ID}~MOD\_\-LNFOLLOW
+\item 
+\#define \hyperlink{lnfollow_8h_aef754d0bec1840c17f222734908cc540}{MAX\_\-LIGHT\_\-SENSORS}~3
+\item 
+\#define \hyperlink{lnfollow_8h_a9a98f7ee8a8df19ceaeab424e5bd3f7a}{LNF\_\-STARTED}~0x0100
+\item 
+\#define \hyperlink{lnfollow_8h_a8bac505756bd1adec15113c924640e55}{LNF\_\-CALIBRATING}~0x0200
+\item 
+\#define \hyperlink{lnfollow_8h_a011d7e6747568054c748c01b73a82abb}{LnFollowStarted}(l)~(l.lnfollowFlags \& LNF\_\-STARTED)
+\item 
+\#define \hyperlink{lnfollow_8h_a4e7f94b4b1a128edff89566e24a55c54}{LnFollowCalibrating}(l)~(l.lnfollowFlags \& LNF\_\-CALIBRATING)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{lnfollow_8h_a7262139a4d5cf032b50decc33e6003c6}{LnFollowInit} (\_\-\_\-out \hyperlink{struct_l_n_f_o_l_l_o_w}{LNFOLLOW} \&lnfollow, \_\-\_\-in int drive, \_\-\_\-in int pidCtrl, \_\-\_\-in int numLightSensors, \_\-\_\-in int driveKp)
+\item 
+void \hyperlink{lnfollow_8h_aadeb67929ae4df0df99d217c68ba6689}{LnFollowCal} (\_\-\_\-inout \hyperlink{struct_l_n_f_o_l_l_o_w}{LNFOLLOW} \&lnfollow, \_\-\_\-in bool fStart)
+\item 
+void \hyperlink{lnfollow_8h_abb7cfc4acdf8f8549791a5bc17d45443}{LnFollowStart} (\_\-\_\-inout \hyperlink{struct_l_n_f_o_l_l_o_w}{LNFOLLOW} \&lnfollow, \_\-\_\-in bool fStart)
+\item 
+void \hyperlink{lnfollow_8h_ad1e2521dafab2f8387496f9450a94ace}{LnFollowTask} (\_\-\_\-inout \hyperlink{struct_l_n_f_o_l_l_o_w}{LNFOLLOW} \&lnfollow)
+\end{DoxyCompactItemize}
+
+
+\subsection{Define Documentation}
+\hypertarget{lnfollow_8h_a4597b2d72f32493a16bf1e953cdd17ed}{
+\index{lnfollow.h@{lnfollow.h}!\_\-LNFOLLOW\_\-H@{\_\-LNFOLLOW\_\-H}}
+\index{\_\-LNFOLLOW\_\-H@{\_\-LNFOLLOW\_\-H}!lnfollow.h@{lnfollow.h}}
+\subsubsection[{\_\-LNFOLLOW\_\-H}]{\setlength{\rightskip}{0pt plus 5cm}\#define \_\-LNFOLLOW\_\-H}}
+\label{lnfollow_8h_a4597b2d72f32493a16bf1e953cdd17ed}
+
+
+Definition at line 16 of file lnfollow.h.
+
+\hypertarget{lnfollow_8h_a8bac505756bd1adec15113c924640e55}{
+\index{lnfollow.h@{lnfollow.h}!LNF\_\-CALIBRATING@{LNF\_\-CALIBRATING}}
+\index{LNF\_\-CALIBRATING@{LNF\_\-CALIBRATING}!lnfollow.h@{lnfollow.h}}
+\subsubsection[{LNF\_\-CALIBRATING}]{\setlength{\rightskip}{0pt plus 5cm}\#define LNF\_\-CALIBRATING~0x0200}}
+\label{lnfollow_8h_a8bac505756bd1adec15113c924640e55}
+
+
+Definition at line 33 of file lnfollow.h.
+
+\hypertarget{lnfollow_8h_a9a98f7ee8a8df19ceaeab424e5bd3f7a}{
+\index{lnfollow.h@{lnfollow.h}!LNF\_\-STARTED@{LNF\_\-STARTED}}
+\index{LNF\_\-STARTED@{LNF\_\-STARTED}!lnfollow.h@{lnfollow.h}}
+\subsubsection[{LNF\_\-STARTED}]{\setlength{\rightskip}{0pt plus 5cm}\#define LNF\_\-STARTED~0x0100}}
+\label{lnfollow_8h_a9a98f7ee8a8df19ceaeab424e5bd3f7a}
+
+
+Definition at line 32 of file lnfollow.h.
+
+\hypertarget{lnfollow_8h_a4e7f94b4b1a128edff89566e24a55c54}{
+\index{lnfollow.h@{lnfollow.h}!LnFollowCalibrating@{LnFollowCalibrating}}
+\index{LnFollowCalibrating@{LnFollowCalibrating}!lnfollow.h@{lnfollow.h}}
+\subsubsection[{LnFollowCalibrating}]{\setlength{\rightskip}{0pt plus 5cm}\#define LnFollowCalibrating(
+\begin{DoxyParamCaption}
+\item[{}]{l}
+\end{DoxyParamCaption}
+)~(l.lnfollowFlags \& LNF\_\-CALIBRATING)}}
+\label{lnfollow_8h_a4e7f94b4b1a128edff89566e24a55c54}
+
+
+Definition at line 35 of file lnfollow.h.
+
+\hypertarget{lnfollow_8h_a011d7e6747568054c748c01b73a82abb}{
+\index{lnfollow.h@{lnfollow.h}!LnFollowStarted@{LnFollowStarted}}
+\index{LnFollowStarted@{LnFollowStarted}!lnfollow.h@{lnfollow.h}}
+\subsubsection[{LnFollowStarted}]{\setlength{\rightskip}{0pt plus 5cm}\#define LnFollowStarted(
+\begin{DoxyParamCaption}
+\item[{}]{l}
+\end{DoxyParamCaption}
+)~(l.lnfollowFlags \& LNF\_\-STARTED)}}
+\label{lnfollow_8h_a011d7e6747568054c748c01b73a82abb}
+
+
+Definition at line 34 of file lnfollow.h.
+
+\hypertarget{lnfollow_8h_aef754d0bec1840c17f222734908cc540}{
+\index{lnfollow.h@{lnfollow.h}!MAX\_\-LIGHT\_\-SENSORS@{MAX\_\-LIGHT\_\-SENSORS}}
+\index{MAX\_\-LIGHT\_\-SENSORS@{MAX\_\-LIGHT\_\-SENSORS}!lnfollow.h@{lnfollow.h}}
+\subsubsection[{MAX\_\-LIGHT\_\-SENSORS}]{\setlength{\rightskip}{0pt plus 5cm}\#define MAX\_\-LIGHT\_\-SENSORS~3}}
+\label{lnfollow_8h_aef754d0bec1840c17f222734908cc540}
+
+
+Definition at line 29 of file lnfollow.h.
+
+\hypertarget{lnfollow_8h_ae9f4f7cf89710651cd39579c3b03ca42}{
+\index{lnfollow.h@{lnfollow.h}!MOD\_\-ID@{MOD\_\-ID}}
+\index{MOD\_\-ID@{MOD\_\-ID}!lnfollow.h@{lnfollow.h}}
+\subsubsection[{MOD\_\-ID}]{\setlength{\rightskip}{0pt plus 5cm}\#define MOD\_\-ID~MOD\_\-LNFOLLOW}}
+\label{lnfollow_8h_ae9f4f7cf89710651cd39579c3b03ca42}
+
+
+Definition at line 23 of file lnfollow.h.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{lnfollow_8h_aadeb67929ae4df0df99d217c68ba6689}{
+\index{lnfollow.h@{lnfollow.h}!LnFollowCal@{LnFollowCal}}
+\index{LnFollowCal@{LnFollowCal}!lnfollow.h@{lnfollow.h}}
+\subsubsection[{LnFollowCal}]{\setlength{\rightskip}{0pt plus 5cm}void LnFollowCal (
+\begin{DoxyParamCaption}
+\item[{\_\-\_\-inout {\bf LNFOLLOW} \&}]{lnfollow, }
+\item[{\_\-\_\-in bool}]{fStart}
+\end{DoxyParamCaption}
+)}}
+\label{lnfollow_8h_aadeb67929ae4df0df99d217c68ba6689}
+This function calibrates the light sensors of the line follower.
+
+
+\begin{DoxyParams}{Parameters}
+{\em lnfollow} & Points to the \hyperlink{struct_l_n_f_o_l_l_o_w}{LNFOLLOW} structure. \\
+\hline
+{\em fStart} & Specifies TRUE to start calibration, FALSE to stop. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 131 of file lnfollow.h.
+
+\hypertarget{lnfollow_8h_a7262139a4d5cf032b50decc33e6003c6}{
+\index{lnfollow.h@{lnfollow.h}!LnFollowInit@{LnFollowInit}}
+\index{LnFollowInit@{LnFollowInit}!lnfollow.h@{lnfollow.h}}
+\subsubsection[{LnFollowInit}]{\setlength{\rightskip}{0pt plus 5cm}void LnFollowInit (
+\begin{DoxyParamCaption}
+\item[{\_\-\_\-out {\bf LNFOLLOW} \&}]{lnfollow, }
+\item[{\_\-\_\-in int}]{drive, }
+\item[{\_\-\_\-in int}]{pidCtrl, }
+\item[{\_\-\_\-in int}]{numLightSensors, }
+\item[{\_\-\_\-in int}]{driveKp}
+\end{DoxyParamCaption}
+)}}
+\label{lnfollow_8h_a7262139a4d5cf032b50decc33e6003c6}
+This function initializes the line follower object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em lnfollow} & Points to the \hyperlink{struct_l_n_f_o_l_l_o_w}{LNFOLLOW} structure to be initialized. \\
+\hline
+{\em drive} & Points to the \hyperlink{struct_d_r_i_v_e}{DRIVE} structure. \\
+\hline
+{\em pidCtrl} & Points to the \hyperlink{struct_p_i_d_c_t_r_l}{PIDCTRL} structure. \\
+\hline
+{\em numLightSensors} & Specifies the number of light sensors used. \\
+\hline
+{\em driveKp} & Specifies the drive power scale factor. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 66 of file lnfollow.h.
+
+\hypertarget{lnfollow_8h_abb7cfc4acdf8f8549791a5bc17d45443}{
+\index{lnfollow.h@{lnfollow.h}!LnFollowStart@{LnFollowStart}}
+\index{LnFollowStart@{LnFollowStart}!lnfollow.h@{lnfollow.h}}
+\subsubsection[{LnFollowStart}]{\setlength{\rightskip}{0pt plus 5cm}void LnFollowStart (
+\begin{DoxyParamCaption}
+\item[{\_\-\_\-inout {\bf LNFOLLOW} \&}]{lnfollow, }
+\item[{\_\-\_\-in bool}]{fStart}
+\end{DoxyParamCaption}
+)}}
+\label{lnfollow_8h_abb7cfc4acdf8f8549791a5bc17d45443}
+This function starts or stops the line follower.
+
+
+\begin{DoxyParams}{Parameters}
+{\em lnfollow} & Points to the \hyperlink{struct_l_n_f_o_l_l_o_w}{LNFOLLOW} structure. \\
+\hline
+{\em fStart} & Specifies TRUE to start the line follower, FALSE to stop. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 165 of file lnfollow.h.
+
+\hypertarget{lnfollow_8h_ad1e2521dafab2f8387496f9450a94ace}{
+\index{lnfollow.h@{lnfollow.h}!LnFollowTask@{LnFollowTask}}
+\index{LnFollowTask@{LnFollowTask}!lnfollow.h@{lnfollow.h}}
+\subsubsection[{LnFollowTask}]{\setlength{\rightskip}{0pt plus 5cm}void LnFollowTask (
+\begin{DoxyParamCaption}
+\item[{\_\-\_\-inout {\bf LNFOLLOW} \&}]{lnfollow}
+\end{DoxyParamCaption}
+)}}
+\label{lnfollow_8h_ad1e2521dafab2f8387496f9450a94ace}
+This function processes the sensor data for line following.
+
+
+\begin{DoxyParams}{Parameters}
+{\em lnfollow} & Points to the \hyperlink{struct_l_n_f_o_l_l_o_w}{LNFOLLOW} structure. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 200 of file lnfollow.h.
+

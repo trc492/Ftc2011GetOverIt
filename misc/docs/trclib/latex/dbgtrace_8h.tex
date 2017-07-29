@@ -1,0 +1,701 @@
+\hypertarget{dbgtrace_8h}{
+\section{C:/Users/Michael/Ftc/2011/code/trclib/dbgtrace.h File Reference}
+\label{dbgtrace_8h}\index{C:/Users/Michael/Ftc/2011/code/trclib/dbgtrace.h@{C:/Users/Michael/Ftc/2011/code/trclib/dbgtrace.h}}
+}
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{dbgtrace_8h_adc55a01e70883775f446a8ac752ee1b0}{\_\-DBGTRACE\_\-H}
+\item 
+\#define \hyperlink{dbgtrace_8h_a1ebe1633f930898050dee1699f82fed2}{MOD\_\-LIB}~0xffffff00
+\item 
+\#define \hyperlink{dbgtrace_8h_a4120df1d059e070c01a1100ecf05a0f8}{MOD\_\-BATT}~0x00000100
+\item 
+\#define \hyperlink{dbgtrace_8h_a5b7e6f4c94263f2903a3dc1bccec5bd5}{MOD\_\-MENU}~0x00000200
+\item 
+\#define \hyperlink{dbgtrace_8h_a9bdda941b6d5e58b80e9a70a8a5940e1}{MOD\_\-NXTBTN}~0x00000400
+\item 
+\#define \hyperlink{dbgtrace_8h_a84a37ab92602298cfddb568bbebb59cd}{MOD\_\-JOYBTN}~0x00000800
+\item 
+\#define \hyperlink{dbgtrace_8h_a572ca612c85c366ae342245fe3c133df}{MOD\_\-SENSOR}~0x00001000
+\item 
+\#define \hyperlink{dbgtrace_8h_a67a29ce0bb2f997d36d3c7e1d1c24269}{MOD\_\-TIMER}~0x00002000
+\item 
+\#define \hyperlink{dbgtrace_8h_ae3c69c119f6e41503852ee1de37331d7}{MOD\_\-SM}~0x00004000
+\item 
+\#define \hyperlink{dbgtrace_8h_ac3a322e53fea131c8f2e29ac2de74d84}{MOD\_\-PIDCTRL}~0x00008000
+\item 
+\#define \hyperlink{dbgtrace_8h_ad4a120027b19911036f79c3c40c20c25}{MOD\_\-DRIVE}~0x00010000
+\item 
+\#define \hyperlink{dbgtrace_8h_a25ea1defba15d9b872c122a0b897437a}{MOD\_\-PIDDRIVE}~0x00020000
+\item 
+\#define \hyperlink{dbgtrace_8h_adff14a5991f87c87fa7d0ef05505c65b}{MOD\_\-LNFOLLOW}~0x00040000
+\item 
+\#define \hyperlink{dbgtrace_8h_aabc452cc5461baad1560b33470785972}{MOD\_\-SERVO}~0x00080000
+\item 
+\#define \hyperlink{dbgtrace_8h_a639a79ac1acd32f27cf3292600c86b46}{MOD\_\-ACCEL}~0x00100000
+\item 
+\#define \hyperlink{dbgtrace_8h_a72c0150b37fd6476740cb594655358bc}{MOD\_\-GYRO}~0x00200000
+\item 
+\#define \hyperlink{dbgtrace_8h_a271fcf2e750e82c1b946bc938522fce7}{MOD\_\-TOUCH}~0x00400000
+\item 
+\#define \hyperlink{dbgtrace_8h_aef1c5332b53b4d97ab4bef3ca1469f87}{MOD\_\-MAIN}~0x00000001
+\item 
+\#define \hyperlink{dbgtrace_8h_ad74cce47edbc72d462912ec4792d224a}{TGenModId}(n)~((MOD\_\-MAIN $<$$<$ (n)) \&\& 0xff)
+\item 
+\#define \hyperlink{dbgtrace_8h_ab5889105dcd019008c9448dff61323f6}{INIT}~0
+\item 
+\#define \hyperlink{dbgtrace_8h_ad8ce4efaa307683d3d763b37b4711c53}{API}~1
+\item 
+\#define \hyperlink{dbgtrace_8h_a521082fd07102c786e78914fb1c4ad47}{CALLBK}~2
+\item 
+\#define \hyperlink{dbgtrace_8h_a7877e997621e1161f058fce90febd464}{EVENT}~3
+\item 
+\#define \hyperlink{dbgtrace_8h_a587e21dda1f72be700a6206023ad681b}{FUNC}~4
+\item 
+\#define \hyperlink{dbgtrace_8h_af0d589fbe2b26bdee7a8c36ce4446a24}{TASK}~5
+\item 
+\#define \hyperlink{dbgtrace_8h_abcfcc969dca8df7944d2bcd1195d604c}{UTIL}~6
+\item 
+\#define \hyperlink{dbgtrace_8h_a605684474e9b21615f2b2bb9226d8053}{HIFREQ}~7
+\item 
+\#define \hyperlink{dbgtrace_8h_a4362ac890f9e50aac5882590deedde41}{FATAL}~0
+\item 
+\#define \hyperlink{dbgtrace_8h_a735563036dced0b7d6cc98f97ea4978b}{ERR}~1
+\item 
+\#define \hyperlink{dbgtrace_8h_a271d8f7f52be750e5c744a394ec71344}{WARN}~2
+\item 
+\#define \hyperlink{dbgtrace_8h_ae1103fea1e1b3c41ca3322d5389f7162}{INFO}~3
+\item 
+\#define \hyperlink{dbgtrace_8h_a42f8c497a1968074f38bf5055c650dca}{VERBOSE}~4
+\item 
+\#define \hyperlink{dbgtrace_8h_a5b19426803ffa53db02a1b01c8f1fe79}{TRACE\_\-PERIOD}~500
+\item 
+\#define \hyperlink{dbgtrace_8h_ab64c277271378db4c9320be6210eb4df}{SAMPLING\_\-PERIOD}~500
+\item 
+\#define \hyperlink{dbgtrace_8h_aa60b7a4f9c563ac208a915f14edc4acf}{TPrintf}~writeDebugStream
+\item 
+\#define \hyperlink{dbgtrace_8h_a03e9e743be041a3e1c1654985f863a17}{TPrintfLine}~writeDebugStreamLine
+\item 
+\#define \hyperlink{dbgtrace_8h_a6e68069df85de40d237c641708a05d89}{TraceInit}(m, l, e)
+\item 
+\#define \hyperlink{dbgtrace_8h_a7596e03f9cc0f30c263576721a7c4bea}{TEnable}(b)
+\item 
+\#define \hyperlink{dbgtrace_8h_aa49a248df66c1886fa57f57c7f9fb3c3}{TFuncName}(s)
+\item 
+\#define \hyperlink{dbgtrace_8h_a8f49a1d59d0a3642ae1f26dd0385c3d9}{TLevel}(l)
+\item 
+\#define \hyperlink{dbgtrace_8h_a6fe884d20644aaf965d70bf3cd88384d}{TEnterMsg}(p)
+\item 
+\#define \hyperlink{dbgtrace_8h_aa9848c1bfae4c3a8cdc4d273367408b6}{TEnter}()
+\item 
+\#define \hyperlink{dbgtrace_8h_a0fdd2f5df2134f616e92d9c783cfc6a3}{TExitMsg}(p)
+\item 
+\#define \hyperlink{dbgtrace_8h_acd8519dc49ad3a0d405355a04f5e046d}{TExit}()
+\item 
+\#define \hyperlink{dbgtrace_8h_aaa68a7dc3f8bc986f05d61dc01cf1a39}{TMsg}(e, p)
+\item 
+\#define \hyperlink{dbgtrace_8h_ac3797ea97c47826e5a2a204113cbd4ad}{TFatal}(p)
+\item 
+\#define \hyperlink{dbgtrace_8h_a43da9006371af37223910669e1f5f970}{TErr}(p)
+\item 
+\#define \hyperlink{dbgtrace_8h_a0d0c98174606a66e3c29b8d6ccbde473}{TWarn}(p)
+\item 
+\#define \hyperlink{dbgtrace_8h_a72e9ce6f6360590408bdeb6a1a9e4f25}{TInfo}(p)
+\item 
+\#define \hyperlink{dbgtrace_8h_a278a3248b8c64a53fa6caa9ae96ea9a8}{TVerbose}(p)
+\item 
+\#define \hyperlink{dbgtrace_8h_a55f3b079f294172afbcf6d1c53951d06}{TMsgPeriod}(t, p)
+\item 
+\#define \hyperlink{dbgtrace_8h_aab4e62cc6b81204e1bea664b3ff21a9e}{TSampling}(p)
+\item 
+\#define \hyperlink{dbgtrace_8h_ae2bdec77f790be61f37b9d23a66bfc5e}{TAssertPeriod}(t, p, r)
+\item 
+\#define \hyperlink{dbgtrace_8h_a9ce180a254f480c13f14f5c33a8b7e18}{TPeriodStart}()
+\item 
+\#define \hyperlink{dbgtrace_8h_a786983373ca08309078f31881eb378ce}{TPeriodEnd}()
+\end{DoxyCompactItemize}
+
+
+\subsection{Define Documentation}
+\hypertarget{dbgtrace_8h_adc55a01e70883775f446a8ac752ee1b0}{
+\index{dbgtrace.h@{dbgtrace.h}!\_\-DBGTRACE\_\-H@{\_\-DBGTRACE\_\-H}}
+\index{\_\-DBGTRACE\_\-H@{\_\-DBGTRACE\_\-H}!dbgtrace.h@{dbgtrace.h}}
+\subsubsection[{\_\-DBGTRACE\_\-H}]{\setlength{\rightskip}{0pt plus 5cm}\#define \_\-DBGTRACE\_\-H}}
+\label{dbgtrace_8h_adc55a01e70883775f446a8ac752ee1b0}
+
+
+Definition at line 16 of file dbgtrace.h.
+
+\hypertarget{dbgtrace_8h_ad8ce4efaa307683d3d763b37b4711c53}{
+\index{dbgtrace.h@{dbgtrace.h}!API@{API}}
+\index{API@{API}!dbgtrace.h@{dbgtrace.h}}
+\subsubsection[{API}]{\setlength{\rightskip}{0pt plus 5cm}\#define API~1}}
+\label{dbgtrace_8h_ad8ce4efaa307683d3d763b37b4711c53}
+
+
+Definition at line 44 of file dbgtrace.h.
+
+\hypertarget{dbgtrace_8h_a521082fd07102c786e78914fb1c4ad47}{
+\index{dbgtrace.h@{dbgtrace.h}!CALLBK@{CALLBK}}
+\index{CALLBK@{CALLBK}!dbgtrace.h@{dbgtrace.h}}
+\subsubsection[{CALLBK}]{\setlength{\rightskip}{0pt plus 5cm}\#define CALLBK~2}}
+\label{dbgtrace_8h_a521082fd07102c786e78914fb1c4ad47}
+
+
+Definition at line 45 of file dbgtrace.h.
+
+\hypertarget{dbgtrace_8h_a735563036dced0b7d6cc98f97ea4978b}{
+\index{dbgtrace.h@{dbgtrace.h}!ERR@{ERR}}
+\index{ERR@{ERR}!dbgtrace.h@{dbgtrace.h}}
+\subsubsection[{ERR}]{\setlength{\rightskip}{0pt plus 5cm}\#define ERR~1}}
+\label{dbgtrace_8h_a735563036dced0b7d6cc98f97ea4978b}
+
+
+Definition at line 53 of file dbgtrace.h.
+
+\hypertarget{dbgtrace_8h_a7877e997621e1161f058fce90febd464}{
+\index{dbgtrace.h@{dbgtrace.h}!EVENT@{EVENT}}
+\index{EVENT@{EVENT}!dbgtrace.h@{dbgtrace.h}}
+\subsubsection[{EVENT}]{\setlength{\rightskip}{0pt plus 5cm}\#define EVENT~3}}
+\label{dbgtrace_8h_a7877e997621e1161f058fce90febd464}
+
+
+Definition at line 46 of file dbgtrace.h.
+
+\hypertarget{dbgtrace_8h_a4362ac890f9e50aac5882590deedde41}{
+\index{dbgtrace.h@{dbgtrace.h}!FATAL@{FATAL}}
+\index{FATAL@{FATAL}!dbgtrace.h@{dbgtrace.h}}
+\subsubsection[{FATAL}]{\setlength{\rightskip}{0pt plus 5cm}\#define FATAL~0}}
+\label{dbgtrace_8h_a4362ac890f9e50aac5882590deedde41}
+
+
+Definition at line 52 of file dbgtrace.h.
+
+\hypertarget{dbgtrace_8h_a587e21dda1f72be700a6206023ad681b}{
+\index{dbgtrace.h@{dbgtrace.h}!FUNC@{FUNC}}
+\index{FUNC@{FUNC}!dbgtrace.h@{dbgtrace.h}}
+\subsubsection[{FUNC}]{\setlength{\rightskip}{0pt plus 5cm}\#define FUNC~4}}
+\label{dbgtrace_8h_a587e21dda1f72be700a6206023ad681b}
+
+
+Definition at line 47 of file dbgtrace.h.
+
+\hypertarget{dbgtrace_8h_a605684474e9b21615f2b2bb9226d8053}{
+\index{dbgtrace.h@{dbgtrace.h}!HIFREQ@{HIFREQ}}
+\index{HIFREQ@{HIFREQ}!dbgtrace.h@{dbgtrace.h}}
+\subsubsection[{HIFREQ}]{\setlength{\rightskip}{0pt plus 5cm}\#define HIFREQ~7}}
+\label{dbgtrace_8h_a605684474e9b21615f2b2bb9226d8053}
+
+
+Definition at line 50 of file dbgtrace.h.
+
+\hypertarget{dbgtrace_8h_ae1103fea1e1b3c41ca3322d5389f7162}{
+\index{dbgtrace.h@{dbgtrace.h}!INFO@{INFO}}
+\index{INFO@{INFO}!dbgtrace.h@{dbgtrace.h}}
+\subsubsection[{INFO}]{\setlength{\rightskip}{0pt plus 5cm}\#define INFO~3}}
+\label{dbgtrace_8h_ae1103fea1e1b3c41ca3322d5389f7162}
+
+
+Definition at line 55 of file dbgtrace.h.
+
+\hypertarget{dbgtrace_8h_ab5889105dcd019008c9448dff61323f6}{
+\index{dbgtrace.h@{dbgtrace.h}!INIT@{INIT}}
+\index{INIT@{INIT}!dbgtrace.h@{dbgtrace.h}}
+\subsubsection[{INIT}]{\setlength{\rightskip}{0pt plus 5cm}\#define INIT~0}}
+\label{dbgtrace_8h_ab5889105dcd019008c9448dff61323f6}
+
+
+Definition at line 43 of file dbgtrace.h.
+
+\hypertarget{dbgtrace_8h_a639a79ac1acd32f27cf3292600c86b46}{
+\index{dbgtrace.h@{dbgtrace.h}!MOD\_\-ACCEL@{MOD\_\-ACCEL}}
+\index{MOD\_\-ACCEL@{MOD\_\-ACCEL}!dbgtrace.h@{dbgtrace.h}}
+\subsubsection[{MOD\_\-ACCEL}]{\setlength{\rightskip}{0pt plus 5cm}\#define MOD\_\-ACCEL~0x00100000}}
+\label{dbgtrace_8h_a639a79ac1acd32f27cf3292600c86b46}
+
+
+Definition at line 36 of file dbgtrace.h.
+
+\hypertarget{dbgtrace_8h_a4120df1d059e070c01a1100ecf05a0f8}{
+\index{dbgtrace.h@{dbgtrace.h}!MOD\_\-BATT@{MOD\_\-BATT}}
+\index{MOD\_\-BATT@{MOD\_\-BATT}!dbgtrace.h@{dbgtrace.h}}
+\subsubsection[{MOD\_\-BATT}]{\setlength{\rightskip}{0pt plus 5cm}\#define MOD\_\-BATT~0x00000100}}
+\label{dbgtrace_8h_a4120df1d059e070c01a1100ecf05a0f8}
+
+
+Definition at line 24 of file dbgtrace.h.
+
+\hypertarget{dbgtrace_8h_ad4a120027b19911036f79c3c40c20c25}{
+\index{dbgtrace.h@{dbgtrace.h}!MOD\_\-DRIVE@{MOD\_\-DRIVE}}
+\index{MOD\_\-DRIVE@{MOD\_\-DRIVE}!dbgtrace.h@{dbgtrace.h}}
+\subsubsection[{MOD\_\-DRIVE}]{\setlength{\rightskip}{0pt plus 5cm}\#define MOD\_\-DRIVE~0x00010000}}
+\label{dbgtrace_8h_ad4a120027b19911036f79c3c40c20c25}
+
+
+Definition at line 32 of file dbgtrace.h.
+
+\hypertarget{dbgtrace_8h_a72c0150b37fd6476740cb594655358bc}{
+\index{dbgtrace.h@{dbgtrace.h}!MOD\_\-GYRO@{MOD\_\-GYRO}}
+\index{MOD\_\-GYRO@{MOD\_\-GYRO}!dbgtrace.h@{dbgtrace.h}}
+\subsubsection[{MOD\_\-GYRO}]{\setlength{\rightskip}{0pt plus 5cm}\#define MOD\_\-GYRO~0x00200000}}
+\label{dbgtrace_8h_a72c0150b37fd6476740cb594655358bc}
+
+
+Definition at line 37 of file dbgtrace.h.
+
+\hypertarget{dbgtrace_8h_a84a37ab92602298cfddb568bbebb59cd}{
+\index{dbgtrace.h@{dbgtrace.h}!MOD\_\-JOYBTN@{MOD\_\-JOYBTN}}
+\index{MOD\_\-JOYBTN@{MOD\_\-JOYBTN}!dbgtrace.h@{dbgtrace.h}}
+\subsubsection[{MOD\_\-JOYBTN}]{\setlength{\rightskip}{0pt plus 5cm}\#define MOD\_\-JOYBTN~0x00000800}}
+\label{dbgtrace_8h_a84a37ab92602298cfddb568bbebb59cd}
+
+
+Definition at line 27 of file dbgtrace.h.
+
+\hypertarget{dbgtrace_8h_a1ebe1633f930898050dee1699f82fed2}{
+\index{dbgtrace.h@{dbgtrace.h}!MOD\_\-LIB@{MOD\_\-LIB}}
+\index{MOD\_\-LIB@{MOD\_\-LIB}!dbgtrace.h@{dbgtrace.h}}
+\subsubsection[{MOD\_\-LIB}]{\setlength{\rightskip}{0pt plus 5cm}\#define MOD\_\-LIB~0xffffff00}}
+\label{dbgtrace_8h_a1ebe1633f930898050dee1699f82fed2}
+
+
+Definition at line 23 of file dbgtrace.h.
+
+\hypertarget{dbgtrace_8h_adff14a5991f87c87fa7d0ef05505c65b}{
+\index{dbgtrace.h@{dbgtrace.h}!MOD\_\-LNFOLLOW@{MOD\_\-LNFOLLOW}}
+\index{MOD\_\-LNFOLLOW@{MOD\_\-LNFOLLOW}!dbgtrace.h@{dbgtrace.h}}
+\subsubsection[{MOD\_\-LNFOLLOW}]{\setlength{\rightskip}{0pt plus 5cm}\#define MOD\_\-LNFOLLOW~0x00040000}}
+\label{dbgtrace_8h_adff14a5991f87c87fa7d0ef05505c65b}
+
+
+Definition at line 34 of file dbgtrace.h.
+
+\hypertarget{dbgtrace_8h_aef1c5332b53b4d97ab4bef3ca1469f87}{
+\index{dbgtrace.h@{dbgtrace.h}!MOD\_\-MAIN@{MOD\_\-MAIN}}
+\index{MOD\_\-MAIN@{MOD\_\-MAIN}!dbgtrace.h@{dbgtrace.h}}
+\subsubsection[{MOD\_\-MAIN}]{\setlength{\rightskip}{0pt plus 5cm}\#define MOD\_\-MAIN~0x00000001}}
+\label{dbgtrace_8h_aef1c5332b53b4d97ab4bef3ca1469f87}
+
+
+Definition at line 40 of file dbgtrace.h.
+
+\hypertarget{dbgtrace_8h_a5b7e6f4c94263f2903a3dc1bccec5bd5}{
+\index{dbgtrace.h@{dbgtrace.h}!MOD\_\-MENU@{MOD\_\-MENU}}
+\index{MOD\_\-MENU@{MOD\_\-MENU}!dbgtrace.h@{dbgtrace.h}}
+\subsubsection[{MOD\_\-MENU}]{\setlength{\rightskip}{0pt plus 5cm}\#define MOD\_\-MENU~0x00000200}}
+\label{dbgtrace_8h_a5b7e6f4c94263f2903a3dc1bccec5bd5}
+
+
+Definition at line 25 of file dbgtrace.h.
+
+\hypertarget{dbgtrace_8h_a9bdda941b6d5e58b80e9a70a8a5940e1}{
+\index{dbgtrace.h@{dbgtrace.h}!MOD\_\-NXTBTN@{MOD\_\-NXTBTN}}
+\index{MOD\_\-NXTBTN@{MOD\_\-NXTBTN}!dbgtrace.h@{dbgtrace.h}}
+\subsubsection[{MOD\_\-NXTBTN}]{\setlength{\rightskip}{0pt plus 5cm}\#define MOD\_\-NXTBTN~0x00000400}}
+\label{dbgtrace_8h_a9bdda941b6d5e58b80e9a70a8a5940e1}
+
+
+Definition at line 26 of file dbgtrace.h.
+
+\hypertarget{dbgtrace_8h_ac3a322e53fea131c8f2e29ac2de74d84}{
+\index{dbgtrace.h@{dbgtrace.h}!MOD\_\-PIDCTRL@{MOD\_\-PIDCTRL}}
+\index{MOD\_\-PIDCTRL@{MOD\_\-PIDCTRL}!dbgtrace.h@{dbgtrace.h}}
+\subsubsection[{MOD\_\-PIDCTRL}]{\setlength{\rightskip}{0pt plus 5cm}\#define MOD\_\-PIDCTRL~0x00008000}}
+\label{dbgtrace_8h_ac3a322e53fea131c8f2e29ac2de74d84}
+
+
+Definition at line 31 of file dbgtrace.h.
+
+\hypertarget{dbgtrace_8h_a25ea1defba15d9b872c122a0b897437a}{
+\index{dbgtrace.h@{dbgtrace.h}!MOD\_\-PIDDRIVE@{MOD\_\-PIDDRIVE}}
+\index{MOD\_\-PIDDRIVE@{MOD\_\-PIDDRIVE}!dbgtrace.h@{dbgtrace.h}}
+\subsubsection[{MOD\_\-PIDDRIVE}]{\setlength{\rightskip}{0pt plus 5cm}\#define MOD\_\-PIDDRIVE~0x00020000}}
+\label{dbgtrace_8h_a25ea1defba15d9b872c122a0b897437a}
+
+
+Definition at line 33 of file dbgtrace.h.
+
+\hypertarget{dbgtrace_8h_a572ca612c85c366ae342245fe3c133df}{
+\index{dbgtrace.h@{dbgtrace.h}!MOD\_\-SENSOR@{MOD\_\-SENSOR}}
+\index{MOD\_\-SENSOR@{MOD\_\-SENSOR}!dbgtrace.h@{dbgtrace.h}}
+\subsubsection[{MOD\_\-SENSOR}]{\setlength{\rightskip}{0pt plus 5cm}\#define MOD\_\-SENSOR~0x00001000}}
+\label{dbgtrace_8h_a572ca612c85c366ae342245fe3c133df}
+
+
+Definition at line 28 of file dbgtrace.h.
+
+\hypertarget{dbgtrace_8h_aabc452cc5461baad1560b33470785972}{
+\index{dbgtrace.h@{dbgtrace.h}!MOD\_\-SERVO@{MOD\_\-SERVO}}
+\index{MOD\_\-SERVO@{MOD\_\-SERVO}!dbgtrace.h@{dbgtrace.h}}
+\subsubsection[{MOD\_\-SERVO}]{\setlength{\rightskip}{0pt plus 5cm}\#define MOD\_\-SERVO~0x00080000}}
+\label{dbgtrace_8h_aabc452cc5461baad1560b33470785972}
+
+
+Definition at line 35 of file dbgtrace.h.
+
+\hypertarget{dbgtrace_8h_ae3c69c119f6e41503852ee1de37331d7}{
+\index{dbgtrace.h@{dbgtrace.h}!MOD\_\-SM@{MOD\_\-SM}}
+\index{MOD\_\-SM@{MOD\_\-SM}!dbgtrace.h@{dbgtrace.h}}
+\subsubsection[{MOD\_\-SM}]{\setlength{\rightskip}{0pt plus 5cm}\#define MOD\_\-SM~0x00004000}}
+\label{dbgtrace_8h_ae3c69c119f6e41503852ee1de37331d7}
+
+
+Definition at line 30 of file dbgtrace.h.
+
+\hypertarget{dbgtrace_8h_a67a29ce0bb2f997d36d3c7e1d1c24269}{
+\index{dbgtrace.h@{dbgtrace.h}!MOD\_\-TIMER@{MOD\_\-TIMER}}
+\index{MOD\_\-TIMER@{MOD\_\-TIMER}!dbgtrace.h@{dbgtrace.h}}
+\subsubsection[{MOD\_\-TIMER}]{\setlength{\rightskip}{0pt plus 5cm}\#define MOD\_\-TIMER~0x00002000}}
+\label{dbgtrace_8h_a67a29ce0bb2f997d36d3c7e1d1c24269}
+
+
+Definition at line 29 of file dbgtrace.h.
+
+\hypertarget{dbgtrace_8h_a271fcf2e750e82c1b946bc938522fce7}{
+\index{dbgtrace.h@{dbgtrace.h}!MOD\_\-TOUCH@{MOD\_\-TOUCH}}
+\index{MOD\_\-TOUCH@{MOD\_\-TOUCH}!dbgtrace.h@{dbgtrace.h}}
+\subsubsection[{MOD\_\-TOUCH}]{\setlength{\rightskip}{0pt plus 5cm}\#define MOD\_\-TOUCH~0x00400000}}
+\label{dbgtrace_8h_a271fcf2e750e82c1b946bc938522fce7}
+
+
+Definition at line 38 of file dbgtrace.h.
+
+\hypertarget{dbgtrace_8h_ab64c277271378db4c9320be6210eb4df}{
+\index{dbgtrace.h@{dbgtrace.h}!SAMPLING\_\-PERIOD@{SAMPLING\_\-PERIOD}}
+\index{SAMPLING\_\-PERIOD@{SAMPLING\_\-PERIOD}!dbgtrace.h@{dbgtrace.h}}
+\subsubsection[{SAMPLING\_\-PERIOD}]{\setlength{\rightskip}{0pt plus 5cm}\#define SAMPLING\_\-PERIOD~500}}
+\label{dbgtrace_8h_ab64c277271378db4c9320be6210eb4df}
+
+
+Definition at line 63 of file dbgtrace.h.
+
+\hypertarget{dbgtrace_8h_af0d589fbe2b26bdee7a8c36ce4446a24}{
+\index{dbgtrace.h@{dbgtrace.h}!TASK@{TASK}}
+\index{TASK@{TASK}!dbgtrace.h@{dbgtrace.h}}
+\subsubsection[{TASK}]{\setlength{\rightskip}{0pt plus 5cm}\#define TASK~5}}
+\label{dbgtrace_8h_af0d589fbe2b26bdee7a8c36ce4446a24}
+
+
+Definition at line 48 of file dbgtrace.h.
+
+\hypertarget{dbgtrace_8h_ae2bdec77f790be61f37b9d23a66bfc5e}{
+\index{dbgtrace.h@{dbgtrace.h}!TAssertPeriod@{TAssertPeriod}}
+\index{TAssertPeriod@{TAssertPeriod}!dbgtrace.h@{dbgtrace.h}}
+\subsubsection[{TAssertPeriod}]{\setlength{\rightskip}{0pt plus 5cm}\#define TAssertPeriod(
+\begin{DoxyParamCaption}
+\item[{}]{t, }
+\item[{}]{p, }
+\item[{}]{r}
+\end{DoxyParamCaption}
+)}}
+\label{dbgtrace_8h_ae2bdec77f790be61f37b9d23a66bfc5e}
+
+
+Definition at line 168 of file dbgtrace.h.
+
+\hypertarget{dbgtrace_8h_a7596e03f9cc0f30c263576721a7c4bea}{
+\index{dbgtrace.h@{dbgtrace.h}!TEnable@{TEnable}}
+\index{TEnable@{TEnable}!dbgtrace.h@{dbgtrace.h}}
+\subsubsection[{TEnable}]{\setlength{\rightskip}{0pt plus 5cm}\#define TEnable(
+\begin{DoxyParamCaption}
+\item[{}]{b}
+\end{DoxyParamCaption}
+)}}
+\label{dbgtrace_8h_a7596e03f9cc0f30c263576721a7c4bea}
+
+
+Definition at line 153 of file dbgtrace.h.
+
+\hypertarget{dbgtrace_8h_aa9848c1bfae4c3a8cdc4d273367408b6}{
+\index{dbgtrace.h@{dbgtrace.h}!TEnter@{TEnter}}
+\index{TEnter@{TEnter}!dbgtrace.h@{dbgtrace.h}}
+\subsubsection[{TEnter}]{\setlength{\rightskip}{0pt plus 5cm}\#define TEnter(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{dbgtrace_8h_aa9848c1bfae4c3a8cdc4d273367408b6}
+
+
+Definition at line 157 of file dbgtrace.h.
+
+\hypertarget{dbgtrace_8h_a6fe884d20644aaf965d70bf3cd88384d}{
+\index{dbgtrace.h@{dbgtrace.h}!TEnterMsg@{TEnterMsg}}
+\index{TEnterMsg@{TEnterMsg}!dbgtrace.h@{dbgtrace.h}}
+\subsubsection[{TEnterMsg}]{\setlength{\rightskip}{0pt plus 5cm}\#define TEnterMsg(
+\begin{DoxyParamCaption}
+\item[{}]{p}
+\end{DoxyParamCaption}
+)}}
+\label{dbgtrace_8h_a6fe884d20644aaf965d70bf3cd88384d}
+
+
+Definition at line 156 of file dbgtrace.h.
+
+\hypertarget{dbgtrace_8h_a43da9006371af37223910669e1f5f970}{
+\index{dbgtrace.h@{dbgtrace.h}!TErr@{TErr}}
+\index{TErr@{TErr}!dbgtrace.h@{dbgtrace.h}}
+\subsubsection[{TErr}]{\setlength{\rightskip}{0pt plus 5cm}\#define TErr(
+\begin{DoxyParamCaption}
+\item[{}]{p}
+\end{DoxyParamCaption}
+)}}
+\label{dbgtrace_8h_a43da9006371af37223910669e1f5f970}
+
+
+Definition at line 162 of file dbgtrace.h.
+
+\hypertarget{dbgtrace_8h_acd8519dc49ad3a0d405355a04f5e046d}{
+\index{dbgtrace.h@{dbgtrace.h}!TExit@{TExit}}
+\index{TExit@{TExit}!dbgtrace.h@{dbgtrace.h}}
+\subsubsection[{TExit}]{\setlength{\rightskip}{0pt plus 5cm}\#define TExit(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{dbgtrace_8h_acd8519dc49ad3a0d405355a04f5e046d}
+
+
+Definition at line 159 of file dbgtrace.h.
+
+\hypertarget{dbgtrace_8h_a0fdd2f5df2134f616e92d9c783cfc6a3}{
+\index{dbgtrace.h@{dbgtrace.h}!TExitMsg@{TExitMsg}}
+\index{TExitMsg@{TExitMsg}!dbgtrace.h@{dbgtrace.h}}
+\subsubsection[{TExitMsg}]{\setlength{\rightskip}{0pt plus 5cm}\#define TExitMsg(
+\begin{DoxyParamCaption}
+\item[{}]{p}
+\end{DoxyParamCaption}
+)}}
+\label{dbgtrace_8h_a0fdd2f5df2134f616e92d9c783cfc6a3}
+
+
+Definition at line 158 of file dbgtrace.h.
+
+\hypertarget{dbgtrace_8h_ac3797ea97c47826e5a2a204113cbd4ad}{
+\index{dbgtrace.h@{dbgtrace.h}!TFatal@{TFatal}}
+\index{TFatal@{TFatal}!dbgtrace.h@{dbgtrace.h}}
+\subsubsection[{TFatal}]{\setlength{\rightskip}{0pt plus 5cm}\#define TFatal(
+\begin{DoxyParamCaption}
+\item[{}]{p}
+\end{DoxyParamCaption}
+)}}
+\label{dbgtrace_8h_ac3797ea97c47826e5a2a204113cbd4ad}
+
+
+Definition at line 161 of file dbgtrace.h.
+
+\hypertarget{dbgtrace_8h_aa49a248df66c1886fa57f57c7f9fb3c3}{
+\index{dbgtrace.h@{dbgtrace.h}!TFuncName@{TFuncName}}
+\index{TFuncName@{TFuncName}!dbgtrace.h@{dbgtrace.h}}
+\subsubsection[{TFuncName}]{\setlength{\rightskip}{0pt plus 5cm}\#define TFuncName(
+\begin{DoxyParamCaption}
+\item[{}]{s}
+\end{DoxyParamCaption}
+)}}
+\label{dbgtrace_8h_aa49a248df66c1886fa57f57c7f9fb3c3}
+
+
+Definition at line 154 of file dbgtrace.h.
+
+\hypertarget{dbgtrace_8h_ad74cce47edbc72d462912ec4792d224a}{
+\index{dbgtrace.h@{dbgtrace.h}!TGenModId@{TGenModId}}
+\index{TGenModId@{TGenModId}!dbgtrace.h@{dbgtrace.h}}
+\subsubsection[{TGenModId}]{\setlength{\rightskip}{0pt plus 5cm}\#define TGenModId(
+\begin{DoxyParamCaption}
+\item[{}]{n}
+\end{DoxyParamCaption}
+)~((MOD\_\-MAIN $<$$<$ (n)) \&\& 0xff)}}
+\label{dbgtrace_8h_ad74cce47edbc72d462912ec4792d224a}
+
+
+Definition at line 41 of file dbgtrace.h.
+
+\hypertarget{dbgtrace_8h_a72e9ce6f6360590408bdeb6a1a9e4f25}{
+\index{dbgtrace.h@{dbgtrace.h}!TInfo@{TInfo}}
+\index{TInfo@{TInfo}!dbgtrace.h@{dbgtrace.h}}
+\subsubsection[{TInfo}]{\setlength{\rightskip}{0pt plus 5cm}\#define TInfo(
+\begin{DoxyParamCaption}
+\item[{}]{p}
+\end{DoxyParamCaption}
+)}}
+\label{dbgtrace_8h_a72e9ce6f6360590408bdeb6a1a9e4f25}
+
+
+Definition at line 164 of file dbgtrace.h.
+
+\hypertarget{dbgtrace_8h_a8f49a1d59d0a3642ae1f26dd0385c3d9}{
+\index{dbgtrace.h@{dbgtrace.h}!TLevel@{TLevel}}
+\index{TLevel@{TLevel}!dbgtrace.h@{dbgtrace.h}}
+\subsubsection[{TLevel}]{\setlength{\rightskip}{0pt plus 5cm}\#define TLevel(
+\begin{DoxyParamCaption}
+\item[{}]{l}
+\end{DoxyParamCaption}
+)}}
+\label{dbgtrace_8h_a8f49a1d59d0a3642ae1f26dd0385c3d9}
+
+
+Definition at line 155 of file dbgtrace.h.
+
+\hypertarget{dbgtrace_8h_aaa68a7dc3f8bc986f05d61dc01cf1a39}{
+\index{dbgtrace.h@{dbgtrace.h}!TMsg@{TMsg}}
+\index{TMsg@{TMsg}!dbgtrace.h@{dbgtrace.h}}
+\subsubsection[{TMsg}]{\setlength{\rightskip}{0pt plus 5cm}\#define TMsg(
+\begin{DoxyParamCaption}
+\item[{}]{e, }
+\item[{}]{p}
+\end{DoxyParamCaption}
+)}}
+\label{dbgtrace_8h_aaa68a7dc3f8bc986f05d61dc01cf1a39}
+
+
+Definition at line 160 of file dbgtrace.h.
+
+\hypertarget{dbgtrace_8h_a55f3b079f294172afbcf6d1c53951d06}{
+\index{dbgtrace.h@{dbgtrace.h}!TMsgPeriod@{TMsgPeriod}}
+\index{TMsgPeriod@{TMsgPeriod}!dbgtrace.h@{dbgtrace.h}}
+\subsubsection[{TMsgPeriod}]{\setlength{\rightskip}{0pt plus 5cm}\#define TMsgPeriod(
+\begin{DoxyParamCaption}
+\item[{}]{t, }
+\item[{}]{p}
+\end{DoxyParamCaption}
+)}}
+\label{dbgtrace_8h_a55f3b079f294172afbcf6d1c53951d06}
+
+
+Definition at line 166 of file dbgtrace.h.
+
+\hypertarget{dbgtrace_8h_a786983373ca08309078f31881eb378ce}{
+\index{dbgtrace.h@{dbgtrace.h}!TPeriodEnd@{TPeriodEnd}}
+\index{TPeriodEnd@{TPeriodEnd}!dbgtrace.h@{dbgtrace.h}}
+\subsubsection[{TPeriodEnd}]{\setlength{\rightskip}{0pt plus 5cm}\#define TPeriodEnd(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{dbgtrace_8h_a786983373ca08309078f31881eb378ce}
+
+
+Definition at line 170 of file dbgtrace.h.
+
+\hypertarget{dbgtrace_8h_a9ce180a254f480c13f14f5c33a8b7e18}{
+\index{dbgtrace.h@{dbgtrace.h}!TPeriodStart@{TPeriodStart}}
+\index{TPeriodStart@{TPeriodStart}!dbgtrace.h@{dbgtrace.h}}
+\subsubsection[{TPeriodStart}]{\setlength{\rightskip}{0pt plus 5cm}\#define TPeriodStart(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{dbgtrace_8h_a9ce180a254f480c13f14f5c33a8b7e18}
+
+
+Definition at line 169 of file dbgtrace.h.
+
+\hypertarget{dbgtrace_8h_aa60b7a4f9c563ac208a915f14edc4acf}{
+\index{dbgtrace.h@{dbgtrace.h}!TPrintf@{TPrintf}}
+\index{TPrintf@{TPrintf}!dbgtrace.h@{dbgtrace.h}}
+\subsubsection[{TPrintf}]{\setlength{\rightskip}{0pt plus 5cm}\#define TPrintf~writeDebugStream}}
+\label{dbgtrace_8h_aa60b7a4f9c563ac208a915f14edc4acf}
+
+
+Definition at line 66 of file dbgtrace.h.
+
+\hypertarget{dbgtrace_8h_a03e9e743be041a3e1c1654985f863a17}{
+\index{dbgtrace.h@{dbgtrace.h}!TPrintfLine@{TPrintfLine}}
+\index{TPrintfLine@{TPrintfLine}!dbgtrace.h@{dbgtrace.h}}
+\subsubsection[{TPrintfLine}]{\setlength{\rightskip}{0pt plus 5cm}\#define TPrintfLine~writeDebugStreamLine}}
+\label{dbgtrace_8h_a03e9e743be041a3e1c1654985f863a17}
+
+
+Definition at line 67 of file dbgtrace.h.
+
+\hypertarget{dbgtrace_8h_a5b19426803ffa53db02a1b01c8f1fe79}{
+\index{dbgtrace.h@{dbgtrace.h}!TRACE\_\-PERIOD@{TRACE\_\-PERIOD}}
+\index{TRACE\_\-PERIOD@{TRACE\_\-PERIOD}!dbgtrace.h@{dbgtrace.h}}
+\subsubsection[{TRACE\_\-PERIOD}]{\setlength{\rightskip}{0pt plus 5cm}\#define TRACE\_\-PERIOD~500}}
+\label{dbgtrace_8h_a5b19426803ffa53db02a1b01c8f1fe79}
+
+
+Definition at line 59 of file dbgtrace.h.
+
+\hypertarget{dbgtrace_8h_a6e68069df85de40d237c641708a05d89}{
+\index{dbgtrace.h@{dbgtrace.h}!TraceInit@{TraceInit}}
+\index{TraceInit@{TraceInit}!dbgtrace.h@{dbgtrace.h}}
+\subsubsection[{TraceInit}]{\setlength{\rightskip}{0pt plus 5cm}\#define TraceInit(
+\begin{DoxyParamCaption}
+\item[{}]{m, }
+\item[{}]{l, }
+\item[{}]{e}
+\end{DoxyParamCaption}
+)}}
+\label{dbgtrace_8h_a6e68069df85de40d237c641708a05d89}
+
+
+Definition at line 152 of file dbgtrace.h.
+
+\hypertarget{dbgtrace_8h_aab4e62cc6b81204e1bea664b3ff21a9e}{
+\index{dbgtrace.h@{dbgtrace.h}!TSampling@{TSampling}}
+\index{TSampling@{TSampling}!dbgtrace.h@{dbgtrace.h}}
+\subsubsection[{TSampling}]{\setlength{\rightskip}{0pt plus 5cm}\#define TSampling(
+\begin{DoxyParamCaption}
+\item[{}]{p}
+\end{DoxyParamCaption}
+)}}
+\label{dbgtrace_8h_aab4e62cc6b81204e1bea664b3ff21a9e}
+
+
+Definition at line 167 of file dbgtrace.h.
+
+\hypertarget{dbgtrace_8h_a278a3248b8c64a53fa6caa9ae96ea9a8}{
+\index{dbgtrace.h@{dbgtrace.h}!TVerbose@{TVerbose}}
+\index{TVerbose@{TVerbose}!dbgtrace.h@{dbgtrace.h}}
+\subsubsection[{TVerbose}]{\setlength{\rightskip}{0pt plus 5cm}\#define TVerbose(
+\begin{DoxyParamCaption}
+\item[{}]{p}
+\end{DoxyParamCaption}
+)}}
+\label{dbgtrace_8h_a278a3248b8c64a53fa6caa9ae96ea9a8}
+
+
+Definition at line 165 of file dbgtrace.h.
+
+\hypertarget{dbgtrace_8h_a0d0c98174606a66e3c29b8d6ccbde473}{
+\index{dbgtrace.h@{dbgtrace.h}!TWarn@{TWarn}}
+\index{TWarn@{TWarn}!dbgtrace.h@{dbgtrace.h}}
+\subsubsection[{TWarn}]{\setlength{\rightskip}{0pt plus 5cm}\#define TWarn(
+\begin{DoxyParamCaption}
+\item[{}]{p}
+\end{DoxyParamCaption}
+)}}
+\label{dbgtrace_8h_a0d0c98174606a66e3c29b8d6ccbde473}
+
+
+Definition at line 163 of file dbgtrace.h.
+
+\hypertarget{dbgtrace_8h_abcfcc969dca8df7944d2bcd1195d604c}{
+\index{dbgtrace.h@{dbgtrace.h}!UTIL@{UTIL}}
+\index{UTIL@{UTIL}!dbgtrace.h@{dbgtrace.h}}
+\subsubsection[{UTIL}]{\setlength{\rightskip}{0pt plus 5cm}\#define UTIL~6}}
+\label{dbgtrace_8h_abcfcc969dca8df7944d2bcd1195d604c}
+
+
+Definition at line 49 of file dbgtrace.h.
+
+\hypertarget{dbgtrace_8h_a42f8c497a1968074f38bf5055c650dca}{
+\index{dbgtrace.h@{dbgtrace.h}!VERBOSE@{VERBOSE}}
+\index{VERBOSE@{VERBOSE}!dbgtrace.h@{dbgtrace.h}}
+\subsubsection[{VERBOSE}]{\setlength{\rightskip}{0pt plus 5cm}\#define VERBOSE~4}}
+\label{dbgtrace_8h_a42f8c497a1968074f38bf5055c650dca}
+
+
+Definition at line 56 of file dbgtrace.h.
+
+\hypertarget{dbgtrace_8h_a271d8f7f52be750e5c744a394ec71344}{
+\index{dbgtrace.h@{dbgtrace.h}!WARN@{WARN}}
+\index{WARN@{WARN}!dbgtrace.h@{dbgtrace.h}}
+\subsubsection[{WARN}]{\setlength{\rightskip}{0pt plus 5cm}\#define WARN~2}}
+\label{dbgtrace_8h_a271d8f7f52be750e5c744a394ec71344}
+
+
+Definition at line 54 of file dbgtrace.h.
+
